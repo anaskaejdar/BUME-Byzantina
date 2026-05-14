@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="martyriaNoteDi" format="2">
+  <advance width="738"/>
+  <unicode hex="E13C"/>
+  <anchor x="517" y="590" name="barline"/>
+  <anchor x="539" y="548" name="agogi"/>
+  <anchor x="533" y="-27" name="martyriaBottom"/>
+  <anchor x="540" y="653" name="fthoraTop"/>
+  <outline>
+    <contour>
+      <point x="703" y="68" type="line"/>
+      <point x="360" y="68" type="line"/>
+      <point x="541" y="450" type="line"/>
+    </contour>
+    <contour>
+      <point x="626" y="113" type="line"/>
+      <point x="525" y="349" type="line"/>
+      <point x="414" y="113" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+        <key>hhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>68</integer>
+            <key>width</key>
+            <integer>45</integer>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

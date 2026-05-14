@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="measureNumber4" format="2">
+  <advance width="0"/>
+  <unicode hex="E222"/>
+  <anchor x="0" y="656" name="_measureNumber"/>
+  <outline>
+    <contour>
+      <point x="28" y="644" type="line"/>
+      <point x="28" y="721" type="line"/>
+      <point x="-111" y="721" type="line"/>
+      <point x="-111" y="758" type="line"/>
+      <point x="35" y="966" type="line"/>
+      <point x="68" y="966" type="line"/>
+      <point x="68" y="758" type="line"/>
+      <point x="111" y="758" type="line"/>
+      <point x="111" y="721" type="line"/>
+      <point x="68" y="721" type="line"/>
+      <point x="68" y="644" type="line"/>
+    </contour>
+    <contour>
+      <point x="28" y="758" type="line"/>
+      <point x="28" y="903" type="line"/>
+      <point x="-72" y="758" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+        <key>hhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>721</integer>
+            <key>width</key>
+            <integer>37</integer>
+          </dict>
+        </array>
+        <key>vhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>28</integer>
+            <key>width</key>
+            <integer>40</integer>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

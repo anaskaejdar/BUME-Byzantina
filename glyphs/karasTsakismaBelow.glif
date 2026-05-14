@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<glyph name="karasTsakismaBelow" format="2">
+  <advance width="0"/>
+  <outline>
+    <component base="karasTsakisma" yOffset="-580"/>
+  </outline>
+</glyph>

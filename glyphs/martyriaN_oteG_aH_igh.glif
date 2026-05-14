@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="martyriaNoteGaHigh" format="2">
+  <advance width="840"/>
+  <unicode hex="E142"/>
+  <anchor x="517" y="590" name="barline"/>
+  <anchor x="517" y="529" name="agogi"/>
+  <anchor x="493" y="-27" name="martyriaBottom"/>
+  <anchor x="517" y="613" name="fthoraTop"/>
+  <outline>
+    <component base="martyriaTick" xOffset="692"/>
+    <component base="martyriaNoteGa"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+        <key>hhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>344</integer>
+            <key>width</key>
+            <integer>206</integer>
+          </dict>
+        </array>
+        <key>vhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>360</integer>
+            <key>width</key>
+            <integer>70</integer>
+          </dict>
+          <dict>
+            <key>position</key>
+            <integer>586</integer>
+            <key>width</key>
+            <integer>73</integer>
+          </dict>
+          <dict>
+            <key>position</key>
+            <integer>740</integer>
+            <key>width</key>
+            <integer>77</integer>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

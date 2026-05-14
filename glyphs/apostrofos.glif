@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="apostrofos" format="2">
+  <advance width="703"/>
+  <unicode hex="E021"/>
+  <anchor x="470" y="891" name="yfenAbove"/>
+  <anchor x="509" y="-40" name="yfenBelow"/>
+  <anchor x="370" y="891" name="koronis"/>
+  <anchor x="502" y="-126" name="endofonon"/>
+  <anchor x="879" y="-19" name="heteronConnecting"/>
+  <anchor x="172" y="783" name="measureNumber"/>
+  <anchor x="366" y="885" name="isonIndicator"/>
+  <anchor x="348" y="-18" name="gorgonBottom"/>
+  <anchor x="500" y="18" name="apli"/>
+  <anchor x="461" y="101" name="antikenoma"/>
+  <anchor x="170" y="643" name="noteTop"/>
+  <anchor x="386" y="642" name="fthoraTop"/>
+  <anchor x="340" y="99" name="fthoraBottom"/>
+  <anchor x="400" y="580" name="gorgonTop"/>
+  <anchor x="233" y="100" name="diesis"/>
+  <anchor x="648" y="557" name="yfesis"/>
+  <anchor x="408" y="567" name="klasmaTop"/>
+  <outline>
+    <component base="u1D051"/>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+        <key>hhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>145</integer>
+            <key>width</key>
+            <integer>32</integer>
+          </dict>
+          <dict>
+            <key>position</key>
+            <integer>465</integer>
+            <key>width</key>
+            <integer>30</integer>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>

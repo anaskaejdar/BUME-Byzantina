@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="u1D0EC" format="2">
+  <advance width="422"/>
+  <unicode hex="1D0EC"/>
+  <anchor x="200" y="866" name="barline"/>
+  <anchor x="200" y="720" name="agogi"/>
+  <anchor x="200" y="949" name="fthoraTop"/>
+  <anchor x="216" y="263" name="martyriaTop"/>
+  <outline>
+    <contour>
+      <point x="386" y="-184" type="line"/>
+      <point x="43" y="-184" type="line"/>
+      <point x="224" y="199" type="line"/>
+    </contour>
+    <contour>
+      <point x="309" y="-139" type="line"/>
+      <point x="208" y="98" type="line"/>
+      <point x="97" y="-139" type="line"/>
+    </contour>
+  </outline>
+  <lib>
+    <dict>
+      <key>com.fontlab.hintData</key>
+      <dict>
+        <key>hhints</key>
+        <array>
+          <dict>
+            <key>position</key>
+            <integer>-460</integer>
+            <key>width</key>
+            <integer>45</integer>
+          </dict>
+        </array>
+      </dict>
+    </dict>
+  </lib>
+</glyph>
