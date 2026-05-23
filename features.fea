@@ -614,6 +614,30 @@ lookup ccmpPsalticBaseLigs {
     sub \u1D08D by \leimma4;
 } ccmpPsalticBaseLigs;
 
+@basesWithBottomKlasma = [\oligonDoubleYpsili \oxeiaDoubleHypsili
+    \oligonKentimataDoubleYpsili \oxeiaKentimataAboveDoubleHypsiliR \petastiIson
+    \petasti \petastiKentima \petastiYpsiliRight \petastiYpsiliLeft
+    \petastiKentimaYpsiliRight \petastiKentimaYpsiliMiddle \petastiApostrofos
+    \petastiElafron \petastiElafronApostrofos \petastiChamili
+    \oligonKentimaTripleYpsili \oxeiaKentimaAboveTripleHypsili \oligonIson
+    \oxeiaIson \oligonElafron \oligonElafronApostrofos \oxeiaElafron
+    \oxeiaElafronApostrofos \oligonRunningElafron \oxeiaApostrofosElafron
+    \oligonApostrofos \oxeiaApostrofos \oligonYporroi \oxeiaYporroi
+    \petastiYporroi \petastiChamiliApostrofos \oligonKentimataTripleYpsili
+    \oxeiaKentimataAboveTripleHypsili \petastiKentimataDoubleYpsili
+    \petastiKentimaDoubleYpsiliRight \petastiKentimaDoubleYpsiliLeft
+    \petastiKentimataTripleYpsili \petastiTripleYpsili
+    \oligonKentimaDoubleYpsiliRight \oxeiaKentimaAboveDoubleHypsiliR
+    \oligonKentimaDoubleYpsiliLeft \oxeiaKentimaAboveDoubleHypsiliL
+    \oligonTripleYpsili \oxeiaTripleHypsili \petastiDoubleYpsili \oligonChamili
+    \oxeiaChamili \petastiChamiliElafronApostrofos \petastiDoubleChamili
+    \petastiDoubleChamiliApostrofos \petastiKentimaTripleYpsili ];
+
+lookup ccmpContextualReplacementsIgnoringMarksExceptKlasma {
+  lookupflag UseMarkFilteringSet [\u1D07F \u1D0F4 \klasmaAbove \klasmaBelow ];
+    sub @basesWithBottomKlasma [\u1D07F \u1D0F4 \klasmaAbove \klasmaBelow ]' by [\u1D0F4 \u1D07F \klasmaBelow \klasmaAbove ];
+} ccmpContextualReplacementsIgnoringMarksExceptKlasma;
+
 lookup ccmpContextualSubstitutions2 {
   lookupflag 0;
     @normalAgogi = [\agogiTrueAgogiMesi \agogiPoliArgi \agogiArgoteri \agogiArgi \agogiMesi \agogiMetria \agogiGorgi \agogiGorgoteri \agogiPoliGorgi ];
@@ -659,6 +683,7 @@ feature ccmp {
       lookup ccmpCombiningFthoraeChroaeYfesisDiesis;
       lookup ccmpContextualReplacements;
       lookup ccmpContextualReplacementsIgnoringMarks;
+      lookup ccmpContextualReplacementsIgnoringMarksExceptKlasma;
       lookup swapOnFirstComponentVariants;
       lookup ccmpPsalticBaseLigsWithMarktoLigature;
       lookup ccmpPsalticBaseLigsConvertToOxeia;
@@ -674,6 +699,7 @@ feature ccmp {
       lookup ccmpCombiningFthoraeChroaeYfesisDiesis;
       lookup ccmpContextualReplacements;
       lookup ccmpContextualReplacementsIgnoringMarks;
+      lookup ccmpContextualReplacementsIgnoringMarksExceptKlasma;
       lookup swapOnFirstComponentVariants;
       lookup ccmpPsalticBaseLigsWithMarktoLigature;
       lookup ccmpPsalticBaseLigsConvertToOxeia;
@@ -689,6 +715,7 @@ feature ccmp {
       lookup ccmpCombiningFthoraeChroaeYfesisDiesis;
       lookup ccmpContextualReplacements;
       lookup ccmpContextualReplacementsIgnoringMarks;
+      lookup ccmpContextualReplacementsIgnoringMarksExceptKlasma;
       lookup swapOnFirstComponentVariants;
       lookup ccmpPsalticBaseLigsWithMarktoLigature;
       lookup ccmpPsalticBaseLigsConvertToOxeia;
@@ -1103,7 +1130,6 @@ lookup markMarkPositioninglookup0 {
 	<anchor 400 133> mark @diesis
 	<anchor 1316 619> mark @yfesis
 	<anchor 785 160> mark @klasmaBottom
-	<anchor 869 -17> mark @klasmaTop
 	<anchor 757 500> mark @gorgonTop
 	<anchor 1480 1025> mark @karasParacletike
 	<anchor 744 112> mark @karasTromikon
@@ -1133,7 +1159,6 @@ lookup markMarkPositioninglookup0 {
 	<anchor 400 133> mark @diesis
 	<anchor 1368 619> mark @yfesis
 	<anchor 785 160> mark @klasmaBottom
-	<anchor 869 -17> mark @klasmaTop
 	<anchor 50 1116> mark @karasParacletike
 	<anchor 744 112> mark @karasTromikon
     <anchor 1013 41> mark @karasLygismaConnecting
@@ -1388,8 +1413,7 @@ lookup markMarkPositioninglookup0 {
     <anchor -153 1186> mark @karasIsakialtFront01
     <anchor 930 942> mark @karasIsakialtBack01
     <anchor 1026 46> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\petasti ] <anchor 792 1049> mark @yfenAbove
 	<anchor 769 -40> mark @yfenBelow
 	<anchor 730 1046> mark @koronis
@@ -1409,8 +1433,7 @@ lookup markMarkPositioninglookup0 {
     <anchor -107 716> mark @karasIsakialtFront01
     <anchor 934 660> mark @karasIsakialtBack01
     <anchor 1026 46> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\petastiOligon ] <anchor 792 1049> mark @yfenAbove
 	<anchor 789 -40> mark @yfenBelow
 	<anchor 730 1046> mark @koronis
@@ -1451,8 +1474,7 @@ lookup markMarkPositioninglookup0 {
     <anchor -107 716> mark @karasIsakialtFront01
     <anchor 934 660> mark @karasIsakialtBack01
     <anchor 1026 46> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\petastiYpsiliRight ] <anchor 792 1309> mark @yfenAbove
 	<anchor 729 -40> mark @yfenBelow
 	<anchor 430 876> mark @koronis
@@ -1472,8 +1494,7 @@ lookup markMarkPositioninglookup0 {
     <anchor -107 716> mark @karasIsakialtFront01
     <anchor 1010 642> mark @karasIsakialtBack01
     <anchor 1026 46> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\petastiYpsiliLeft ] <anchor 792 1299> mark @yfenAbove
 	<anchor 729 -40> mark @yfenBelow
 	<anchor 925 807> mark @koronis
@@ -1493,8 +1514,7 @@ lookup markMarkPositioninglookup0 {
     <anchor -107 894> mark @karasIsakialtFront01
     <anchor 934 660> mark @karasIsakialtBack01
     <anchor 1026 46> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\petastiKentimaYpsiliRight ] <anchor 792 1299> mark @yfenAbove
 	<anchor 729 -40> mark @yfenBelow
 	<anchor 599 969> mark @koronis
@@ -1514,8 +1534,7 @@ lookup markMarkPositioninglookup0 {
     <anchor -107 716> mark @karasIsakialtFront01
     <anchor 1010 642> mark @karasIsakialtBack01
     <anchor 1026 46> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\petastiKentimaYpsiliMiddle ] <anchor 792 1299> mark @yfenAbove
 	<anchor 729 -40> mark @yfenBelow
 	<anchor 313 963> mark @koronis
@@ -1535,8 +1554,7 @@ lookup markMarkPositioninglookup0 {
     <anchor -107 716> mark @karasIsakialtFront01
     <anchor 934 660> mark @karasIsakialtBack01
     <anchor 1026 46> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\petastiApostrofos ] <anchor 792 1049> mark @yfenAbove
 	<anchor 729 -40> mark @yfenBelow
 	<anchor 663 961> mark @koronis
@@ -1556,8 +1574,8 @@ lookup markMarkPositioninglookup0 {
     <anchor 54 344> mark @karasIsakialtFront01
     <anchor 934 660> mark @karasIsakialtBack01
     <anchor 1026 46> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 884 -94> mark @klasmaTop # TODO: Find a new position for this one
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\petastiElafron ] <anchor 712 1109> mark @yfenAbove
 	<anchor 729 -40> mark @yfenBelow
 	<anchor 663 1091> mark @koronis
@@ -1577,8 +1595,8 @@ lookup markMarkPositioninglookup0 {
     <anchor 54 344> mark @karasIsakialtFront01
     <anchor 866 932> mark @karasIsakialtBack01
     <anchor 1026 46> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 884 -94> mark @klasmaTop # TODO: Find a new position for this one
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\petastiElafronApostrofos ] <anchor 702 1089> mark @yfenAbove
 	<anchor 729 -40> mark @yfenBelow
 	<anchor 663 1091> mark @koronis
@@ -1598,8 +1616,8 @@ lookup markMarkPositioninglookup0 {
     <anchor 54 344> mark @karasIsakialtFront01
     <anchor 866 932> mark @karasIsakialtBack01
     <anchor 1026 46> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 884 -94> mark @klasmaTop # TODO: Find a new position for this one
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\petastiChamili ] <anchor 782 1229> mark @yfenAbove
 	<anchor 729 -40> mark @yfenBelow
 	<anchor 763 1131> mark @koronis
@@ -1619,8 +1637,8 @@ lookup markMarkPositioninglookup0 {
     <anchor 54 344> mark @karasIsakialtFront01
     <anchor 866 968> mark @karasIsakialtBack01
     <anchor 1026 46> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 884 -94> mark @klasmaTop # TODO: Find a new position for this one
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\kentimata ] <anchor 806 34> mark @heteronConnecting
 	<anchor 413 875> mark @yfenAbove
 	<anchor 459 -40> mark @yfenBelow
@@ -1659,7 +1677,6 @@ lookup markMarkPositioninglookup0 {
 	<anchor 400 133> mark @diesis
 	<anchor 1378 619> mark @yfesis
 	<anchor 785 160> mark @klasmaBottom
-	<anchor 869 -17> mark @klasmaTop
 	<anchor 990 770> mark @gorgonTop
     <anchor 18 197> mark @karasIsaki
     <anchor -103 892> mark @karasIsakialtFront01
@@ -1682,8 +1699,8 @@ lookup markMarkPositioninglookup0 {
 	<anchor 338 878> mark @noteTop
 	<anchor 788 717> mark @fthoraTop
 	<anchor 789 209> mark @fthoraBottom
+	<anchor 869 -17> mark @klasmaTop # TODO: Find a new position for this one
 	<anchor 785 160> mark @klasmaBottom
-	<anchor 869 -17> mark @klasmaTop
 	<anchor 400 133> mark @diesis
 	<anchor 1316 619> mark @yfesis
     <anchor 18 197> mark @karasIsaki
@@ -1709,8 +1726,8 @@ lookup markMarkPositioninglookup0 {
 	<anchor 789 209> mark @fthoraBottom
 	<anchor 400 133> mark @diesis
 	<anchor 1316 619> mark @yfesis
+	<anchor 869 -17> mark @klasmaTop # TODO: Find a new position for this one
 	<anchor 785 160> mark @klasmaBottom
-	<anchor 869 -17> mark @klasmaTop
     <anchor -117 1024> mark @karasIsaki
     <anchor 18 197> mark @karasIsakialtFront01
     <anchor 916 876> mark @karasIsakialtBack01
@@ -1734,8 +1751,8 @@ lookup markMarkPositioninglookup0 {
 	<anchor 990 209> mark @fthoraBottom
 	<anchor 620 133> mark @diesis
 	<anchor 1520 619> mark @yfesis
+	<anchor 1044 -17> mark @klasmaTop # TODO: Find a new position for this one
 	<anchor 960 160> mark @klasmaBottom
-	<anchor 1044 -17> mark @klasmaTop
     <anchor -93 970> mark @karasIsaki
     <anchor 260 197> mark @karasIsakialtFront01
     <anchor 1144 876> mark @karasIsakialtBack01
@@ -1784,8 +1801,8 @@ lookup markMarkPositioninglookup0 {
 	<anchor 789 209> mark @fthoraBottom
 	<anchor 400 133> mark @diesis
 	<anchor 1316 619> mark @yfesis
+	<anchor 869 -17> mark @klasmaTop # TODO: Find a new position for this one
 	<anchor 785 160> mark @klasmaBottom
-	<anchor 869 -17> mark @klasmaTop
     <anchor 244 1000> mark @karasIsaki
     <anchor 30 230> mark @karasIsakialtFront01
     <anchor 826 882> mark @karasIsakialtBack01
@@ -1811,7 +1828,6 @@ lookup markMarkPositioninglookup0 {
 	<anchor 400 133> mark @diesis
 	<anchor 1316 619> mark @yfesis
 	<anchor 785 160> mark @klasmaBottom
-	<anchor 869 -17> mark @klasmaTop
     <anchor 498 856> mark @karasIsaki
     <anchor 30 230> mark @karasIsakialtFront01
     <anchor 1038 872> mark @karasIsakialtBack01
@@ -1838,8 +1854,7 @@ lookup markMarkPositioninglookup0 {
     <anchor 196 786> mark @karasIsaki
     <anchor 30 230> mark @karasIsakialtFront01
     <anchor 768 802> mark @karasIsakialtBack01
-    <anchor 798 94> mark @karasIsakialtBack02
-	<anchor 884 -94> mark @klasmaTop;
+    <anchor 798 94> mark @karasIsakialtBack02;
   pos base [\petastiChamiliApostrofos ] <anchor 782 1229> mark @yfenAbove
 	<anchor 729 -80> mark @yfenBelow
 	<anchor 763 1131> mark @koronis
@@ -1855,8 +1870,8 @@ lookup markMarkPositioninglookup0 {
 	<anchor 202 1242> mark @noteTop
 	<anchor 464 147> mark @diesis
 	<anchor 1028 1025> mark @yfesis
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 884 -94> mark @klasmaTop # TODO: Find a new position for this one
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\apostrofos ] <anchor 470 891> mark @yfenAbove
 	<anchor 509 -40> mark @yfenBelow
 	<anchor 370 891> mark @koronis
@@ -1898,7 +1913,6 @@ lookup markMarkPositioninglookup0 {
 	<anchor 400 133> mark @diesis
 	<anchor 1377 619> mark @yfesis
 	<anchor 785 160> mark @klasmaBottom
-	<anchor 869 -17> mark @klasmaTop
     <anchor 18 197> mark @karasIsaki
     <anchor -103 892> mark @karasIsakialtFront01
     <anchor 1172 546> mark @karasIsakialtBack01
@@ -1989,8 +2003,7 @@ lookup markMarkPositioninglookup0 {
     <anchor -132 740> mark @karasIsakialtFront01
     <anchor 1088 606> mark @karasIsakialtBack01
     <anchor 952 56> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\petastiKentimaDoubleYpsiliRight ] <anchor 792 1449> mark @yfenAbove
 	<anchor 729 -40> mark @yfenBelow
 	<anchor 340 1330> mark @koronis
@@ -2010,8 +2023,7 @@ lookup markMarkPositioninglookup0 {
     <anchor -132 740> mark @karasIsakialtFront01
     <anchor 1088 606> mark @karasIsakialtBack01
     <anchor 952 56> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\petastiKentimaDoubleYpsiliLeft ] <anchor 792 1449> mark @yfenAbove
 	<anchor 729 -40> mark @yfenBelow
 	<anchor 670 1460> mark @koronis
@@ -2031,8 +2043,7 @@ lookup markMarkPositioninglookup0 {
     <anchor -132 940> mark @karasIsakialtFront01
     <anchor 834 720> mark @karasIsakialtBack01
     <anchor 952 56> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\petastiKentimataTripleYpsili ] <anchor 792 1439> mark @yfenAbove
 	<anchor 729 -40> mark @yfenBelow
 	<anchor 663 1383> mark @koronis
@@ -2052,8 +2063,7 @@ lookup markMarkPositioninglookup0 {
     <anchor -170 986> mark @karasIsakialtFront01
     <anchor 1088 606> mark @karasIsakialtBack01
     <anchor 952 56> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\petastiTripleYpsili ] <anchor 792 1379> mark @yfenAbove
 	<anchor 729 -40> mark @yfenBelow
 	<anchor 663 1313> mark @koronis
@@ -2073,8 +2083,7 @@ lookup markMarkPositioninglookup0 {
     <anchor -132 940> mark @karasIsakialtFront01
     <anchor 1088 606> mark @karasIsakialtBack01
     <anchor 952 56> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\oligonKentimaDoubleYpsiliRight \oxeiaKentimaAboveDoubleHypsiliR ] <anchor 667 125> mark @gorgonBottom
 	<anchor 930 1441> mark @yfenAbove
 	<anchor 929 -40> mark @yfenBelow
@@ -2094,7 +2103,6 @@ lookup markMarkPositioninglookup0 {
 	<anchor 400 133> mark @diesis
 	<anchor 1368 619> mark @yfesis
 	<anchor 785 160> mark @klasmaBottom
-	<anchor 869 -17> mark @klasmaTop
 	<anchor 1525 1028> mark @karasParacletike
     <anchor 1068 41> mark @karasLygisma
     <anchor 70 197> mark @karasIsaki
@@ -2121,7 +2129,6 @@ lookup markMarkPositioninglookup0 {
 	<anchor 400 133> mark @diesis
 	<anchor 1316 619> mark @yfesis
 	<anchor 785 160> mark @klasmaBottom
-	<anchor 869 -17> mark @klasmaTop
 	<anchor 1282 650> mark @karasParacletike
     <anchor 1068 41> mark @karasLygisma
     <anchor 70 197> mark @karasIsaki
@@ -2148,7 +2155,6 @@ lookup markMarkPositioninglookup0 {
 	<anchor 400 133> mark @diesis
 	<anchor 1368 619> mark @yfesis
 	<anchor 785 160> mark @klasmaBottom
-	<anchor 869 -17> mark @klasmaTop
 	<anchor 1561 1049> mark @karasParacletike
     <anchor 1068 41> mark @karasLygisma
     <anchor 70 197> mark @karasIsaki
@@ -2175,8 +2181,7 @@ lookup markMarkPositioninglookup0 {
     <anchor 8 978> mark @karasIsakialtFront01
     <anchor 1058 638> mark @karasIsakialtBack01
     <anchor 966 72> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\oligonChamili \oxeiaChamili ] <anchor 667 125> mark @gorgonBottom
 	<anchor 930 1031> mark @yfenAbove
 	<anchor 929 -40> mark @yfenBelow
@@ -2195,8 +2200,8 @@ lookup markMarkPositioninglookup0 {
 	<anchor 789 209> mark @fthoraBottom
 	<anchor 400 133> mark @diesis
 	<anchor 1316 619> mark @yfesis
+	<anchor 869 -17> mark @klasmaTop # TODO: Find another position for this one
 	<anchor 785 160> mark @klasmaBottom
-	<anchor 869 -17> mark @klasmaTop
     <anchor 1068 41> mark @karasLygisma
     <anchor -136 1118> mark @karasIsaki
     <anchor 70 197> mark @karasIsakialtFront01
@@ -2243,8 +2248,8 @@ lookup markMarkPositioninglookup0 {
     <anchor 78 272> mark @karasIsakialtFront01
     <anchor 856 1246> mark @karasIsakialtBack01
     <anchor 966 72> mark @karasIsakialtBack02
-	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 884 -94> mark @klasmaTop # TODO: Find a better position for this one
+	<anchor 800 83> mark @klasmaBottom;
   pos base [\petastiDoubleChamili ] <anchor 782 1289> mark @yfenAbove
 	<anchor 729 -210> mark @yfenBelow
 	<anchor 763 1291> mark @koronis
@@ -2264,8 +2269,8 @@ lookup markMarkPositioninglookup0 {
     <anchor 78 128> mark @karasIsakialtFront01
     <anchor 856 1098> mark @karasIsakialtBack01
     <anchor 966 -78> mark @karasIsakialtBack02
-	<anchor 800 -63> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop;
+	<anchor 884 -94> mark @klasmaTop # TODO: Find a better position for this one
+	<anchor 800 -63> mark @klasmaBottom;
   pos base [\petastiDoubleChamiliApostrofos ] <anchor 782 1289> mark @yfenAbove
 	<anchor 729 -210> mark @yfenBelow
 	<anchor 763 1291> mark @koronis
@@ -2285,8 +2290,8 @@ lookup markMarkPositioninglookup0 {
     <anchor 78 128> mark @karasIsakialtFront01
     <anchor 856 1098> mark @karasIsakialtBack01
     <anchor 966 -78> mark @karasIsakialtBack02
-	<anchor 800 -65> mark @klasmaBottom
-	<anchor 884 -242> mark @klasmaTop;
+	<anchor 884 -242> mark @klasmaTop # TODO: Find a better position for this one
+	<anchor 800 -65> mark @klasmaBottom;
   pos base [\oligonKentimaMiddle \oxeiaKentimaMiddle ] <anchor 667 125> mark @gorgonBottom
 	<anchor 930 641> mark @yfenAbove
 	<anchor 929 -40> mark @yfenBelow
@@ -2485,7 +2490,6 @@ lookup markMarkPositioninglookup0 {
 	<anchor 464 147> mark @diesis
 	<anchor 352 162> mark @fthoraBottom
 	<anchor 800 83> mark @klasmaBottom
-	<anchor 884 -94> mark @klasmaTop
 	<anchor 713 62> mark @antikenoma
 	<anchor 765 -80> mark @apli;
   pos base [\leimma1 \leimma2 \leimma3 \leimma4 ] <anchor 585 563> mark @gorgonTop;
