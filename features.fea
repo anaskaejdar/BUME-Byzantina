@@ -301,14 +301,14 @@ lookup ccmpContextualReplacements {
     sub [\u1D0AD ] \u1D0F3' by \u1D0AF.withMApos;
     sub [@practicalMartyria @theoreticalMartyria @martyrifyableFthora @martyrifiedFthora ] \u1D086' \u1D050' by \u1D0AE;
     # Ano Oxeia
-    sub @practicalMartyria \u1D086' by \martyriaTick \martyriaTick;
+    sub [@practicalMartyria @practicalMartyriaTop ] \u1D086' by \martyriaTick \martyriaTick;
     # Martyria Apostrofos (not for practical martyriae ^^^)
     sub [@practicalMartyria @theoreticalMartyria @martyrifyableFthora @martyrifiedFthora ] \u1D086' by \u1D0AD;
     # Ano Oxeia
-    sub [@practicalMartyria @martyrifyableFthora @martyrifiedFthora \martyriaTick ] \u1D086' by \martyriaTick \martyriaTick;
-    sub [@practicalMartyria @theoreticalMartyria @martyrifyableFthora @martyrifiedFthora \martyriaTick ] \u1D087' by \martyriaTick \martyriaTick \martyriaTick;
-    sub [@practicalMartyria @theoreticalMartyria @martyrifyableFthora @martyrifiedFthora \martyriaTick ] \u1D088' by \martyriaTick \martyriaTick \martyriaTick \martyriaTick;
-    sub [@practicalMartyria @theoreticalMartyria @martyrifyableFthora @martyrifiedFthora \martyriaTick ] \u1D085' by \martyriaTick;
+    sub [@practicalMartyria @practicalMartyriaTop @martyrifyableFthora @martyrifiedFthora @martyrifiedFthoraTop \martyriaTick ] \u1D086' by \martyriaTick \martyriaTick;
+    sub [@practicalMartyria @practicalMartyriaTop @theoreticalMartyria @martyrifyableFthora @martyrifiedFthora @martyrifiedFthoraTop \martyriaTick ] \u1D087' by \martyriaTick \martyriaTick \martyriaTick;
+    sub [@practicalMartyria @practicalMartyriaTop @theoreticalMartyria @martyrifyableFthora @martyrifiedFthora @martyrifiedFthoraTop \martyriaTick ] \u1D088' by \martyriaTick \martyriaTick \martyriaTick \martyriaTick;
+    sub [@practicalMartyria @practicalMartyriaTop @theoreticalMartyria @martyrifyableFthora @martyrifiedFthora @martyrifiedFthoraTop \martyriaTick ] \u1D085' by \martyriaTick;
     # For lack of secondary chromatic theoretical martyriae in the unicode block
     # Replace the fthora with a bottom martyria in certain contexts
     ## sub [ \u1D046 - \u1D0F5 ] \u1D0AD' by \u1D0AD; # Prevent it from becoming a martyria if immediately preceded by something in the neume block
@@ -2439,9 +2439,6 @@ lookup markMarkPositioninglookup0 {
     <anchor 631 460> mark @martyriaTop;
   pos base [\karasThemaAploun.toSabaaMartyria ]
     <anchor 627 460> mark @martyriaTop;
-  pos base [\u1D0EE.toZoMartyriaTop ] # Inverted Martyria Zo Below
-	<anchor 413 219> mark @agogi
-	<anchor 589 59> mark @martyriaAnoOxeia;
   pos base [\u1D0E9 ] # Inverted Martyriae Pa Below
 	<anchor 400 350> mark @martyriaTop
 	<anchor 600 20> mark @martyriaAnoOxeia;
@@ -3030,46 +3027,67 @@ lookup mkmkMarktoMarklookup1 {
   pos mark [\barlineShortSingleAbove \barlineShortDoubleAbove \barlineShortTheseosAbove ] <anchor 0 1080> mark @measureNumber;
   pos mark [\barlineSingleAbove \barlineDoubleAbove \barlineTheseosAbove ] <anchor 0 950> mark @measureNumber;
   pos mark [\psifiston ] <anchor -702 270> mark @fthoraBottom;
-  pos mark [\u1D0A3.toProtosMartyriaTop ] # Martyria Protos Above
+  pos mark [\u1D0A3.toProtosMartyriaTop ]
+	<anchor 370 417> mark @fthoraTop
 	<anchor 380 540> mark @agogiAboveFthora;
-  pos mark [\u1D0A5.toPrimaryChromaticMartyriaTop ] # Martyria Primary Chromatic Above
+  pos mark [\u1D0A5.toPrimaryChromaticMartyriaTop ]
+	<anchor 600 160> mark @fthoraTop
 	<anchor 600 200> mark @agogiAboveFthora;
-  pos mark [\u1D0A7.toTritosMartyriaTop ] # Martyria Tritos Above
+  pos mark [\u1D0A7.toTritosMartyriaTop ]
+	<anchor 468 310> mark @fthoraTop
 	<anchor 500 460> mark @agogiAboveFthora;
-  pos mark [\u1D0A8.toTetartosMartyriaTop ] # Martyria Tetartos Above
+  pos mark [\u1D0A8.toTetartosMartyriaTop ]
+	<anchor 477 375> mark @fthoraTop
 	<anchor 500 500> mark @agogiAboveFthora;
-  pos mark [\u1D0A9.toLegetosMartyriaTop ] # Martyria Legetos Above
+  pos mark [\u1D0A9.toLegetosMartyriaTop ]
+	<anchor 455 368> mark @fthoraTop
 	<anchor 475 500> mark @agogiAboveFthora;
-  pos mark [\u1D0B1.toVarysMartyriaTop ] # Martyria Varys Above
+  pos mark [\u1D0B1.toVarysMartyriaTop ]
+	<anchor 791 162> mark @fthoraTop
 	<anchor 775 240> mark @agogiAboveFthora;
   pos mark [\u1D0C4.toSoftChromaticKeMartyriaTop ]
+	<anchor 445 318> mark @fthoraTop
 	<anchor 440 410> mark @agogiAboveFthora;
   pos mark [\u1D0C7.toHardChromaticDiMartyriaTop ]
+	<anchor 445 318> mark @fthoraTop
 	<anchor 460 410> mark @agogiAboveFthora;
   pos mark [\u1D0C8.toZygosMartyriaTop ]
+	<anchor 445 318> mark @fthoraTop
     <anchor 480 410> mark @agogiAboveFthora;
   pos mark [\u1D0C9.toKlitonMartyriaTop ]
+	<anchor 517 318> mark @fthoraTop
     <anchor 539 410> mark @agogiAboveFthora;
   pos mark [\u1D0CA.toSpathiMartyriaTop ]
+	<anchor 627 318> mark @fthoraTop
     <anchor 631 410> mark @agogiAboveFthora;
   pos mark [\karasThemaAploun.toSabaaMartyriaTop ]
+	<anchor 627 318> mark @fthoraTop
     <anchor 627 410> mark @agogiAboveFthora;
-  pos mark [\u1D0E9.toPaMartyriaTop ] # Martyriae Pa Above
+  pos mark [\u1D0E9.toPaMartyriaTop ]
+	<anchor 409 250> mark @fthoraTop
 	<anchor 400 235> mark @agogiAboveFthora
 	<anchor 600 20> mark @martyriaAnoOxeia;
-  pos mark [\u1D0EA.toVouMartyriaTop ] # Martyriae Vou Above
+  pos mark [\u1D0EA.toVouMartyriaTop ]
+	<anchor 425 360> mark @fthoraTop
 	<anchor 415 275> mark @agogiAboveFthora
 	<anchor 580 20> mark @martyriaAnoOxeia;
-  pos mark [\u1D0EB.toGaMartyriaTop ] # Martyria Ga Above
+  pos mark [\u1D0EB.toGaMartyriaTop ]
+	<anchor 371 270> mark @fthoraTop
 	<anchor 433 244> mark @agogiAboveFthora
 	<anchor 620 13> mark @martyriaAnoOxeia
     <anchor 650 154> mark @fanerosisMonofonias;
-  pos mark [\u1D0EC.toDiMartyriaTop ] # Martyria Di Above
+  pos mark [\u1D0EC.toDiMartyriaTop ]
+	<anchor 425 362> mark @fthoraTop
 	<anchor 426 275> mark @agogiAboveFthora
 	<anchor 565 15> mark @martyriaAnoOxeia;
-  pos mark [\u1D0ED.toKeMartyriaTop \u1D0EF.toNiMartyriaTop ] # Martyria Ke and Ni Above
+  pos mark [\u1D0ED.toKeMartyriaTop \u1D0EF.toNiMartyriaTop ]
+	<anchor 397 250> mark @fthoraTop
 	<anchor 391 229> mark @agogiAboveFthora
 	<anchor 570 -10> mark @martyriaAnoOxeia;
+  pos mark [\u1D0EE.toZoMartyriaTop ]
+	<anchor 425 290> mark @fthoraTop
+	<anchor 413 219> mark @agogiAboveFthora
+	<anchor 589 59> mark @martyriaAnoOxeia;
 } mkmkMarktoMarklookup1;
 
 @wideFthochraeTop = [\fthoraHardChromaticPaAbove \fthoraSoftChromaticDiAbove \chroaSpathiAbove \karasThemaAploun ];
@@ -3412,7 +3430,7 @@ feature mkmk {
     \u1D0C8.toZygosMartyriaTop \u1D0C9.toKlitonMartyriaTop
     \u1D0CA.toSpathiMartyriaTop \karasThemaAploun.toSabaaMartyriaTop
     \u1D0E9.toPaMartyriaTop \u1D0EA.toVouMartyriaTop \u1D0EB.toGaMartyriaTop
-    \u1D0EC.toDiMartyriaTop \u1D0ED.toKeMartyriaTop \u1D0EF.toNiMartyriaTop ];
+    \u1D0EC.toDiMartyriaTop \u1D0ED.toKeMartyriaTop \u1D0EE.toZoMartyriaTop \u1D0EF.toNiMartyriaTop ];
 
 table GDEF {
   GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
