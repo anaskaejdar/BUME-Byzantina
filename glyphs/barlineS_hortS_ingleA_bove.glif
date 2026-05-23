@@ -2,8 +2,8 @@
 <glyph name="barlineShortSingleAbove" format="2">
   <advance width="0"/>
   <unicode hex="E219"/>
-  <anchor x="0" y="590" name="_barlineAboveFthora"/>
-  <anchor x="0" y="590" name="_barline"/>
+
+
   <outline>
     <contour>
       <point x="-17" y="883" type="curve" smooth="yes"/>

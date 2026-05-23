@@ -2,7 +2,7 @@
 <glyph name="leimma1" format="2">
   <advance width="610"/>
   <unicode hex="E0E0"/>
-  <anchor x="585" y="563" name="gorgonTop"/>
+
   <outline>
     <contour>
       <point x="74" y="697" type="curve"/>

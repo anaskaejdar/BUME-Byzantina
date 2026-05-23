@@ -2,9 +2,9 @@
 <glyph name="chroaZygosAbove" format="2">
   <advance width="0"/>
   <unicode hex="E19D"/>
-  <anchor x="0" y="1241" name="barlineAboveFthora"/>
-  <anchor x="0" y="1196" name="agogiAboveFthora"/>
-  <anchor x="0" y="704" name="_fthoraTop"/>
+
+
+
   <outline>
     <contour>
       <point x="79" y="1015" type="curve"/>

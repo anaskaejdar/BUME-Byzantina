@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="agogiTrueAgogiMetriaAbove" format="2">
   <advance width="0"/>
-  <anchor x="0.599" y="-200.486" name="_agogiAboveFthora"/>
-  <anchor x="0.411" y="-199.736" name="_agogi"/>
+
+
   <outline>
     <contour>
       <point x="-291.3" y="224.6" type="curve" smooth="yes"/>

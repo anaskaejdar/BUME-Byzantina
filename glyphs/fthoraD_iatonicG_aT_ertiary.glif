@@ -2,7 +2,7 @@
 <glyph name="fthoraDiatonicGaTertiary" format="2">
   <advance width="0"/>
   <unicode hex="E1B3"/>
-  <anchor x="0" y="684" name="_fthoraTopTertiary"/>
+
   <outline>
     <contour>
       <point x="-12.5" y="808" type="line"/>

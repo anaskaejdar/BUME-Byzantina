@@ -2,7 +2,7 @@
 <glyph name="antikenoma" format="2">
   <advance width="0"/>
   <unicode hex="E0A2"/>
-  <anchor x="8" y="113" name="_antikenoma"/>
+
   <outline>
     <contour>
       <point x="-649.376" y="64" type="curve" smooth="yes"/>

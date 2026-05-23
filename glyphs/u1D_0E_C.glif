@@ -1,21 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <glyph name="u1D0EC" format="2">
-  <advance width="422"/>
+  <advance width="822"/>
   <unicode hex="1D0EC"/>
-  <anchor x="200" y="866" name="barline"/>
-  <anchor x="200" y="720" name="agogi"/>
-  <anchor x="200" y="949" name="fthoraTop"/>
-  <anchor x="216" y="263" name="martyriaTop"/>
   <outline>
     <contour>
-      <point x="386" y="-184" type="line"/>
-      <point x="43" y="-184" type="line"/>
-      <point x="224" y="199" type="line"/>
+      <point x="586" y="-184" type="line"/>
+      <point x="243" y="-184" type="line"/>
+      <point x="424" y="199" type="line"/>
     </contour>
     <contour>
-      <point x="309" y="-139" type="line"/>
-      <point x="208" y="98" type="line"/>
-      <point x="97" y="-139" type="line"/>
+      <point x="509" y="-139" type="line"/>
+      <point x="408" y="98" type="line"/>
+      <point x="297" y="-139" type="line"/>
     </contour>
   </outline>
   <lib>

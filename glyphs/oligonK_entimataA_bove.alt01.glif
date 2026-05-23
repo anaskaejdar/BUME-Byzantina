@@ -2,7 +2,7 @@
 <glyph name="oligonKentimataAbove.alt01" format="2">
   <advance width="1465"/>
   <unicode hex="F001"/>
-  <anchor x="840" y="113" name="psifiston"/>
+
   <outline>
     <contour>
       <point x="753" y="660" type="curve" smooth="yes"/>

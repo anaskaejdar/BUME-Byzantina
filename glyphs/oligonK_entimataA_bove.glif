@@ -2,22 +2,22 @@
 <glyph name="oligonKentimataAbove" format="2">
   <advance width="1465"/>
   <unicode hex="E083"/>
-  <anchor x="240" y="480" name="fthoraTopSecondary"/>
-  <anchor x="930" y="901" name="yfenAbove"/>
-  <anchor x="929" y="-40" name="yfenBelow"/>
-  <anchor x="772" y="-47" name="endofonon"/>
-  <anchor x="1594" y="-19" name="heteronConnecting"/>
-  <anchor x="1590" y="130" name="omalonConnecting"/>
-  <anchor x="172" y="753" name="measureNumber"/>
-  <anchor x="710" y="1117" name="isonIndicator"/>
-  <anchor x="820" y="165" name="antikenoma"/>
-  <anchor x="262" y="561" name="noteTop"/>
-  <anchor x="746" y="194" name="fthoraBottom"/>
-  <anchor x="767" y="791" name="fthoraTop"/>
-  <anchor x="400" y="133" name="diesis"/>
-  <anchor x="1316" y="619" name="yfesis"/>
-  <anchor x="840" y="113" name="psifiston"/>
-  <anchor x="842" y="767" name="gorgonTop"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <outline>
     <contour>
       <point x="792" y="697" type="curve" smooth="yes"/>

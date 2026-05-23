@@ -2,7 +2,7 @@
 <glyph name="yfesis2Tertiary" format="2">
   <advance width="0"/>
   <unicode hex="E20A"/>
-  <anchor x="-213" y="452" name="_yfesisTertiary"/>
+
   <outline>
     <contour>
       <point x="-74" y="573" type="curve"/>

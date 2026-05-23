@@ -2,7 +2,7 @@
 <glyph name="fthoraSoftChromaticKeBelow" format="2">
   <advance width="0"/>
   <unicode hex="E1CB"/>
-  <anchor x="0" y="364" name="_fthoraBottom"/>
+
   <outline>
     <contour>
       <point x="-78.5674" y="33" type="curve"/>

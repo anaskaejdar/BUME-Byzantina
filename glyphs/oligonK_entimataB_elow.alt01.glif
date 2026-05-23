@@ -2,18 +2,18 @@
 <glyph name="oligonKentimataBelow.alt01" format="2">
   <advance width="1465"/>
   <unicode hex="F000"/>
-  <anchor x="277" y="590" name="barline"/>
-  <anchor x="686" y="801" name="koronis"/>
-  <anchor x="172" y="753" name="measureNumber"/>
-  <anchor x="384" y="160" name="fthoraBottom"/>
-  <anchor x="400" y="133" name="diesis"/>
-  <anchor x="763" y="505" name="gorgonTop"/>
-  <anchor x="793" y="487" name="klasmaTop"/>
-  <anchor x="1316" y="619" name="yfesis"/>
-  <anchor x="743" y="515" name="fthoraTop"/>
-  <anchor x="262" y="561" name="noteTop"/>
-  <anchor x="710" y="877" name="isonIndicator"/>
-  <anchor x="840" y="113" name="psifiston"/>
+
+
+
+
+
+
+
+
+
+
+
+
   <outline>
     <contour>
       <point x="863" y="180" type="curve" smooth="yes"/>

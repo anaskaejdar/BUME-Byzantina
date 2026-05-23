@@ -2,9 +2,9 @@
 <glyph name="fthoraDiatonicNiLowAbove" format="2">
   <advance width="0"/>
   <unicode hex="E190"/>
-  <anchor x="0" y="1300" name="barlineAboveFthora"/>
-  <anchor x="0" y="1126" name="agogiAboveFthora"/>
-  <anchor x="0" y="734" name="_fthoraTop"/>
+
+
+
   <outline>
     <contour>
       <point x="-94.3115" y="879" type="curve"/>

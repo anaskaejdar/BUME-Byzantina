@@ -2,7 +2,7 @@
 <glyph name="fthoraEnharmonicBelow" format="2">
   <advance width="0"/>
   <unicode hex="E1CC"/>
-  <anchor x="0" y="294" name="_fthoraBottom"/>
+
   <outline>
     <contour>
       <point x="39.8877" y="70" type="curve"/>

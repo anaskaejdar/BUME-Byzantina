@@ -2,7 +2,7 @@
 <glyph name="trigorgonDottedRight" format="2">
   <advance width="0"/>
   <unicode hex="E0FB"/>
-  <anchor x="0" y="800" name="_gorgonTop"/>
+
   <outline>
     <contour>
       <point x="-136" y="1065" type="curve" smooth="yes"/>

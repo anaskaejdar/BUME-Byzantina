@@ -2,24 +2,24 @@
 <glyph name="petastiYporroi" format="2">
   <advance width="1164"/>
   <unicode hex="E061"/>
-  <anchor x="702" y="816" name="barline"/>
-  <anchor x="830" y="758" name="gorgonTop"/>
-  <anchor x="702" y="1049" name="yfenAbove"/>
-  <anchor x="729" y="-40" name="yfenBelow"/>
-  <anchor x="663" y="961" name="koronis"/>
-  <anchor x="772" y="-127" name="endofonon"/>
-  <anchor x="1316" y="-19" name="heteronConnecting"/>
-  <anchor x="745" y="140" name="psifiston"/>
-  <anchor x="172" y="663" name="measureNumber"/>
-  <anchor x="664" y="997" name="isonIndicator"/>
-  <anchor x="765" y="-80" name="apli"/>
-  <anchor x="713" y="62" name="antikenoma"/>
-  <anchor x="352" y="162" name="fthoraBottom"/>
-  <anchor x="689" y="781" name="fthoraTop"/>
-  <anchor x="202" y="942" name="noteTop"/>
-  <anchor x="464" y="147" name="diesis"/>
-  <anchor x="936" y="857" name="yfesis"/>
-  <anchor x="800" y="83" name="klasmaBottom"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <outline>
     <contour>
       <point x="772" y="673" type="curve" smooth="yes"/>

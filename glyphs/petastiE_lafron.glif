@@ -2,22 +2,22 @@
 <glyph name="petastiElafron" format="2">
   <advance width="1242"/>
   <unicode hex="E062"/>
-  <anchor x="712" y="1109" name="yfenAbove"/>
-  <anchor x="729" y="-40" name="yfenBelow"/>
-  <anchor x="663" y="1091" name="koronis"/>
-  <anchor x="772" y="-127" name="endofonon"/>
-  <anchor x="1316" y="-19" name="heteronConnecting"/>
-  <anchor x="795" y="140" name="psifiston"/>
-  <anchor x="172" y="1103" name="measureNumber"/>
-  <anchor x="660" y="1049" name="isonIndicator"/>
-  <anchor x="765" y="-80" name="apli"/>
-  <anchor x="713" y="62" name="antikenoma"/>
-  <anchor x="352" y="162" name="fthoraBottom"/>
-  <anchor x="489" y="1051" name="fthoraTop"/>
-  <anchor x="202" y="1102" name="noteTop"/>
-  <anchor x="464" y="147" name="diesis"/>
-  <anchor x="1028" y="1025" name="yfesis"/>
-  <anchor x="800" y="83" name="klasmaBottom"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <outline>
     <contour>
       <point x="375" y="595" type="curve"/>

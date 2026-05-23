@@ -2,9 +2,9 @@
 <glyph name="fthoraEnharmonicAbove" format="2">
   <advance width="0"/>
   <unicode hex="E19C"/>
-  <anchor x="0" y="1298" name="barlineAboveFthora"/>
-  <anchor x="0" y="1146" name="agogiAboveFthora"/>
-  <anchor x="0" y="734" name="_fthoraTop"/>
+
+
+
   <outline>
     <contour>
       <point x="39.8877" y="880" type="curve"/>

@@ -2,7 +2,7 @@
 <glyph name="diesis2Tertiary" format="2">
   <advance width="0"/>
   <unicode hex="E1FA"/>
-  <anchor x="196" y="612" name="_diesisTertiary"/>
+
   <outline>
     <contour>
       <point x="54" y="491" type="curve"/>

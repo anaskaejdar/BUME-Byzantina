@@ -2,27 +2,27 @@
 <glyph name="oligonKentimaBelow" format="2">
   <advance width="1515"/>
   <unicode hex="E003"/>
-  <anchor x="763" y="-180" name="apli"/>
-  <anchor x="450" y="125" name="gorgonBottom"/>
-  <anchor x="930" y="641" name="yfenAbove"/>
-  <anchor x="929" y="-200" name="yfenBelow"/>
-  <anchor x="783" y="801" name="koronis"/>
-  <anchor x="802" y="-62" name="endofonon"/>
-  <anchor x="172" y="753" name="measureNumber"/>
-  <anchor x="792" y="913" name="isonIndicator"/>
-  <anchor x="1692" y="-51" name="heteronConnecting"/>
-  <anchor x="1027" y="-33" name="heteron"/>
-  <anchor x="1033" y="-67" name="omalon"/>
-  <anchor x="1473" y="-53" name="omalonConnecting"/>
-  <anchor x="820" y="-55" name="antikenoma"/>
-  <anchor x="314" y="676" name="noteTop"/>
-  <anchor x="788" y="507" name="fthoraTop"/>
-  <anchor x="420" y="107" name="fthoraBottom"/>
-  <anchor x="400" y="133" name="diesis"/>
-  <anchor x="1316" y="619" name="yfesis"/>
-  <anchor x="793" y="487" name="klasmaTop"/>
-  <anchor x="780" y="500" name="gorgonTop"/>
-  <anchor x="840" y="113" name="psifiston"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <outline>
     <contour>
       <point x="863" y="180" type="curve" smooth="yes"/>

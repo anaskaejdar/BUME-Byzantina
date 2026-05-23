@@ -1,0 +1,2854 @@
+languagesystem DFLT dflt;
+languagesystem byzm dflt;
+languagesystem latn dflt;
+
+
+# GSUB 
+
+
+lookup saltStylisticAlternativesinByzantineMusiclookup4 {
+  lookupflag 0;
+    sub \psifiston from [\psifiston.salt01 ];
+    sub \heteronConnecting from [\heteronConnecting.salt01 ];
+    sub \modeFourth from [\modeFourth.salt01 ];
+    sub \modeFirst from [\modeFirst.salt01 ];
+} saltStylisticAlternativesinByzantineMusiclookup4;
+
+lookup subs {
+  lookupflag 0;
+    sub \oligonKentimataBelow by \oligonKentimataBelow.alt01 ;
+    sub \psifiston by \psifiston.alt01 ;
+    sub \antikenoma by \antikenoma.alt01 ;
+} subs;
+
+lookup rcltRequiredContextualAlternateslookup3 {
+  lookupflag 0;
+    @cc1_match_1 = [\petastiIson \petasti \petastiOligon \petastiKentima \petastiYpsiliRight 
+	\petastiYpsiliLeft \petastiKentimaYpsiliRight 
+	\petastiKentimaYpsiliMiddle \petastiDoubleYpsili 
+	\petastiKentimataDoubleYpsili \petastiKentimaDoubleYpsiliRight 
+	\petastiKentimaDoubleYpsiliLeft \petastiTripleYpsili 
+	\petastiKentimataTripleYpsili \petastiKentimaTripleYpsili 
+	\petastiApostrofos \petastiYporroi \petastiElafron 
+	\petastiRunningElafron \petastiElafronApostrofos \petastiChamili 
+	\petastiChamiliApostrofos \petastiChamiliElafron 
+	\petastiChamiliElafronApostrofos \petastiDoubleChamili 
+	\petastiDoubleChamiliApostrofos ];
+    @cc1_match_2 = [\antikenoma ];
+    @cc1_back_1 = [\petastiIson \petasti \petastiOligon \petastiKentima \petastiYpsiliRight 
+	\petastiYpsiliLeft \petastiKentimaYpsiliRight 
+	\petastiKentimaYpsiliMiddle \petastiDoubleYpsili 
+	\petastiKentimataDoubleYpsili \petastiKentimaDoubleYpsiliRight 
+	\petastiKentimaDoubleYpsiliLeft \petastiTripleYpsili 
+	\petastiKentimataTripleYpsili \petastiKentimaTripleYpsili 
+	\petastiApostrofos \petastiYporroi \petastiElafron 
+	\petastiRunningElafron \petastiElafronApostrofos \petastiChamili 
+	\petastiChamiliApostrofos \petastiChamiliElafron 
+	\petastiChamiliElafronApostrofos \petastiDoubleChamili 
+	\petastiDoubleChamiliApostrofos ];
+    @cc1_back_2 = [\antikenoma ];
+    sub @cc1_back_1 @cc1_match_2'lookup subs  ;
+} rcltRequiredContextualAlternateslookup3;
+
+lookup ccmpGlyphCompositionDecompositionlookup2 {
+  lookupflag 0;
+    sub \oligonKentimataAbove \kentima  by \oligonKentimaMiddleKentimata;
+    sub \oligon \kentima  by \oligonKentimaMiddle;
+    sub \martyriaNoteNi \martyriaTick  by \martyriaNoteNiHigh;
+    sub \martyriaNoteZo \martyriaTick  by \martyriaNoteZoHigh;
+    sub \martyriaNotePa \martyriaTick  by \martyriaNotePaHigh;
+    sub \martyriaNoteVou \martyriaTick  by \martyriaNoteVouHigh;
+    sub \martyriaNoteGa \martyriaTick  by \martyriaNoteGaHigh;
+    sub \martyriaNoteDi \martyriaTick  by \martyriaNoteDiHigh;
+    sub \martyriaNoteKe \martyriaTick  by \martyriaNoteKeHigh;
+} ccmpGlyphCompositionDecompositionlookup2;
+
+lookup rcltRequiredContextualAlternateslookup1 {
+  lookupflag 0;
+    sub  \oligonKentimataBelow'lookup subs  \psifiston'  ;
+    sub  \apostrofos' \antikenoma'lookup subs   ;
+    sub  \yporroi' \antikenoma'lookup subs   ;
+    sub  \oligonIsonKentimata' \psifiston'lookup subs   ;
+    sub  \oligonElafronKentimata' \psifiston'lookup subs   ;
+    sub  \oligonRunningElafronKentimata' \psifiston'lookup subs   ;
+    sub  \oligonElafronApostrofosKentimata' \psifiston'lookup subs   ;
+    sub  \oligonElafronApostrofosKentimata' \psifiston'lookup subs   ;
+    sub  \oligonChamiliKentimata' \psifiston'lookup subs   ;
+} rcltRequiredContextualAlternateslookup1;
+
+lookup ccmpWithinProperPsalticBlock {
+  lookupflag 0;
+    # Double Kentima to Kentimata
+    sub \u1D04F \u1D04F by \u1D04E;
+    sub \u1D0F1 \u1D0F1 by \u1D0F0;
+    sub \u1D0F3 \u1D0F3 by \u1D0F2;
+    # Apli Dipli Tripli and Tetrapli
+    sub \u1D085 \u1D085 \u1D085 \u1D085 by \u1D088;
+    sub \u1D085 \u1D085 \u1D085 by \u1D087;
+    sub \u1D085 \u1D085 by \u1D086;
+    # Gorga and Arga
+    sub \u1D08F \u1D08F \u1D08F by \u1D096;
+    sub \u1D08F \u1D08F by \u1D092;
+    sub \u1D090 \u1D08F by \u1D093;
+    sub \u1D08F \u1D090 by \u1D094;
+    sub \u1D08F \u1D091 by \u1D095;
+    sub \u1D097 \u1D097 \u1D097 by \u1D099;
+    sub \u1D097 \u1D097 by \u1D098;
+    # Diesis and Yfesis
+    sub \u1D0D0 \u1D0D0 \u1D0D0 \u1D0D0 by \u1D0D3;
+    sub \u1D0D0 \u1D0D0 \u1D0D0 by \u1D0D2;
+    sub \u1D0D0 \u1D0D0 by \u1D0D1;
+    sub \u1D0D4 \u1D0D4 \u1D0D4 \u1D0D4 by \u1D0D7;
+    sub \u1D0D4 \u1D0D4 \u1D0D4 by \u1D0D6;
+    sub \u1D0D4 \u1D0D4 by \u1D0D5;
+    # Agogi
+    sub \u1D09E \u1D097 \u1D08F by \u1D09D;
+    sub \u1D09E \u1D097 \u1D097 \u1D097 by \u1D09A;
+    sub \u1D09E \u1D097 \u1D097 by \u1D09B;
+    sub \u1D09E \u1D097 by \u1D09C;
+    sub \u1D09E \u1D08F \u1D08F \u1D08F by \u1D0A1;
+    sub \u1D09E \u1D08F \u1D08F by \u1D0A0;
+    sub \u1D09E \u1D08F by \u1D09F;
+    # Diastoli
+    sub \u1D0DA \u1D0DA \u1D0DA by \u1D0DD;
+    sub \u1D0DA \u1D0DA by \u1D0DC;
+    # Double-Klasma Ano becomes Klasma Kato
+    sub \u1D07F \u1D07F by \u1D0F4;
+    sub \karasTsakisma \karasTsakisma by \karasTsakismaBelow;
+    # Hxoi
+    # sub \u1D0B1 \u1D0A3 by \u1D0B2; # Protovarys # TODO: Implement \u1D0B2
+    # sub \u1D0A2 \u1D0A5 by \u1D0A2; # Wide Protos # TODO: Implement \u1D0A2
+    # sub \u1D0B1 \u1D0A5 by \u1D0A4; # Wide Defteros # TODO: Implement \u1D0A4
+} ccmpWithinProperPsalticBlock;
+
+lookup ccmpCombiningFthoraeChroaeYfesisDiesis {
+  lookupflag 0;
+    # fthorae and chroae
+    sub \u1D0B6 \u1D0B6 \u1D0B6 \u1D0B6 by \fthoraDiatonicVouTertiary;
+    sub \u1D0B6 \u1D0B6 \u1D0B6 by \fthoraDiatonicVouSecondary;
+    sub \u1D0B6 \u1D0B6 by \fthoraDiatonicVouBelow;
+    sub \u1D0B6 by \fthoraDiatonicVouAbove;
+    sub \u1D0BA \u1D0BA \u1D0BA \u1D0BA by \fthoraDiatonicPaTertiary;
+    sub \u1D0BA \u1D0BA \u1D0BA by \fthoraDiatonicPaSecondary;
+    sub \u1D0BA \u1D0BA by \fthoraDiatonicPaBelow;
+    sub \u1D0BA by \fthoraDiatonicPaAbove;
+    sub \u1D0BB \u1D0BB \u1D0BB \u1D0BB by \fthoraDiatonicGaTertiary;
+    sub \u1D0BB \u1D0BB \u1D0BB by \fthoraDiatonicGaSecondary;
+    sub \u1D0BB \u1D0BB by \fthoraDiatonicGaBelow;
+    sub \u1D0BB by \fthoraDiatonicGaAbove;
+    sub \u1D0BD \u1D0BD \u1D0BD \u1D0BD by \fthoraDiatonicDiTertiary;
+    sub \u1D0BD \u1D0BD \u1D0BD by \fthoraDiatonicDiSecondary;
+    sub \u1D0BD \u1D0BD by \fthoraDiatonicDiBelow;
+    sub \u1D0BD by \fthoraDiatonicDiAbove;
+    sub \u1D0BF \u1D0BF \u1D0BF \u1D0BF by \fthoraDiatonicKeTertiary;
+    sub \u1D0BF \u1D0BF \u1D0BF by \fthoraDiatonicKeSecondary;
+    sub \u1D0BF \u1D0BF by \fthoraDiatonicKeBelow;
+    sub \u1D0BF by \fthoraDiatonicKeAbove;
+    sub \u1D0C0 \u1D0C0 \u1D0C0 \u1D0C0 by \fthoraDiatonicZoTertiary;
+    sub \u1D0C0 \u1D0C0 \u1D0C0 by \fthoraDiatonicZoSecondary;
+    sub \u1D0C0 \u1D0C0 by \fthoraDiatonicZoBelow;
+    sub \u1D0C0 by \fthoraDiatonicZoAbove;
+    sub \u1D0C1 \u1D0C1 \u1D0C1 \u1D0C1 by \fthoraDiatonicNiLowTertiary;
+    sub \u1D0C1 \u1D0C1 \u1D0C1 by \fthoraDiatonicNiLowSecondary;
+    sub \u1D0C1 \u1D0C1 by \fthoraDiatonicNiLowBelow;
+    sub \u1D0C1 by \fthoraDiatonicNiLowAbove;
+    sub \u1D0C2 \u1D0C2 \u1D0C2 \u1D0C2 by \fthoraDiatonicNiHighTertiary;
+    sub \u1D0C2 \u1D0C2 \u1D0C2 by \fthoraDiatonicNiHighSecondary;
+    sub \u1D0C2 \u1D0C2 by \fthoraDiatonicNiHighBelow;
+    sub \u1D0C2 by \fthoraDiatonicNiHighAbove;
+    sub \u1D0C3 \u1D0C3 \u1D0C3 \u1D0C3 by \fthoraSoftChromaticDiTertiary;
+    sub \u1D0C3 \u1D0C3 \u1D0C3 by \fthoraSoftChromaticDiSecondary;
+    sub \u1D0C3 \u1D0C3 by \fthoraSoftChromaticDiBelow;
+    sub \u1D0C3 by \fthoraSoftChromaticDiAbove;
+    sub \u1D0C4 \u1D0C4 \u1D0C4 \u1D0C4 by \fthoraSoftChromaticKeTertiary;
+    sub \u1D0C4 \u1D0C4 \u1D0C4 by \fthoraSoftChromaticKeSecondary;
+    sub \u1D0C4 \u1D0C4 by \fthoraSoftChromaticKeBelow;
+    sub \u1D0C4 by \fthoraSoftChromaticKeAbove;
+    sub \u1D0C5 \u1D0C5 \u1D0C5 \u1D0C5 by \fthoraHardChromaticPaTertiary;
+    sub \u1D0C5 \u1D0C5 \u1D0C5 by \fthoraHardChromaticPaSecondary;
+    sub \u1D0C5 \u1D0C5 by \fthoraHardChromaticPaBelow;
+    sub \u1D0C5 by \fthoraHardChromaticPaAbove;
+    sub \u1D0C7 \u1D0C7 \u1D0C7 \u1D0C7 by \fthoraHardChromaticDiTertiary;
+    sub \u1D0C7 \u1D0C7 \u1D0C7 by \fthoraHardChromaticDiSecondary;
+    sub \u1D0C7 \u1D0C7 by \fthoraHardChromaticDiBelow;
+    sub \u1D0C7 by \fthoraHardChromaticDiAbove;
+    sub \u1D0C8 \u1D0C8 \u1D0C8 \u1D0C8 by \chroaZygosTertiary;
+    sub \u1D0C8 \u1D0C8 \u1D0C8 by \chroaZygosSecondary;
+    sub \u1D0C8 \u1D0C8 by \chroaZygosBelow;
+    sub \u1D0C8 by \chroaZygosAbove;
+    sub \u1D0C9 \u1D0C9 \u1D0C9 \u1D0C9 by \chroaKlitonTertiary;
+    sub \u1D0C9 \u1D0C9 \u1D0C9 by \chroaKlitonSecondary;
+    sub \u1D0C9 \u1D0C9 by \chroaKlitonBelow;
+    sub \u1D0C9 by \chroaKlitonAbove;
+    sub \u1D0CA \u1D0CA \u1D0CA \u1D0CA by \chroaSpathiTertiary;
+    sub \u1D0CA \u1D0CA \u1D0CA by \chroaSpathiSecondary;
+    sub \u1D0CA \u1D0CA by \chroaSpathiBelow;
+    sub \u1D0CA by \chroaSpathiAbove;
+    sub \u1D0CB \u1D0CB \u1D0CB \u1D0CB by \fthoraEnharmonicTertiary;
+    sub \u1D0CB \u1D0CB \u1D0CB by \fthoraEnharmonicSecondary;
+    sub \u1D0CB \u1D0CB by \fthoraEnharmonicBelow;
+    sub \u1D0CB by \fthoraEnharmonicAbove;
+    sub \karasThemaAploun \karasThemaAploun \karasThemaAploun \karasThemaAploun by \karasThemaAplounTertiary;
+    sub \karasThemaAploun \karasThemaAploun \karasThemaAploun by \karasThemaAplounSecondary;
+    sub \karasThemaAploun \karasThemaAploun by \karasThemaAplounBelow;
+    # Sharps and Flats
+    sub \u1D0D3 \u1D0D3 \u1D0D3 by \diesis8Tertiary;
+    sub [\u1D0D2 \u1D0D3 ] [\u1D0D2 \u1D0D3 ] \u1D0D2 by \diesis6Tertiary;
+    sub [\u1D0D1 \u1D0D3 ] [\u1D0D1 \u1D0D3 ] \u1D0D1 by \diesis4Tertiary;
+    sub \u1D0D3 \u1D0D3 \u1D0D0 by \diesis2Tertiary;
+    sub \u1D0D3 \u1D0D3 by \diesis8Secondary;
+    sub [\u1D0D2 \u1D0D3 ] \u1D0D2 by \diesis6Secondary;
+    sub [\u1D0D1 \u1D0D3 ] \u1D0D1 by \diesis4Secondary;
+    sub \u1D0D3 \u1D0D0 by \diesis2Secondary;
+    sub \u1D0D3 by \diesis8;
+    sub \u1D0D2 by \diesis6;
+    sub \u1D0D1 by \diesis4;
+    sub \u1D0D0 by \diesis2;
+    sub \u1D0D7 \u1D0D7 \u1D0D7 by \yfesis8Tertiary;
+    sub [\u1D0D6 \u1D0D7 ] [\u1D0D6 \u1D0D7 ] \u1D0D6 by \yfesis6Tertiary;
+    sub [\u1D0D5 \u1D0D7 ] [\u1D0D5 \u1D0D7 ] \u1D0D5 by \yfesis4Tertiary;
+    sub \u1D0D7 \u1D0D7 \u1D0D4 by \yfesis2Tertiary;
+    sub \u1D0D7 \u1D0D7 by \yfesis8Secondary;
+    sub [\u1D0D6 \u1D0D7 ] \u1D0D6 by \yfesis6Secondary;
+    sub [\u1D0D5 \u1D0D7 ] \u1D0D5 by \yfesis4Secondary;
+    sub \u1D0D7 \u1D0D4 by \yfesis2Secondary;
+    sub \u1D0D7 by \yfesis8;
+    sub \u1D0D6 by \yfesis6;
+    sub \u1D0D5 by \yfesis4;
+    sub \u1D0D4 by \yfesis2;
+    sub \u1D0D8 \u1D0D8 \u1D0D8 \u1D0D8 by \diesisGenikiTertiary;
+    sub \u1D0D8 \u1D0D8 \u1D0D8 by \diesisGenikiSecondary;
+    sub \u1D0D8 \u1D0D8 by \diesisGenikiAbove;
+    sub \u1D0D8 by \diesisGenikiBelow; # TODO: Make double-/triple-/quadruple-barred versions
+    sub \u1D0D9 \u1D0D9 \u1D0D9 \u1D0D9 by \yfesisGenikiTertiary;
+    sub \u1D0D9 \u1D0D9 \u1D0D9 by \yfesisGenikiSecondary;
+    sub \u1D0D9 \u1D0D9 by \yfesisGenikiBelow;
+    sub \u1D0D9 by \yfesisGenikiAbove;
+    # Diastoli
+    sub \u1D0DD \u1D0DD by \barlineShortTheseos;
+    sub \u1D0DD \u1D0DC by \barlineShortDouble;
+    sub \u1D0DD \u1D0DA by \barlineShortSingle;
+    sub \u1D0DA by \barlineShortSingleAbove;
+    sub \u1D0DC by \barlineShortDoubleAbove;
+    sub \u1D0DD by \barlineShortTheseosAbove;
+    sub \u1D0DB \u1D0DB \u1D0DB \u1D0DB \u1D0DB \u1D0DB by \barlineTheseosAbove;
+    sub \u1D0DB \u1D0DB \u1D0DB \u1D0DB \u1D0DB by \barlineDoubleAbove;
+    sub \u1D0DB \u1D0DB \u1D0DB \u1D0DB by \barlineSingleAbove;
+    sub \u1D0DB \u1D0DB \u1D0DB by \barlineTheseos;
+    sub \u1D0DB \u1D0DB by \barlineDouble;
+    sub \u1D0DB by \barlineSingle;
+    # Metrical numbers
+    sub \u1D09E \u1D085 by \measureNumber2;
+    sub \u1D09E \u1D086 by \measureNumber3;
+    sub \u1D09E \u1D087 by \measureNumber4;
+    sub \u1D09E \u1D088 \u1D085 by \measureNumber6;
+    sub \u1D09E \u1D088 \u1D086 by \measureNumber7;
+    sub \u1D09E \u1D088 \u1D087 by \measureNumber8;
+    sub \u1D09E \u1D088 by \measureNumber5;
+    # modal declarations
+    sub \u1D0A3 \u1D0A3 by \modeFirst;
+    sub \u1D0A5 \u1D0A5 by \modeSecond;
+    sub \u1D0A7 \u1D0A7 by \modeThird;
+    sub \u1D0A6 by \modeThird;
+    sub \u1D0A8 \u1D0A8 by \modeFourth;
+    sub \u1D0A9 \u1D0A9 by \modeLegetos;
+    sub \u1D0AA by \modeLegetos;
+    sub \u1D0AB by \modePlagal;
+} ccmpCombiningFthoraeChroaeYfesisDiesis;
+
+lookup ccmpModalDeclarationsOnetoMany {
+    sub \u1D0B3 by \modePlagal \modePlagalFourth;
+} ccmpModalDeclarationsOnetoMany;
+
+@practicalMartyria = [\u1D0E9 \u1D0EA \u1D0EB \u1D0EC \u1D0ED \u1D0EE \u1D0EF ];
+@theoreticalMartyria = [\u1D0A3 \u1D0A8 \u1D0A7 \u1D0A9 \u1D0B1 \u1D0A5];
+@martyrifyableFthora = [\fthoraHardChromaticDiAbove \fthoraSoftChromaticKeAbove ];
+@martyrifiedFthora = [\u1D0C7.toHardChromaticDiMartyria \u1D0C4.toSoftChromaticKeMartyria ];
+@chromaticFthora = [
+    \fthoraHardChromaticPaAbove \fthoraHardChromaticDiAbove \fthoraSoftChromaticDiAbove \fthoraSoftChromaticKeAbove
+    \fthoraHardChromaticPaBelow \fthoraHardChromaticDiBelow \fthoraSoftChromaticDiBelow \fthoraSoftChromaticKeBelow
+    \fthoraHardChromaticPaSecondary \fthoraHardChromaticDiSecondary \fthoraSoftChromaticDiSecondary \fthoraSoftChromaticKeSecondary
+    \fthoraHardChromaticPaTertiary \fthoraHardChromaticDiTertiary \fthoraSoftChromaticDiTertiary \fthoraSoftChromaticKeTertiary
+];
+
+lookup ccmpContextualReplacements {
+  lookupflag 0;
+    # Fanerosis Di-/Mono-/Tetrafonias
+    sub [@practicalMartyria @theoreticalMartyria @martyrifyableFthora @martyrifiedFthora \u1D0AD ] \u1D04F' by \u1D0B0;
+    sub [\u1D0AF \u1D0AF.withMApos ] \u1D04F' by \u1D0B0.withMonofonias;
+    sub [@practicalMartyria @theoreticalMartyria @martyrifyableFthora @martyrifiedFthora ] \u1D0F3' by \u1D0AF;
+    sub @practicalMartyria \u1D086' \u1D0F3' by \u1D0AF.withMApos;
+    sub [\u1D0AD ] \u1D0F3' by \u1D0AF.withMApos;
+    sub [@practicalMartyria @theoreticalMartyria @martyrifyableFthora @martyrifiedFthora ] \u1D086' \u1D050' by \u1D0AE;
+    # Ano Oxeia
+    sub @practicalMartyria \u1D086' by \martyriaTick \martyriaTick;
+    # Martyria Apostrofos (not for practical martyriae ^^^)
+    sub [@practicalMartyria @theoreticalMartyria @martyrifyableFthora @martyrifiedFthora ] \u1D086' by \u1D0AD;
+    # Ano Oxeia
+    sub [@practicalMartyria @martyrifyableFthora @martyrifiedFthora \martyriaTick ] \u1D086' by \martyriaTick \martyriaTick;
+    sub [@practicalMartyria @theoreticalMartyria @martyrifyableFthora @martyrifiedFthora \martyriaTick ] \u1D087' by \martyriaTick \martyriaTick \martyriaTick;
+    sub [@practicalMartyria @theoreticalMartyria @martyrifyableFthora @martyrifiedFthora \martyriaTick ] \u1D088' by \martyriaTick \martyriaTick \martyriaTick \martyriaTick;
+    sub [@practicalMartyria @theoreticalMartyria @martyrifyableFthora @martyrifiedFthora \martyriaTick ] \u1D085' by \martyriaTick;
+    # For lack of secondary chromatic theoretical martyriae in the unicode block
+    # Replace the fthora with a bottom martyria in certain contexts
+    # sub [ \u1D046 - \u1D0F5 ] \u1D0AD' by \u1D0AD; # Prevent it from becoming a martyria if immediately preceded by something in the neume block
+    sub @martyrifyableFthora' @practicalMartyria @practicalMartyria @practicalMartyria by @martyrifyableFthora;
+    sub @practicalMartyria @martyrifyableFthora' @practicalMartyria @practicalMartyria by @martyrifiedFthora;
+    sub @martyrifyableFthora' @practicalMartyria @practicalMartyria by @martyrifyableFthora;
+    sub @martyrifyableFthora' [\u1D0AD \u1D086 \martyriaTick @practicalMartyria ] by @martyrifiedFthora;
+    sub [\u1D0AD \u1D086 \martyriaTick @practicalMartyria ] @martyrifyableFthora' by @martyrifiedFthora;
+    # Turn doubled practical martyria into note indicator if preceded by chromatic martyria
+    sub @chromaticFthora \u1D0E9' \u1D0E9' by \noteIndicatorPa;
+    sub @chromaticFthora \u1D0EA' \u1D0EA' by \noteIndicatorVou;
+    sub @chromaticFthora \u1D0EB' \u1D0EB' by \noteIndicatorGa;
+    sub @chromaticFthora \u1D0EC' \u1D0EC' by \noteIndicatorDi;
+    sub @chromaticFthora \u1D0ED' \u1D0ED' by \noteIndicatorKe;
+    sub @chromaticFthora \u1D0EE' \u1D0EE' by \noteIndicatorZo;
+    sub @chromaticFthora \u1D0EF' \u1D0EF' by \noteIndicatorNi;
+    # Ison Markings After Martyrifyable Fthora
+    sub @martyrifyableFthora \u1D0E9' \u1D0E9' \u1D0E9' by \isonIndicatorPa;
+    sub @martyrifyableFthora \u1D0EA' \u1D0EA' \u1D0EA' by \isonIndicatorVou;
+    sub @martyrifyableFthora \u1D0EB' \u1D0EB' \u1D0EB' by \isonIndicatorGa;
+    sub @martyrifyableFthora \u1D0EC' \u1D0EC' \u1D0EC' by \isonIndicatorDi;
+    sub @martyrifyableFthora \u1D0EC' \u1D0EC' \u1D0EC' \u1D0EC' by \isonIndicatorDiLow;
+    sub @martyrifyableFthora \u1D0ED' \u1D0ED' \u1D0ED' by \isonIndicatorKe;
+    sub @martyrifyableFthora \u1D0ED' \u1D0ED' \u1D0ED' \u1D0ED' by \isonIndicatorKeLow;
+    sub @martyrifyableFthora \u1D0EE' \u1D0EE' \u1D0EE' by \isonIndicatorZo;
+    sub @martyrifyableFthora \u1D0EE' \u1D0EE' \u1D0EE' \u1D0EE' by \isonIndicatorZoHigh;
+    sub @martyrifyableFthora \u1D0EF' \u1D0EF' \u1D0EF' by \isonIndicatorNi;
+    sub @martyrifyableFthora \u1D09E' \u1D09E' \u1D09E' by \isonIndicatorUnison;
+    # Metrical numbers
+    @barlines = [\barlineShortSingleAbove \barlineShortDoubleAbove \barlineShortTheseosAbove
+        \barlineShortSingle \barlineShortDouble \barlineShortTheseos
+        \barlineSingleAbove \barlineDoubleAbove \barlineTheseosAbove
+        \barlineSingle \barlineDouble \barlineTheseos ];
+    sub @barlines \u1D085' by \measureNumber2;
+    sub @barlines \u1D086' by \measureNumber3;
+    sub @barlines \u1D087' by \measureNumber4;
+    sub @barlines \u1D088' \u1D085' by \measureNumber6;
+    sub @barlines \u1D088' \u1D086' by \measureNumber7;
+    sub @barlines \u1D088' \u1D087' by \measureNumber8;
+    sub @barlines \u1D088' by \measureNumber5;
+} ccmpContextualReplacements;
+
+lookup ccmpContextualReplacementsIgnoringMarks {
+  lookupflag IgnoreMarks;
+    sub \u1D047' \u1D0F2' \u1D05A by \oligonKentimataBelow.alt01;
+    sub \oxeia' \u1D0F2' \u1D05A by \oxeiaKentimataBelow.alt01;
+} ccmpContextualReplacementsIgnoringMarks;
+
+lookup ccmpPsalticBaseLigsWithMarktoLigature {
+  lookupflag IgnoreMarks;
+    # kentimata combos
+    sub \u1D053 \u1D04E by \oligonYporroiKentimata;
+    sub \u1D046 \u1D04E by \oligonIsonKentimata;
+    sub \u1D051 \u1D04E by \oligonApostrofosKentimata;
+    sub \u1D055 \u1D04E by \oligonElafronKentimata;
+    sub \u1D055 \u1D051 \u1D04E by \oligonElafronApostrofosKentimata;
+    sub \u1D051 \u1D055 \u1D04E by \oligonRunningElafronKentimata;
+    sub \u1D056 \u1D04E by \oligonChamiliKentimata;
+    sub \oxeia \u1D053 \u1D04E by \oxeiaYporroiKentimata;
+    sub \oxeia \u1D046 \u1D04E by \oxeiaIsonKentimata;
+    sub \oxeia \u1D051 \u1D04E by \oxeiaApostrofosKentimata;
+    sub \oxeia \u1D055 \u1D04E by \oxeiaElafronKentimata;
+    sub \oxeia \u1D055 \u1D051 \u1D04E by \oxeiaElafronApostrofosKentimata;
+    sub \oxeia \u1D051 \u1D055 \u1D04E by \oxeiaApostrofosElafronKentimata;
+    sub \oxeia \u1D056 \u1D04E by \oxeiaChamiliKentimata;
+    # bare descent combos
+    sub \u1D051 \u1D051 by \apostrofosSyndesmos;
+    sub \u1D046 \u1D051 by \isonApostrofos;
+} ccmpPsalticBaseLigsWithMarktoLigature;
+
+lookup ccmpPsalticBaseLigs {
+  lookupflag 0;
+    # kentimata combos
+    sub \u1D047 \u1D04E \u1D0F1 by \oligonKentimaMiddleKentimata;
+    sub \u1D047 \u1D0F1 \u1D04E by \oligonKentimaMiddleKentimata;
+    sub \u1D047 \u1D04E \u1D050 by \oligonYpsiliRightKentimata;
+    sub \u1D050 \u1D047 \u1D04E by \oligonYpsiliLeftKentimata;
+    sub \u1D047 \u1D04E by \oligonKentimataAbove;
+    sub \u1D047 \u1D0F2 by \oligonKentimataBelow;
+    sub \oxeia \u1D04E \u1D0F1 by \oxeiaKentimaMiddleKentimataAbove;
+    sub \oxeia \u1D0F1 \u1D04E by \oxeiaKentimaMiddleKentimataAbove;
+    sub \oxeia \u1D04E \u1D050 by \oxeiaKentimataHypsili;
+    sub \u1D050 \oxeia \u1D04E by \oxeiaKentimataAboveHypsiliL;
+    sub \oxeia \u1D04E by \oxeiaKentimataAbove;
+    sub \oxeia \u1D0F2 by \oxeiaKentimataBelow;
+    # petaste descents
+    sub \u1D049 \u1D053 by \petastiYporroi;
+    sub \u1D049 \u1D051 \u1D055 by \petastiRunningElafron;
+    sub \u1D049 \u1D051 \u1D056 \u1D056 by \petastiDoubleChamiliApostrofos;
+    sub \u1D049 \u1D051 \u1D056 by \petastiChamiliApostrofos;
+    sub \u1D049 \u1D051 by \petastiApostrofos;
+    sub \u1D049 \u1D055 \u1D051 \u1D056 by \petastiChamiliElafronApostrofos;
+    sub \u1D049 \u1D055 \u1D056 by \petastiChamiliElafron;
+    sub \u1D049 \u1D055 \u1D051 by \petastiElafronApostrofos;
+    sub \u1D049 \u1D055 by \petastiElafron;
+    sub \u1D049 \u1D056 \u1D056 by \petastiDoubleChamili;
+    sub \u1D049 \u1D056 by \petastiChamili;
+    # petaste ascents
+    sub \u1D049 \u1D046 by \petastiIson;
+    sub \u1D049 \u1D047 by \petastiOligon;
+    sub \u1D049 \u1D04F \u1D050 by \petastiKentimaYpsiliRight;
+    sub \u1D049 \u1D04F by \petastiKentima;
+    sub \u1D049 \u1D050 \u1D04F \u1D050 by \petastiKentimaDoubleYpsiliRight;
+    sub \u1D049 \u1D050 \u1D04F by \petastiKentimaYpsiliMiddle;
+    sub \u1D049 \u1D050 \u1D04E \u1D050 by \petastiKentimataDoubleYpsili;
+    sub \u1D049 \u1D050 \u1D050 \u1D050 by \petastiTripleYpsili;
+    sub \u1D049 \u1D050 by \petastiYpsiliRight;
+    sub \u1D050 \u1D049 \u1D050 \u1D04F \u1D050 by \petastiKentimaTripleYpsili;
+    sub \u1D050 \u1D049 \u1D050 \u1D04E \u1D050 by \petastiKentimataTripleYpsili;
+    sub \u1D050 \u1D049 \u1D050 \u1D04F by \petastiKentimaDoubleYpsiliLeft;
+    sub \u1D050 \u1D049 \u1D050 \u1D050 by \petastiTripleYpsili;
+    sub \u1D050 \u1D049 \u1D050 by \petastiDoubleYpsili;
+    sub \u1D050 \u1D050 \u1D050 \u1D049 by \petastiTripleYpsili;
+    sub \u1D050 \u1D050 \u1D049 \u1D050 by \petastiTripleYpsili;
+    sub \u1D050 \u1D049 by \petastiYpsiliLeft;
+    # bare descent combos
+    sub \u1D051 \u1D055 by \runningElafron;
+    sub \u1D051 \u1D056 \u1D056 by \doubleChamiliApostrofos;
+    sub \u1D051 \u1D056 by \chamiliApostrofos;
+    sub \u1D055 \u1D056 \u1D056 by \doubleChamiliElafron;
+    sub \u1D055 \u1D056 by \chamiliElafron;
+    sub \u1D055 \u1D051 \u1D056 \u1D056 by \doubleChamiliElafronApostrofos;
+    sub \u1D055 \u1D051 \u1D056 by \chamiliElafronApostrofos;
+    sub \u1D055 \u1D051 by \elafronApostrofos;
+    sub \u1D056 \u1D056 \u1D056 by \tripleChamili;
+    sub \u1D056 \u1D056 by \doubleChamili;
+    # bare ascent combos and underlined descents
+    sub \u1D047 \u1D0F1 by \oligonKentimaMiddle;
+    sub \oxeia \u1D0F1 by \oxeiaKentimaMiddle;
+    sub \u1D047 \u1D0F3 by \oligonKentimaBelow;
+    sub \u1D047 \u1D04F \u1D050 by \oligonKentimaYpsiliRight;
+    sub \u1D047 \u1D04F by \oligonKentimaAbove;
+    sub \u1D047 \u1D050 \u1D04F \u1D050 by \oligonKentimaDoubleYpsiliRight;
+    sub \u1D047 \u1D050 \u1D04F by \oligonKentimaYpsiliMiddle;
+    sub \u1D047 \u1D050 \u1D04E \u1D050 by \oligonKentimataDoubleYpsili;
+    sub \u1D047 \u1D050 \u1D050 \u1D050 by \oligonTripleYpsili;
+    sub \u1D047 \u1D050 by \oligonYpsiliRight;
+    sub \u1D047 \u1D046 by \oligonIson;
+    sub \u1D047 \u1D051 \u1D055 by \oligonRunningElafron;
+    sub \u1D047 \u1D051 by \oligonApostrofos;
+    sub \u1D047 \u1D053 by \oligonYporroi;
+    sub \u1D047 \u1D055 \u1D051 by \oligonElafronApostrofos;
+    sub \u1D047 \u1D055 by \oligonElafron;
+    sub \u1D047 \u1D056 by \oligonChamili;
+    sub \u1D050 \u1D047 \u1D050 \u1D04E \u1D050 by \oligonKentimataTripleYpsili;
+    sub \u1D050 \u1D047 \u1D050 \u1D04F \u1D050 by \oligonKentimaTripleYpsili;
+    sub \u1D050 \u1D047 \u1D050 \u1D04F by \oligonKentimaDoubleYpsiliLeft;
+    sub \u1D050 \u1D047 \u1D050 \u1D050 by \oligonTripleYpsili;
+    sub \u1D050 \u1D047 \u1D050 by \oligonDoubleYpsili;
+    sub \u1D050 \u1D047 by \oligonYpsiliLeft;
+    sub \u1D050 \u1D050 \u1D047 \u1D050 by \oligonTripleYpsili;
+    sub \u1D050 \u1D050 \u1D050 \u1D047 by \oligonTripleYpsili;
+    sub \oxeia \u1D0F1 by \oxeiaKentimaMiddle;
+    sub \oxeia \u1D0F3 by \oxeiaKentimaBelow;
+    sub \oxeia \u1D04F \u1D050 by \oxeiaKentimaAboveHypsiliR;
+    sub \oxeia \u1D04F by \oxeiaKentimaAbove;
+    sub \oxeia \u1D050 \u1D04F \u1D050 by \oxeiaKentimaAboveDoubleHypsiliR;
+    sub \oxeia \u1D050 \u1D04F by \oxeiaKentimaAboveHypsiliM;
+    sub \oxeia \u1D050 \u1D04E \u1D050 by \oxeiaKentimataAboveDoubleHypsiliR;
+    sub \oxeia \u1D050 \u1D050 \u1D050 by \oxeiaTripleHypsili;
+    sub \oxeia \u1D050 by \oxeiaHypsiliR;
+    sub \oxeia \u1D046 by \oxeiaIson;
+    sub \oxeia \u1D051 \u1D055 by \oxeiaApostrofosElafron;
+    sub \oxeia \u1D051 by \oxeiaApostrofos;
+    sub \oxeia \u1D053 by \oxeiaYporroi;
+    sub \oxeia \u1D055 \u1D051 by \oxeiaElafronApostrofos;
+    sub \oxeia \u1D055 by \oxeiaElafron;
+    sub \oxeia \u1D056 by \oxeiaChamili;
+    sub \u1D050 \oxeia \u1D050 \u1D04E \u1D050 by \oxeiaKentimataAboveTripleHypsili;
+    sub \u1D050 \oxeia \u1D050 \u1D04F \u1D050 by \oxeiaKentimaAboveTripleHypsili;
+    sub \u1D050 \oxeia \u1D050 \u1D04F by \oxeiaKentimaAboveDoubleHypsiliL;
+    sub \u1D050 \oxeia \u1D050 \u1D050 by \oxeiaTripleHypsili;
+    sub \u1D050 \oxeia \u1D050 by \oxeiaDoubleHypsili;
+    sub \u1D050 \oxeia by \oxeiaHypsiliL;
+    sub \u1D050 \u1D050 \oxeia \u1D050 by \oxeiaTripleHypsili;
+    sub \u1D050 \u1D050 \u1D050 \oxeia by \oxeiaTripleHypsili;
+    # rests
+    sub \u1D058 \u1D085 by \leimma1;
+    sub \u1D058 \u1D086 by \leimma2;
+    sub \u1D058 \u1D087 by \leimma3;
+    sub \u1D058 \u1D088 by \leimma4;
+    # Ison markings
+    sub \u1D0E9 \u1D0E9 by \isonIndicatorPa;
+    sub \u1D0EA \u1D0EA by \isonIndicatorVou;
+    sub \u1D0EB \u1D0EB by \isonIndicatorGa;
+    sub \u1D0EC \u1D0EC by \isonIndicatorDi;
+    sub \u1D0EC \u1D0EC \u1D0EC by \isonIndicatorDiLow;
+    sub \u1D0ED \u1D0ED by \isonIndicatorKe;
+    sub \u1D0ED \u1D0ED \u1D0ED by \isonIndicatorKeLow;
+    sub \u1D0EE \u1D0EE by \isonIndicatorZo;
+    sub \u1D0EE \u1D0EE \u1D0EE by \isonIndicatorZoHigh;
+    sub \u1D0EF \u1D0EF by \isonIndicatorNi;
+    sub \u1D09E \u1D09E by \isonIndicatorUnison;
+    # single subs
+    sub \u1D046 by \ison;
+    sub \u1D047 by \oligon;
+    sub \u1D049 by \petasti;
+    sub \u1D04E by \kentimata;
+    sub \u1D0F0 by \kentimata;
+    sub \u1D0F2 by \kentimata;
+    sub \u1D04F by \kentima;
+    sub \u1D0F1 by \kentima;
+    sub \u1D0F3 by \kentima;
+    sub \u1D051 by \apostrofos;
+    sub \u1D053 by \yporroi;
+    sub \u1D055 by \elafron;
+    sub \u1D056 by \chamili;
+    sub \u1D05A by \psifiston;
+    sub \u1D05A \u1D05A by \psifiston.salt01;
+    sub \u1D05B \u1D05B by \omalonConnecting;
+    sub \u1D05B by \omalon;
+    sub \u1D05C by \antikenoma;
+    sub \u1D060 \u1D060 \u1D060 by \heteronConnecting.salt01;
+    sub \u1D060 \u1D060 by \heteronConnecting;
+    sub \u1D060 by \heteron;
+    # sub \u1D07B \u1D07B \u1D07B by \endofononConnecting.salt01; TODO: Create these alternates
+    # sub \u1D07B \u1D07B by \endofononConnecting;
+    sub \u1D07B by \endofonon;
+    sub \u1D07F by \klasmaAbove;
+    sub \u1D0F4 by \klasmaBelow;
+    sub \u1D085 by \apli;
+    sub \u1D086 by \dipli;
+    sub \u1D087 by \tripli;
+    sub \u1D088 by \tetrapli;
+    sub \u1D08F by \gorgonAbove;
+    sub \u1D0F5 by \gorgonBelow;
+    sub \u1D090 by \gorgonDottedLeft;
+    sub \u1D091 by \gorgonDottedRight;
+    sub \u1D092 by \digorgon;
+    sub \u1D093 by \digorgonDottedLeftBelow;
+    sub \u1D094 by \digorgonDottedLeftAbove;
+    sub \u1D095 by \digorgonDottedRight;
+    sub \u1D096 by \trigorgon;
+    sub \u1D097 by \argon;
+    sub \u1D098 by \diargon;
+    sub \u1D099 by \triargon;
+    sub \u1D09A by \agogiArgi; # NOTE: These names are garbo. Complete mismatch. agogiArgi is actually agogiPoliArgi
+    sub \u1D09B by \agogiArgoteri;
+    sub \u1D09C by \agogiMetria; # agogiArgi
+    sub \u1D09D by \agogiMesi; # This is a nonstandard extra argi...
+    sub \u1D09E by \agogiTrueAgogiMesi; # The rest are named more sanely
+    sub \u1D09F by \agogiGorgi;
+    sub \u1D0A0 by \agogiGorgoteri;
+    sub \u1D0A1 by \agogiPoliGorgi;
+    sub \u1D07C by \yfenBelow;
+    sub \u1D07D by \yfenAbove;
+} ccmpPsalticBaseLigs;
+
+lookup ccmpContextualSubstitutions2 {
+  lookupflag 0;
+    @normalAgogi = [\agogiTrueAgogiMesi \agogiPoliArgi \agogiArgoteri \agogiArgi \agogiMesi \agogiMetria \agogiGorgi \agogiGorgoteri \agogiPoliGorgi ];
+    @aboveAgogi = [\agogiTrueAgogiMesiAbove \agogiPoliArgiAbove \agogiArgoteriAbove \agogiArgiAbove \agogiMesiAbove \agogiMetriaAbove \agogiGorgiAbove \agogiGorgoteriAbove \agogiPoliGorgiAbove ];
+    sub [@practicalMartyria @theoreticalMartyria @martyrifiedFthora \martyriaTick \u1D0AD ] @normalAgogi' by @aboveAgogi;
+} ccmpContextualSubstitutions2;
+
+feature salt {
+
+ script DFLT;
+     language dflt ;
+      lookup saltStylisticAlternativesinByzantineMusiclookup4;
+
+ script byzm;
+     language dflt ;
+      lookup saltStylisticAlternativesinByzantineMusiclookup4;
+} salt;
+
+feature rclt {
+
+ script DFLT;
+     language dflt ;
+      lookup rcltRequiredContextualAlternateslookup3;
+      lookup rcltRequiredContextualAlternateslookup1;
+
+ script byzm;
+     language dflt ;
+      lookup rcltRequiredContextualAlternateslookup3;
+      lookup rcltRequiredContextualAlternateslookup1;
+
+ script latn;
+     language dflt ;
+      lookup rcltRequiredContextualAlternateslookup3;
+      lookup rcltRequiredContextualAlternateslookup1;
+} rclt;
+
+feature ccmp {
+
+ script DFLT;
+     language dflt ;
+      lookup ccmpWithinProperPsalticBlock;
+      lookup ccmpCombiningFthoraeChroaeYfesisDiesis;
+      lookup ccmpModalDeclarationsOnetoMany;
+      lookup ccmpContextualReplacements;
+      lookup ccmpContextualReplacementsIgnoringMarks;
+      lookup ccmpPsalticBaseLigsWithMarktoLigature;
+      lookup ccmpPsalticBaseLigs;
+      lookup ccmpContextualSubstitutions2;
+      lookup ccmpGlyphCompositionDecompositionlookup2;
+
+ script byzm;
+     language dflt ;
+      lookup ccmpWithinProperPsalticBlock;
+      lookup ccmpCombiningFthoraeChroaeYfesisDiesis;
+      lookup ccmpModalDeclarationsOnetoMany;
+      lookup ccmpContextualReplacements;
+      lookup ccmpContextualReplacementsIgnoringMarks;
+      lookup ccmpPsalticBaseLigsWithMarktoLigature;
+      lookup ccmpPsalticBaseLigs;
+      lookup ccmpContextualSubstitutions2;
+      lookup ccmpGlyphCompositionDecompositionlookup2;
+
+ script latn;
+     language dflt ;
+      lookup ccmpWithinProperPsalticBlock;
+      lookup ccmpCombiningFthoraeChroaeYfesisDiesis;
+      lookup ccmpModalDeclarationsOnetoMany;
+      lookup ccmpContextualReplacements;
+      lookup ccmpContextualReplacementsIgnoringMarks;
+      lookup ccmpPsalticBaseLigsWithMarktoLigature;
+      lookup ccmpPsalticBaseLigs;
+      lookup ccmpContextualSubstitutions2;
+      lookup ccmpGlyphCompositionDecompositionlookup2;
+} ccmp;
+
+# GPOS 
+
+
+lookup markMarkPositioninglookup0 {
+  lookupflag 0;
+  markClass [\stavrosAbove ] <anchor -2 124> @stavros;
+  markClass [\diesis2Tertiary ] <anchor 196 612> @diesisTertiary;
+  markClass [\diesis4Tertiary ] <anchor 177 682> @diesisTertiary;
+  markClass [\diesis6Tertiary ] <anchor 152 652> @diesisTertiary;
+  markClass [\diesis8Tertiary ] <anchor 12 553> @diesisTertiary;
+  markClass [\diesis2Secondary ] <anchor 196 612> @diesisSecondary;
+  markClass [\diesis4Secondary ] <anchor 177 682> @diesisSecondary;
+  markClass [\diesis6Secondary ] <anchor 152 652> @diesisSecondary;
+  markClass [\diesis8Secondary ] <anchor 12 553> @diesisSecondary;
+  markClass [\barlineShortSingleAbove \barlineShortDoubleAbove \barlineShortTheseosAbove ] <anchor 0 590> @barline;
+  markClass [\barlineSingleAbove \barlineDoubleAbove \barlineTheseosAbove ] <anchor 0 0> @barline;
+  markClass [\yfesis2Tertiary ] <anchor -213 452> @yfesisTertiary;
+  markClass [\yfesis4Tertiary ] <anchor -134 429> @yfesisTertiary;
+  markClass [\yfesis6Tertiary ] <anchor -153 456> @yfesisTertiary;
+  markClass [\yfesis8Tertiary ] <anchor -159 440> @yfesisTertiary;
+  markClass [\yfesis2Secondary ] <anchor -213 452> @yfesisSecondary;
+  markClass [\yfesis4Secondary ] <anchor -134 429> @yfesisSecondary;
+  markClass [\yfesis6Secondary ] <anchor -153 456> @yfesisSecondary;
+  markClass [\yfesis8Secondary ] <anchor -159 440> @yfesisSecondary;
+  markClass [\fthoraDiatonicNiLowTertiary \fthoraEnharmonicTertiary \chroaKlitonTertiary ] <anchor 0 734> @fthoraTopTertiary;
+  markClass [\fthoraDiatonicPaTertiary ] <anchor 0 644> @fthoraTopTertiary;
+  markClass [\fthoraDiatonicVouTertiary \yfesisGenikiTertiary ] <anchor 0 634> @fthoraTopTertiary;
+  markClass [\fthoraDiatonicGaTertiary ] <anchor 0 684> @fthoraTopTertiary;
+  markClass [\fthoraDiatonicDiTertiary \fthoraHardChromaticDiTertiary ] <anchor 0 744> @fthoraTopTertiary;
+  markClass [\fthoraDiatonicKeTertiary \fthoraHardChromaticPaTertiary \fthoraSoftChromaticDiTertiary \chroaSpathiTertiary \karasThemaAplounTertiary \diesisGenikiTertiary ] <anchor 0 804> @fthoraTopTertiary;
+  markClass [\fthoraDiatonicZoTertiary ] <anchor 0 624> @fthoraTopTertiary;
+  markClass [\fthoraDiatonicNiHighTertiary ] <anchor 0 754> @fthoraTopTertiary;
+  markClass [\fthoraSoftChromaticKeTertiary ] <anchor 0 714> @fthoraTopTertiary;
+  markClass [\chroaZygosTertiary ] <anchor 0 704> @fthoraTopTertiary;
+  markClass [\fthoraDiatonicNiLowSecondary \fthoraEnharmonicSecondary \chroaKlitonSecondary ] <anchor 0 734> @fthoraTopSecondary;
+  markClass [\fthoraDiatonicPaSecondary ] <anchor 0 644> @fthoraTopSecondary;
+  markClass [\fthoraDiatonicVouSecondary \yfesisGenikiSecondary ] <anchor 0 634> @fthoraTopSecondary;
+  markClass [\fthoraDiatonicGaSecondary ] <anchor 0 684> @fthoraTopSecondary;
+  markClass [\fthoraDiatonicDiSecondary \fthoraHardChromaticDiSecondary ] <anchor 0 744> @fthoraTopSecondary;
+  markClass [\fthoraDiatonicKeSecondary \fthoraHardChromaticPaSecondary \fthoraSoftChromaticDiSecondary \chroaSpathiSecondary \karasThemaAplounSecondary \diesisGenikiSecondary ] <anchor 0 804> @fthoraTopSecondary;
+  markClass [\fthoraDiatonicZoSecondary ] <anchor 0 624> @fthoraTopSecondary;
+  markClass [\fthoraDiatonicNiHighSecondary ] <anchor 0 754> @fthoraTopSecondary;
+  markClass [\fthoraSoftChromaticKeSecondary ] <anchor 0 714> @fthoraTopSecondary;
+  markClass [\chroaZygosSecondary ] <anchor 0 704> @fthoraTopSecondary;
+  markClass [\yfenBelow ] <anchor -593 -43> @yfenBelow;
+  markClass [\yfenAbove ] <anchor -589 951> @yfenAbove;
+  markClass [\koronis ] <anchor 0 872> @koronis;
+  markClass [\endofonon ] <anchor 1 -20> @endofonon;
+  markClass [\agogiTrueAgogiMesiAbove ] <anchor 0 -200> @agogi;
+  markClass [\agogiPoliArgiAbove ] <anchor 0 -200> @agogi;
+  markClass [\agogiArgoteriAbove ] <anchor -0 -200> @agogi;
+  markClass [\agogiArgiAbove ] <anchor 1 -202> @agogi;
+  markClass [\agogiMetriaAbove ] <anchor 1 -199> @agogi;
+  markClass [\agogiMesiAbove ] <anchor 5 -206> @agogi;
+  markClass [\agogiGorgiAbove ] <anchor 2 -206> @agogi;
+  markClass [\agogiGorgoteriAbove ] <anchor -1 -204> @agogi;
+  markClass [\agogiPoliGorgiAbove ] <anchor 0 -198> @agogi;
+  markClass [\modeOligonYpsili \modeOligonKentimaAbove \modeElafron \modeRunningElafron ] <anchor 0 800> @modeTop;
+  markClass [\isonIndicatorDiLow \isonIndicatorUnison \isonIndicatorKeLow \isonIndicatorZo \isonIndicatorNi \isonIndicatorPa \isonIndicatorVou \isonIndicatorGa \isonIndicatorDi \isonIndicatorKe \isonIndicatorZoHigh ] <anchor 0 996> @isonIndicator;
+  markClass [\measureNumber3 \measureNumber4 \measureNumber5 \measureNumber6 \measureNumber7 \measureNumber8 \measureNumber2 ] <anchor 0 656> @measureNumber;
+  markClass [\heteronConnecting ] <anchor 0 -19> @heteronConnecting;
+  markClass [\heteronConnecting.salt01 ] <anchor 0 -200> @heteronConnecting;
+  markClass [\omalon ] <anchor 0 67> @omalon;
+  markClass [\omalonConnecting ] <anchor 0 67> @omalonConnecting;
+  markClass [\u1D0E9 \u1D0EA \u1D0EB \u1D0EC \u1D0ED \u1D0EE \u1D0EF ] <anchor 215 -40> @martyriaTop; # Martyriae Above
+  markClass [\u1D0A8 ] <anchor 215 -40> @martyriaTop; # Inverted Martyria Di Above
+  markClass [\u1D0A9 ] <anchor 260 -40> @martyriaTop; # Inverted Martyria Vou
+  markClass [\u1D0A3 ] <anchor 180 -40> @martyriaTop; # Inverted Martyria Pa Above
+  markClass [\u1D0B1 ] <anchor 575 -40> @martyriaTop; # Inverted Martyria Varys Above
+  markClass [\u1D0A7 ] <anchor 300 -40> @martyriaTop; # Inverted Martyria Nana Above
+  markClass [\u1D0A5 ] <anchor 400 -40> @martyriaTop; # Inverted Martyria Primary Chromatic Above
+  markClass [\u1D0AD ] <anchor 0 230> @martyriaTop; # Martyria Apostrofoi
+  markClass [\u1D0AF ] <anchor 0 -6> @martyriaTop; # Fanerosis Monofonias
+  markClass [\u1D0AF.withMApos ] <anchor 25 -92> @fanerosisMonofonias;
+  markClass [\u1D0B0 \u1D0AE ] <anchor 0 -6> @martyriaTop; # Fanerosis Di-/Tetrafonias
+  markClass [\u1D0B0.withMonofonias ] <anchor 80 -40> @fanerosisDifonias;
+  markClass [\u1D0C7.toHardChromaticDiMartyria ] <anchor 265 -66> @martyriaTop;
+  markClass [\u1D0C4.toSoftChromaticKeMartyria ] <anchor 264 -63> @martyriaTop;
+  markClass [\martyriaTick ] <anchor 28 345> @martyriaAnoOxeia; # Martyria AnoOxeia
+  markClass [\martyriaZoAbove \martyriaDeltaAbove \martyriaAlphaAbove \martyriaAlphaDottedAbove \martyriaHardChromaticPaAbove \martyriaHardChromaticDiAbove \martyriaSoftChromaticDiAbove \martyriaSoftChromaticKeAbove ] <anchor 2 -192> @martyriaTop;
+  markClass [\martyriaLegetosAbove ] <anchor 2 -143> @martyriaTop;
+  markClass [\martyriaNanaAbove ] <anchor 2 -204> @martyriaTop;
+  markClass [\martyriaDeltaDottedAbove ] <anchor 2 -199> @martyriaTop;
+  markClass [\martyriaZygosAbove ] <anchor 0 -199> @martyriaTop;
+  markClass [\martyriaZoBelow ] <anchor 2 108> @martyriaBottom;
+  markClass [\martyriaDeltaBelow \martyriaLegetosBelow \martyriaHardChromaticDiBelow ] <anchor 2 298> @martyriaBottom;
+  markClass [\martyriaAlphaBelow ] <anchor 2 328> @martyriaBottom;
+  markClass [\martyriaNanaBelow ] <anchor 2 248> @martyriaBottom;
+  markClass [\martyriaDeltaDottedBelow ] <anchor 2 398> @martyriaBottom;
+  markClass [
+    \martyriaAlphaDottedBelow
+    #\martyriaAlphaDottedAbove
+  ] <anchor 1 427> @martyriaBottom;
+  markClass [\martyriaHardChromaticPaBelow \martyriaSoftChromaticDiBelow ] <anchor 2 138> @martyriaBottom;
+  markClass [\martyriaSoftChromaticKeBelow ] <anchor 2 263> @martyriaBottom;
+  markClass [\martyriaZygosBelow ] <anchor 0 244> @martyriaBottom;
+  markClass [\noteIndicatorNi \noteIndicatorPa \noteIndicatorVou \noteIndicatorGa \noteIndicatorDi \noteIndicatorKe \noteIndicatorZo ] <anchor 0 800> @noteTop;
+  markClass [\fthoraDiatonicNiLowBelow ] <anchor 0 264> @fthoraBottom;
+  markClass [\fthoraDiatonicPaBelow ] <anchor 0 244> @fthoraBottom;
+  markClass [\fthoraDiatonicVouBelow ] <anchor 0 471> @fthoraBottom;
+  markClass [\fthoraDiatonicGaBelow \fthoraDiatonicNiHighBelow ] <anchor 0 374> @fthoraBottom;
+  markClass [\fthoraDiatonicDiBelow \fthoraSoftChromaticDiBelow ] <anchor 0 314> @fthoraBottom;
+  markClass [\fthoraDiatonicKeBelow \chroaKlitonBelow ] <anchor 0 394> @fthoraBottom;
+  markClass [\fthoraDiatonicZoBelow ] <anchor 0 514> @fthoraBottom;
+  markClass [\fthoraHardChromaticPaBelow \fthoraEnharmonicBelow ] <anchor 0 294> @fthoraBottom;
+  markClass [\fthoraHardChromaticDiBelow ] <anchor 0 334> @fthoraBottom;
+  markClass [\fthoraSoftChromaticKeBelow ] <anchor 0 364> @fthoraBottom;
+  markClass [\chroaZygosBelow ] <anchor 0 354> @fthoraBottom;
+  markClass [\diesisGenikiBelow ] <anchor 0 444> @fthoraBottom;
+  markClass [\yfesisGenikiBelow ] <anchor 0 250> @fthoraBottom;
+  markClass [\chroaSpathiBelow \karasThemaAplounBelow ] <anchor 0 304> @fthoraBottom;
+  markClass [\fthoraDiatonicNiLowAbove \fthoraEnharmonicAbove \chroaKlitonAbove ] <anchor 0 734> @fthoraTop;
+  markClass [\fthoraDiatonicPaAbove ] <anchor 0 644> @fthoraTop;
+  markClass [\fthoraDiatonicVouAbove \yfesisGenikiAbove ] <anchor 0 634> @fthoraTop;
+  markClass [\fthoraDiatonicGaAbove ] <anchor 0 684> @fthoraTop;
+  markClass [\fthoraDiatonicDiAbove \fthoraHardChromaticDiAbove ] <anchor 0 744> @fthoraTop;
+  markClass [\fthoraDiatonicKeAbove \fthoraHardChromaticPaAbove \fthoraSoftChromaticDiAbove \diesisGenikiAbove \chroaSpathiAbove \karasThemaAploun ] <anchor 0 804> @fthoraTop;
+  markClass [\fthoraDiatonicZoAbove ] <anchor 0 624> @fthoraTop;
+  markClass [\fthoraDiatonicNiHighAbove ] <anchor 0 754> @fthoraTop;
+  markClass [\fthoraSoftChromaticKeAbove ] <anchor 0 714> @fthoraTop;
+  markClass [\chroaZygosAbove ] <anchor 0 704> @fthoraTop;
+  markClass [\heteron ] <anchor 1 -20> @heteron;
+  markClass [\gorgonSecondary \gorgonDottedLeftSecondary \gorgonDottedRightSecondary \digorgonSecondary \digorgonDottedLeftBelowSecondary \digorgonDottedRightSecondary \trigorgonSecondary \trigorgonDottedLeftBelowSecondary \trigorgonDottedRightSecondary \digorgonDottedLeftSecondary \trigorgonDottedLeftSecondary ] <anchor 0 800> @gorgonSecondary;
+  markClass [\antikenoma.alt01 ] <anchor 0 88> @antikenoma;
+  markClass [\antikenoma ] <anchor 8 113> @antikenoma;
+  markClass [\gorgonBelow ] <anchor -121 260> @gorgonBottom;
+  markClass [\psifiston ] <anchor -1 458> @psifiston;
+  markClass [\psifiston.salt01 ] <anchor -1 569> @psifiston;
+  markClass [\psifiston.alt01 ] <anchor -2 458> @psifiston;
+  markClass [\diesis2 ] <anchor 196 612> @diesis;
+  markClass [\diesis4 ] <anchor 177 682> @diesis;
+  markClass [\diesis6 ] <anchor 152 652> @diesis;
+  markClass [\diesis8 ] <anchor 12 553> @diesis;
+  markClass [\yfesis2 ] <anchor -213 452> @yfesis;
+  markClass [\yfesis4 ] <anchor -134 429> @yfesis;
+  markClass [\yfesis6 ] <anchor -153 456> @yfesis;
+  markClass [\yfesis8 ] <anchor -159 440> @yfesis;
+  markClass [\klasmaAbove \karasTsakisma ] <anchor 84 604> @klasmaTop;
+  markClass [\klasmaBelow \karasTsakismaBelow ] <anchor 0 201> @klasmaBottom;
+  markClass [\apli \dipli \tripli \tetrapli ] <anchor 0 0> @apli;
+  markClass [\gorgonAbove \gorgonDottedLeft \digorgon \gorgonDottedRight \digorgonDottedLeftBelow \digorgonDottedLeftAbove \digorgonDottedRight \trigorgon \trigorgonDottedLeftBelow \trigorgonDottedLeftAbove \trigorgonDottedRight \argon \triargon ] <anchor 0 800> @gorgonTop;
+  markClass [\diargon ] <anchor -1 800> @gorgonTop;
+  markClass [\karasParacletike ] <anchor -930 896> @karasParacletike;
+  markClass [\karasPiesma ] <anchor -418 30> @karasPiesma;
+  pos base [\ison ] <anchor 930 641> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 801> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 753> mark @measureNumber
+	<anchor 792 913> mark @isonIndicator
+	<anchor 713 125> mark @gorgonBottom
+	<anchor 1700 -19> mark @heteronConnecting
+	<anchor 1027 207> mark @heteron
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 1031 133> mark @omalon
+	<anchor 803 30> mark @apli
+	<anchor 820 165> mark @antikenoma
+	<anchor 314 676> mark @noteTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 788 507> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 840 113> mark @psifiston
+	<anchor 873 487> mark @klasmaTop
+	<anchor 786 505> mark @gorgonTop;
+  pos base [\oligonKentimaBelow \oxeiaKentimaBelow ] <anchor 763 -180> mark @apli
+	<anchor 450 125> mark @gorgonBottom
+	<anchor 930 641> mark @yfenAbove
+	<anchor 929 -200> mark @yfenBelow
+	<anchor 783 801> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 753> mark @measureNumber
+	<anchor 792 913> mark @isonIndicator
+	<anchor 1692 -51> mark @heteronConnecting
+	<anchor 1027 -33> mark @heteron
+	<anchor 1033 -67> mark @omalon
+	<anchor 1473 -53> mark @omalonConnecting
+	<anchor 820 -55> mark @antikenoma
+	<anchor 314 676> mark @noteTop
+	<anchor 788 507> mark @fthoraTop
+	<anchor 420 107> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 793 487> mark @klasmaTop
+	<anchor 780 500> mark @gorgonTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\oligon \oxeia ] <anchor 930 641> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 686 801> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 753> mark @measureNumber
+	<anchor 792 913> mark @isonIndicator
+	<anchor 667 125> mark @gorgonBottom
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 803 30> mark @apli
+	<anchor 820 165> mark @antikenoma
+	<anchor 314 676> mark @noteTop
+	<anchor 788 507> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 793 487> mark @klasmaTop
+	<anchor 840 113> mark @psifiston
+	<anchor 780 500> mark @gorgonTop;
+  pos base [\oligonKentimaAbove \oxeiaKentimaAbove ] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 911> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 891> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 753> mark @measureNumber
+	<anchor 792 913> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 314 676> mark @noteTop
+	<anchor 1253 440> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 383 487> mark @klasmaTop
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 1138 500> mark @gorgonTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\oligonYpsiliRight \oxeiaHypsiliR ] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 1203> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 801> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 753> mark @measureNumber
+	<anchor 792 1203> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 314 676> mark @noteTop
+	<anchor 557 489> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 598 487> mark @klasmaTop
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 708 500> mark @gorgonTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\oligonYpsiliLeft \oxeiaHypsiliL ] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 1285> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 951 855> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 213 827> mark @measureNumber
+	<anchor 792 1283> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 188 750> mark @noteTop
+	<anchor 889 501> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 980 487> mark @klasmaTop
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 1102 500> mark @gorgonTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\oligonKentimaYpsiliRight \oxeiaKentimaAboveHypsiliR ] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 1202> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 911> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 753> mark @measureNumber
+	<anchor 792 1203> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 314 676> mark @noteTop
+	<anchor 358 507> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 353 487> mark @klasmaTop
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 708 839> mark @gorgonTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\oligonKentimaYpsiliMiddle \oxeiaKentimaAboveHypsiliM] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 1403> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 275 835> mark @koronis
+	<anchor 353 487> mark @klasmaTop
+	<anchor 172 753> mark @measureNumber
+	<anchor 792 1403> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 314 676> mark @noteTop
+	<anchor 1227 447> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 1138 500> mark @gorgonTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\oligonDoubleYpsili \oxeiaDoubleHypsili ] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 1271> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 1261> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 160 800> mark @measureNumber
+	<anchor 792 1273> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 194 772> mark @noteTop
+	<anchor 678 507> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 869 -17> mark @klasmaTop
+	<anchor 757 500> mark @gorgonTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\oligonKentimataDoubleYpsili \oxeiaKentimataAboveDoubleHypsiliR ] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 1371> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 1371> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 875> mark @measureNumber
+	<anchor 792 1373> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 156 680> mark @noteTop
+	<anchor 314 1071> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1368 619> mark @yfesis
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 869 -17> mark @klasmaTop
+	<anchor 50 1116> mark @karasParacletike
+	<anchor 840 113> mark @psifiston;
+  pos base [\yporroi ] <anchor 587 887> mark @diesisSecondary
+	<anchor -19 -223> mark @yfesisSecondary
+	<anchor 308 609> mark @yfesis
+	<anchor 286 590> mark @barline
+	<anchor 217 887> mark @yfenAbove
+	<anchor 159 -40> mark @yfenBelow
+	<anchor 210 881> mark @koronis
+	<anchor 192 -146> mark @endofonon
+	<anchor 583 -19> mark @heteronConnecting
+	<anchor 72 483> mark @measureNumber
+	<anchor 212 885> mark @isonIndicator
+	<anchor 316 -86> mark @heteron
+	<anchor 161 42> mark @apli
+	<anchor 134 80> mark @karasPiesma
+	<anchor 197 100> mark @antikenoma
+	<anchor 156 675> mark @noteTop
+	<anchor 308 609> mark @fthoraTop
+	<anchor 148 101> mark @fthoraBottom
+	<anchor 267 60> mark @diesis
+	<anchor 400 527> mark @gorgonTop;
+  pos base [\runningElafron ] <anchor 547 487> mark @stavros
+	<anchor 713 895> mark @diesisSecondary
+	<anchor 583 590> mark @barline
+	<anchor 290 665> mark @fthoraTopSecondary
+	<anchor 388 570> mark @yfesisSecondary
+	<anchor 1060 891> mark @yfenAbove
+	<anchor 1109 -40> mark @yfenBelow
+	<anchor 1030 746> mark @koronis
+	<anchor 1112 -37> mark @endofonon
+	<anchor 172 653> mark @measureNumber
+	<anchor 1018 887> mark @isonIndicator
+	<anchor 1929 -19> mark @heteronConnecting
+	<anchor 1751 89> mark @omalonConnecting
+	<anchor 1132 13> mark @apli
+	<anchor 666 72> mark @karasPiesma
+	<anchor 1191 101> mark @antikenoma
+	<anchor 742 703> mark @noteTop
+	<anchor 1098 660> mark @fthoraTop
+	<anchor 1139 70> mark @fthoraBottom
+	<anchor 1147 580> mark @gorgonTop
+	<anchor 937 20> mark @diesis
+	<anchor 1490 536> mark @yfesis
+	<anchor 1060 620> mark @klasmaTop;
+  pos base [\elafron ] <anchor 650 901> mark @yfenAbove
+	<anchor 659 -40> mark @yfenBelow
+	<anchor 560 746> mark @koronis
+	<anchor 632 -37> mark @endofonon
+	<anchor 172 613> mark @measureNumber
+	<anchor 528 897> mark @isonIndicator
+	<anchor 487 -18> mark @gorgonBottom
+	<anchor 1420 -19> mark @heteronConnecting
+	<anchor 1241 89> mark @omalonConnecting
+	<anchor 588 -1> mark @apli
+	<anchor 360 72> mark @karasPiesma
+	<anchor 566 70> mark @antikenoma
+	<anchor 242 703> mark @noteTop
+	<anchor 518 660> mark @fthoraTop
+	<anchor 609 70> mark @fthoraBottom
+	<anchor 627 580> mark @gorgonTop
+	<anchor 427 20> mark @diesis
+	<anchor 980 536> mark @yfesis
+	<anchor 560 620> mark @klasmaTop;
+  pos base [\elafronApostrofos ] <anchor 487 -93> mark @gorgonBottom
+	<anchor 630 891> mark @yfenAbove
+	<anchor 659 -210> mark @yfenBelow
+	<anchor 560 746> mark @koronis
+	<anchor 632 -37> mark @endofonon
+	<anchor 172 643> mark @measureNumber
+	<anchor 528 897> mark @isonIndicator
+	<anchor 1420 -19> mark @heteronConnecting
+	<anchor 1241 89> mark @omalonConnecting
+	<anchor 600 -93> mark @apli
+	<anchor 340 72> mark @karasPiesma
+	<anchor 581 -29> mark @antikenoma
+	<anchor 232 703> mark @noteTop
+	<anchor 518 660> mark @fthoraTop
+	<anchor 609 -30> mark @fthoraBottom
+	<anchor 627 580> mark @gorgonTop
+	<anchor 427 20> mark @diesis
+	<anchor 980 536> mark @yfesis
+	<anchor 560 620> mark @klasmaTop;
+  pos base [\chamiliApostrofos ] <anchor 630 921> mark @yfenAbove
+	<anchor 659 -300> mark @yfenBelow
+	<anchor 720 910> mark @koronis
+	<anchor 632 -257> mark @endofonon
+	<anchor 172 943> mark @measureNumber
+	<anchor 528 897> mark @isonIndicator
+	<anchor 1284 -180> mark @heteronConnecting
+	<anchor 1107 -40> mark @omalonConnecting
+	<anchor 576 -211> mark @apli
+	<anchor 189 128> mark @karasPiesma
+	<anchor 579 -129> mark @antikenoma
+	<anchor 242 933> mark @noteTop
+	<anchor 773 765> mark @fthoraTop
+	<anchor 609 -130> mark @fthoraBottom
+	<anchor 819 680> mark @gorgonTop
+	<anchor 328 16> mark @diesis
+	<anchor 953 747> mark @yfesis
+	<anchor 747 513> mark @klasmaTop;
+  pos base [\chamili ] <anchor 630 921> mark @yfenAbove
+	<anchor 659 -40> mark @yfenBelow
+	<anchor 770 916> mark @koronis
+	<anchor 632 -37> mark @endofonon
+	<anchor 172 943> mark @measureNumber
+	<anchor 528 897> mark @isonIndicator
+	<anchor 393 125> mark @gorgonBottom
+	<anchor 1284 -19> mark @heteronConnecting
+	<anchor 1111 89> mark @omalonConnecting
+	<anchor 640 76> mark @apli
+	<anchor 441 220> mark @karasPiesma
+	<anchor 642 169> mark @antikenoma
+	<anchor 242 923> mark @noteTop
+	<anchor 773 765> mark @fthoraTop
+	<anchor 609 240> mark @fthoraBottom
+	<anchor 819 680> mark @gorgonTop
+	<anchor 393 201> mark @diesis
+	<anchor 953 747> mark @yfesis
+	<anchor 747 513> mark @klasmaTop;
+  pos base [\chamiliElafron ] <anchor 630 1301> mark @yfenAbove
+	<anchor 659 -40> mark @yfenBelow
+	<anchor 770 1226> mark @koronis
+	<anchor 632 -37> mark @endofonon
+	<anchor 172 1233> mark @measureNumber
+	<anchor 528 1227> mark @isonIndicator
+	<anchor 1420 -19> mark @heteronConnecting
+	<anchor 1240 89> mark @omalonConnecting
+	<anchor 575 -10> mark @apli
+	<anchor 360 40> mark @karasPiesma
+	<anchor 569 91> mark @antikenoma
+	<anchor 242 1223> mark @noteTop
+	<anchor 773 1065> mark @fthoraTop
+	<anchor 609 90> mark @fthoraBottom
+	<anchor 819 1010> mark @gorgonTop
+	<anchor 458 16> mark @diesis
+	<anchor 1005 1051> mark @yfesis
+	<anchor 807 820> mark @klasmaTop;
+  pos base [\chamiliElafronApostrofos ] <anchor 630 1251> mark @yfenAbove
+	<anchor 659 -230> mark @yfenBelow
+	<anchor 770 1216> mark @koronis
+	<anchor 632 -107> mark @endofonon
+	<anchor 172 1233> mark @measureNumber
+	<anchor 528 1227> mark @isonIndicator
+	<anchor 1420 -19> mark @heteronConnecting
+	<anchor 1240 89> mark @omalonConnecting
+	<anchor 575 -110> mark @apli
+	<anchor 373 40> mark @karasPiesma
+	<anchor 577 -18> mark @antikenoma
+	<anchor 242 1223> mark @noteTop
+	<anchor 773 1085> mark @fthoraTop
+	<anchor 609 -20> mark @fthoraBottom
+	<anchor 819 1010> mark @gorgonTop
+	<anchor 458 16> mark @diesis
+	<anchor 1005 1051> mark @yfesis
+	<anchor 807 820> mark @klasmaTop;
+  pos base [\doubleChamili ] <anchor 630 1241> mark @yfenAbove
+	<anchor 659 -40> mark @yfenBelow
+	<anchor 770 1226> mark @koronis
+	<anchor 632 -37> mark @endofonon
+	<anchor 172 1223> mark @measureNumber
+	<anchor 528 1227> mark @isonIndicator
+	<anchor 1284 -19> mark @heteronConnecting
+	<anchor 1108 89> mark @omalonConnecting
+	<anchor 595 70> mark @apli
+	<anchor 441 220> mark @karasPiesma
+	<anchor 594 175> mark @antikenoma
+	<anchor 242 1223> mark @noteTop
+	<anchor 773 1105> mark @fthoraTop
+	<anchor 609 240> mark @fthoraBottom
+	<anchor 819 1027> mark @gorgonTop
+	<anchor 464 161> mark @diesis
+	<anchor 965 1097> mark @yfesis
+	<anchor 707 933> mark @klasmaTop;
+  pos base [\petastiIson ] <anchor 792 1049> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 730 1046> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 1179 915> mark @yfesis
+	<anchor 854 140> mark @psifiston
+	<anchor 172 1073> mark @measureNumber
+	<anchor 714 1049> mark @isonIndicator
+	<anchor 765 -10> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 298 1040> mark @noteTop
+	<anchor 734 846> mark @fthoraTop
+	<anchor 464 147> mark @diesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petasti ] <anchor 792 1049> mark @yfenAbove
+	<anchor 769 -40> mark @yfenBelow
+	<anchor 730 1046> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 1113 691> mark @yfesis
+	<anchor 172 743> mark @measureNumber
+	<anchor 664 1049> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 214 636> mark @noteTop
+	<anchor 656 600> mark @fthoraTop
+	<anchor 464 147> mark @diesis
+	<anchor 795 140> mark @psifiston
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petastiOligon ] <anchor 792 1049> mark @yfenAbove
+	<anchor 789 -40> mark @yfenBelow
+	<anchor 730 1046> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 1113 991> mark @yfesis
+	<anchor 860 140> mark @psifiston
+	<anchor 172 953> mark @measureNumber
+	<anchor 724 1049> mark @isonIndicator
+	<anchor 785 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 214 916> mark @noteTop
+	<anchor 734 846> mark @fthoraTop
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop
+	<anchor 464 147> mark @diesis;
+  pos base [\petastiKentima ] <anchor 792 1049> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 730 1046> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 1113 691> mark @yfesis
+	<anchor 795 140> mark @psifiston
+	<anchor 172 853> mark @measureNumber
+	<anchor 664 1049> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 158 670> mark @noteTop
+	<anchor 1091 660> mark @fthoraTop
+	<anchor 464 147> mark @diesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petastiYpsiliRight ] <anchor 792 1309> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 430 876> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 1113 691> mark @yfesis
+	<anchor 795 140> mark @psifiston
+	<anchor 172 853> mark @measureNumber
+	<anchor 664 1299> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 214 676> mark @noteTop
+	<anchor 594 868> mark @fthoraTop
+	<anchor 464 147> mark @diesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petastiYpsiliLeft ] <anchor 792 1299> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 925 807> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 1113 691> mark @yfesis
+	<anchor 795 140> mark @psifiston
+	<anchor 172 853> mark @measureNumber
+	<anchor 664 1299> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 194 956> mark @noteTop
+	<anchor 958 648> mark @fthoraTop
+	<anchor 464 147> mark @diesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petastiKentimaYpsiliRight ] <anchor 792 1299> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 599 969> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 1113 691> mark @yfesis
+	<anchor 795 140> mark @psifiston
+	<anchor 172 853> mark @measureNumber
+	<anchor 664 1299> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 214 676> mark @noteTop
+	<anchor 482 890> mark @fthoraTop
+	<anchor 464 147> mark @diesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petastiKentimaYpsiliMiddle ] <anchor 792 1299> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 313 963> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 1113 691> mark @yfesis
+	<anchor 795 140> mark @psifiston
+	<anchor 172 853> mark @measureNumber
+	<anchor 664 1299> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 214 676> mark @noteTop
+	<anchor 1020 680> mark @fthoraTop
+	<anchor 464 147> mark @diesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petastiApostrofos ] <anchor 792 1049> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 663 961> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 795 140> mark @psifiston
+	<anchor 172 953> mark @measureNumber
+	<anchor 664 997> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 489 911> mark @fthoraTop
+	<anchor 202 942> mark @noteTop
+	<anchor 464 147> mark @diesis
+	<anchor 802 879> mark @yfesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petastiElafron ] <anchor 712 1109> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 663 1091> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 795 140> mark @psifiston
+	<anchor 172 1103> mark @measureNumber
+	<anchor 660 1049> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 489 1051> mark @fthoraTop
+	<anchor 202 1102> mark @noteTop
+	<anchor 464 147> mark @diesis
+	<anchor 1028 1025> mark @yfesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petastiElafronApostrofos ] <anchor 702 1089> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 663 1091> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 795 140> mark @psifiston
+	<anchor 172 1103> mark @measureNumber
+	<anchor 644 1037> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 489 1031> mark @fthoraTop
+	<anchor 202 1042> mark @noteTop
+	<anchor 464 147> mark @diesis
+	<anchor 1028 1025> mark @yfesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petastiChamili ] <anchor 782 1229> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 763 1131> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 795 140> mark @psifiston
+	<anchor 172 1243> mark @measureNumber
+	<anchor 650 1133> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 649 971> mark @fthoraTop
+	<anchor 202 1242> mark @noteTop
+	<anchor 464 147> mark @diesis
+	<anchor 1028 1025> mark @yfesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\kentimata ] <anchor 806 34> mark @heteronConnecting
+	<anchor 413 875> mark @yfenAbove
+	<anchor 459 -40> mark @yfenBelow
+	<anchor 452 -277> mark @endofonon
+	<anchor 172 753> mark @measureNumber
+	<anchor 354 -18> mark @gorgonBottom
+	<anchor 330 877> mark @isonIndicator
+	<anchor 125 507> mark @noteTop
+	<anchor 465 97> mark @fthoraBottom
+	<anchor 227 759> mark @fthoraTop
+	<anchor 333 93> mark @diesis
+	<anchor 624 551> mark @yfesis
+	<anchor 453 547> mark @gorgonTop;
+  pos base [\oligonKentimataAbove \oxeiaKentimataAbove ] <anchor 240 480> mark @fthoraTopSecondary
+	<anchor 930 901> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 772 -47> mark @endofonon
+	<anchor 1594 -19> mark @heteronConnecting
+	<anchor 1590 130> mark @omalonConnecting
+	<anchor 172 753> mark @measureNumber
+	<anchor 385 764> mark @karasParacletike
+	<anchor 710 1117> mark @isonIndicator
+	<anchor 820 165> mark @antikenoma
+	<anchor 262 561> mark @noteTop
+	<anchor 746 194> mark @fthoraBottom
+	<anchor 767 791> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 840 113> mark @psifiston
+	<anchor 842 767> mark @gorgonTop;
+  pos base [\oligonYpsiliLeftKentimata \oxeiaKentimataAboveHypsiliL ] <anchor 930 1201> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 802 -37> mark @endofonon
+	<anchor 1594 -19> mark @heteronConnecting
+	<anchor 174 983> mark @measureNumber
+	<anchor 710 1207> mark @isonIndicator
+	<anchor 820 165> mark @antikenoma
+	<anchor 172 991> mark @noteTop
+	<anchor 746 194> mark @fthoraBottom
+	<anchor 853 889> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 840 113> mark @psifiston
+	<anchor 1069 816> mark @karasParacletike
+	<anchor 1000 787> mark @gorgonTop;
+  pos base [\oligonKentimataBelow \oxeiaKentimataBelow ] <anchor 1596 897> mark @diesisSecondary
+	<anchor 425 -145> mark @yfesisSecondary
+	<anchor 277 590> mark @barline
+	<anchor 930 641> mark @yfenAbove
+	<anchor 929 -200> mark @yfenBelow
+	<anchor 686 801> mark @koronis
+	<anchor 772 -277> mark @endofonon
+	<anchor 1087 227> mark @heteron
+	<anchor 1684 -138> mark @heteronConnecting
+	<anchor 803 -227> mark @apli
+	<anchor 172 753> mark @measureNumber
+	<anchor 710 133> mark @diesis
+	<anchor 710 877> mark @isonIndicator
+	<anchor 1460 -40> mark @omalonConnecting
+	<anchor 1040 -120> mark @omalon
+	<anchor 820 -85> mark @antikenoma
+	<anchor 262 561> mark @noteTop
+	<anchor 384 160> mark @fthoraBottom
+	<anchor 743 515> mark @fthoraTop
+	<anchor 1316 619> mark @yfesis
+	<anchor 793 487> mark @klasmaTop
+	<anchor 763 505> mark @gorgonTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\oligonKentimaTripleYpsili \oxeiaKentimaAboveTripleHypsili ] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 1461> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 1461> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 1213> mark @measureNumber
+	<anchor 178 1224> mark @karasParacletike
+	<anchor 792 1463> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 116 820> mark @noteTop
+	<anchor 1340 1293> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1378 619> mark @yfesis
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 869 -17> mark @klasmaTop
+	<anchor 990 770> mark @gorgonTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\oligonIson \oxeiaIson ] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 911> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 911> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 943> mark @measureNumber
+	<anchor 792 913> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 338 878> mark @noteTop
+	<anchor 788 717> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 869 -17> mark @klasmaTop
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 840 113> mark @psifiston;
+  pos base [\oligonElafron \oligonElafronApostrofos \oxeiaElafron \oxeiaElafronApostrofos ] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 1091> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 1041> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 943> mark @measureNumber
+	<anchor 792 1093> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 214 912> mark @noteTop
+	<anchor 602 1035> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 869 -17> mark @klasmaTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\petastiRunningElafron ] <anchor 663 1235> mark @diesisSecondary
+	<anchor 397 940> mark @barline
+	<anchor 338 910> mark @yfesisSecondary
+	<anchor 150 906> mark @fthoraTopSecondary
+	<anchor 932 1049> mark @yfenAbove
+	<anchor 1029 -40> mark @yfenBelow
+	<anchor 833 1041> mark @koronis
+	<anchor 1052 -127> mark @endofonon
+	<anchor 1586 -19> mark @heteronConnecting
+	<anchor 173 920> mark @measureNumber
+	<anchor 832 999> mark @isonIndicator
+	<anchor 1095 -80> mark @apli
+	<anchor 1003 62> mark @antikenoma
+	<anchor 542 162> mark @fthoraBottom
+	<anchor 759 911> mark @fthoraTop
+	<anchor 502 972> mark @noteTop
+	<anchor 754 147> mark @diesis
+	<anchor 1222 911> mark @yfesis
+	<anchor 1072 129> mark @psifiston
+	<anchor 1071 53> mark @klasmaBottom
+	<anchor 1155 -124> mark @klasmaTop;
+  pos base [\oligonApostrofos \oxeiaApostrofos ] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 911> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 911> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 943> mark @measureNumber
+	<anchor 792 913> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 196 674> mark @noteTop
+	<anchor 746 882> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 869 -17> mark @klasmaTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\oligonYporroi \oxeiaYporroi ] <anchor 997 878> mark @barline
+	<anchor 667 125> mark @gorgonBottom
+	<anchor 930 971> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 911> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 943> mark @measureNumber
+	<anchor 792 973> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 196 674> mark @noteTop
+	<anchor 989 924> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 869 -17> mark @klasmaTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\petastiYporroi ] <anchor 702 816> mark @barline
+	<anchor 830 758> mark @gorgonTop
+	<anchor 702 1049> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 663 961> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 745 140> mark @psifiston
+	<anchor 172 663> mark @measureNumber
+	<anchor 664 997> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 689 781> mark @fthoraTop
+	<anchor 202 942> mark @noteTop
+	<anchor 464 147> mark @diesis
+	<anchor 936 857> mark @yfesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\oligonKentimaMiddleKentimata \oxeiaKentimaMiddleKentimataAbove ] <anchor 930 1101> mark @yfenAbove
+	<anchor 1109 -40> mark @yfenBelow
+	<anchor 802 -37> mark @endofonon
+	<anchor 1920 -19> mark @heteronConnecting
+	<anchor 172 753> mark @measureNumber
+	<anchor 710 1117> mark @isonIndicator
+	<anchor 820 165> mark @antikenoma
+	<anchor 262 561> mark @noteTop
+	<anchor 746 194> mark @fthoraBottom
+	<anchor 767 791> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 840 113> mark @psifiston
+	<anchor 365 784> mark @karasParacletike
+	<anchor 842 767> mark @gorgonTop;
+  pos base [\oligonYpsiliRightKentimata \oxeiaKentimataHypsili ] <anchor 930 1251> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 802 -37> mark @endofonon
+	<anchor 1594 -19> mark @heteronConnecting
+	<anchor 164 847> mark @measureNumber
+	<anchor 710 1177> mark @isonIndicator
+	<anchor 820 165> mark @antikenoma
+	<anchor 212 850> mark @noteTop
+	<anchor 746 194> mark @fthoraBottom
+	<anchor 573 855> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1515 939> mark @yfesis
+	<anchor 840 113> mark @psifiston
+	<anchor 713 753> mark @gorgonTop;
+  pos base [\petastiChamiliApostrofos ] <anchor 782 1229> mark @yfenAbove
+	<anchor 729 -80> mark @yfenBelow
+	<anchor 763 1131> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 795 140> mark @psifiston
+	<anchor 172 1243> mark @measureNumber
+	<anchor 650 1133> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 649 971> mark @fthoraTop
+	<anchor 202 1242> mark @noteTop
+	<anchor 464 147> mark @diesis
+	<anchor 1028 1025> mark @yfesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\apostrofos ] <anchor 470 891> mark @yfenAbove
+	<anchor 509 -40> mark @yfenBelow
+	<anchor 370 891> mark @koronis
+	<anchor 502 -126> mark @endofonon
+	<anchor 879 -19> mark @heteronConnecting
+	<anchor 172 783> mark @measureNumber
+	<anchor 366 885> mark @isonIndicator
+	<anchor 348 -18> mark @gorgonBottom
+	<anchor 500 18> mark @apli
+	<anchor 461 101> mark @antikenoma
+	<anchor 170 643> mark @noteTop
+	<anchor 386 642> mark @fthoraTop
+	<anchor 340 99> mark @fthoraBottom
+	<anchor 400 580> mark @gorgonTop
+	<anchor 233 100> mark @diesis
+	<anchor 648 557> mark @yfesis
+	<anchor 408 567> mark @klasmaTop;
+  pos base [\oligonKentimataTripleYpsili \oxeiaKentimataAboveTripleHypsili ] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 1461> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 1461> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 1213> mark @measureNumber
+	<anchor 172 1213> mark @karasParacletike
+	<anchor 792 1463> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 13> mark @apli
+	<anchor 116 820> mark @noteTop
+	<anchor 1280 1329> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1377 619> mark @yfesis
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 869 -17> mark @klasmaTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\doubleChamiliElafronApostrofos ] <anchor 630 1231> mark @yfenAbove
+	<anchor 659 -310> mark @yfenBelow
+	<anchor 770 1236> mark @koronis
+	<anchor 632 -347> mark @endofonon
+	<anchor 172 1223> mark @measureNumber
+	<anchor 528 1227> mark @isonIndicator
+	<anchor 1284 -240> mark @heteronConnecting
+	<anchor 1160 -180> mark @omalonConnecting
+	<anchor 575 -320> mark @apli
+	<anchor 402 -160> mark @karasPiesma
+	<anchor 572 -232> mark @antikenoma
+	<anchor 242 1223> mark @noteTop
+	<anchor 773 1105> mark @fthoraTop
+	<anchor 609 -230> mark @fthoraBottom
+	<anchor 819 1047> mark @gorgonTop
+	<anchor 462 -191> mark @diesis
+	<anchor 965 1097> mark @yfesis
+	<anchor 707 933> mark @klasmaTop;
+  pos base [\doubleChamiliElafron ] <anchor 630 1231> mark @yfenAbove
+	<anchor 659 -310> mark @yfenBelow
+	<anchor 770 1226> mark @koronis
+	<anchor 632 -267> mark @endofonon
+	<anchor 172 1223> mark @measureNumber
+	<anchor 528 1227> mark @isonIndicator
+	<anchor 1284 -240> mark @heteronConnecting
+	<anchor 1153 -140> mark @omalonConnecting
+	<anchor 575 -200> mark @apli
+	<anchor 441 -136> mark @karasPiesma
+	<anchor 644 -123> mark @antikenoma
+	<anchor 242 1223> mark @noteTop
+	<anchor 773 1105> mark @fthoraTop
+	<anchor 609 -120> mark @fthoraBottom
+	<anchor 819 1047> mark @gorgonTop
+	<anchor 462 -191> mark @diesis
+	<anchor 965 1097> mark @yfesis
+	<anchor 707 933> mark @klasmaTop;
+  pos base [\doubleChamiliApostrofos ] <anchor 630 1231> mark @yfenAbove
+	<anchor 659 -310> mark @yfenBelow
+	<anchor 770 1236> mark @koronis
+	<anchor 632 -297> mark @endofonon
+	<anchor 172 1223> mark @measureNumber
+	<anchor 528 1227> mark @isonIndicator
+	<anchor 1284 -180> mark @heteronConnecting
+	<anchor 1087 -113> mark @omalonConnecting
+	<anchor 575 -230> mark @apli
+	<anchor 273 86> mark @karasPiesma
+	<anchor 581 -120> mark @antikenoma
+	<anchor 242 1223> mark @noteTop
+	<anchor 773 1105> mark @fthoraTop
+	<anchor 609 -120> mark @fthoraBottom
+	<anchor 819 1047> mark @gorgonTop
+	<anchor 458 16> mark @diesis
+	<anchor 965 1097> mark @yfesis
+	<anchor 707 933> mark @klasmaTop;
+  pos base [\petastiKentimataDoubleYpsili ] <anchor 792 1419> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 235 1333> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 1220 627> mark @yfesis
+	<anchor 795 140> mark @psifiston
+	<anchor 172 853> mark @measureNumber
+	<anchor 664 1389> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 227 927> mark @noteTop
+	<anchor 192 750> mark @fthoraTop
+	<anchor 464 147> mark @diesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petastiKentimaDoubleYpsiliRight ] <anchor 792 1449> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 340 1330> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 1113 691> mark @yfesis
+	<anchor 795 140> mark @psifiston
+	<anchor 172 853> mark @measureNumber
+	<anchor 664 1389> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 207 913> mark @noteTop
+	<anchor 192 750> mark @fthoraTop
+	<anchor 464 147> mark @diesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petastiKentimaDoubleYpsiliLeft ] <anchor 792 1449> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 670 1460> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 1113 691> mark @yfesis
+	<anchor 795 140> mark @psifiston
+	<anchor 187 1293> mark @measureNumber
+	<anchor 664 1389> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 132 1142> mark @noteTop
+	<anchor 1086 648> mark @fthoraTop
+	<anchor 464 147> mark @diesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petastiKentimataTripleYpsili ] <anchor 792 1439> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 663 1383> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 1227 600> mark @yfesis
+	<anchor 795 140> mark @psifiston
+	<anchor 133 1273> mark @measureNumber
+	<anchor 664 1389> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 132 1272> mark @noteTop
+	<anchor 1224 1296> mark @fthoraTop
+	<anchor 464 147> mark @diesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petastiTripleYpsili ] <anchor 792 1379> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 663 1313> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 1193 660> mark @yfesis
+	<anchor 795 140> mark @psifiston
+	<anchor 193 1280> mark @measureNumber
+	<anchor 664 1299> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 132 1142> mark @noteTop
+	<anchor 834 1282> mark @fthoraTop
+	<anchor 464 147> mark @diesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\oligonKentimaDoubleYpsiliRight \oxeiaKentimaAboveDoubleHypsiliR ] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 1441> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 1441> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 853> mark @measureNumber
+	<anchor 792 1443> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 156 680> mark @noteTop
+	<anchor 245 1056> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1368 619> mark @yfesis
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 869 -17> mark @klasmaTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\oligonKentimaDoubleYpsiliLeft \oxeiaKentimaAboveDoubleHypsiliL ] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 1441> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 1441> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 1213> mark @measureNumber
+	<anchor 792 1443> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 116 820> mark @noteTop
+	<anchor 1262 861> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 869 -17> mark @klasmaTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\oligonTripleYpsili \oxeiaTripleHypsili ] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 1281> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 1281> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 1213> mark @measureNumber
+	<anchor 792 1283> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 116 820> mark @noteTop
+	<anchor 863 1239> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1368 619> mark @yfesis
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 869 -17> mark @klasmaTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\petastiDoubleYpsili ] <anchor 792 1299> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 867 1283> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 1113 691> mark @yfesis
+	<anchor 795 140> mark @psifiston
+	<anchor 172 853> mark @measureNumber
+	<anchor 664 1299> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 213 960> mark @noteTop
+	<anchor 204 842> mark @fthoraTop
+	<anchor 464 147> mark @diesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\oligonChamili \oxeiaChamili ] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 1031> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 1041> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 513> mark @measureNumber
+	<anchor 792 1023> mark @isonIndicator
+	<anchor 1692 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 240 1020> mark @noteTop
+	<anchor 758 927> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 785 160> mark @klasmaBottom
+	<anchor 869 -17> mark @klasmaTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\petastiChamiliElafron ] <anchor 782 1429> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 763 1421> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 795 140> mark @psifiston
+	<anchor 172 1483> mark @measureNumber
+	<anchor 650 1423> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 649 1221> mark @fthoraTop
+	<anchor 202 1482> mark @noteTop
+	<anchor 464 147> mark @diesis
+	<anchor 968 1337> mark @yfesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petastiChamiliElafronApostrofos ] <anchor 782 1429> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 763 1421> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 795 140> mark @psifiston
+	<anchor 172 1483> mark @measureNumber
+	<anchor 650 1423> mark @isonIndicator
+	<anchor 765 -80> mark @apli
+	<anchor 713 62> mark @antikenoma
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 649 1261> mark @fthoraTop
+	<anchor 202 1482> mark @noteTop
+	<anchor 464 147> mark @diesis
+	<anchor 968 1337> mark @yfesis
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petastiDoubleChamili ] <anchor 782 1289> mark @yfenAbove
+	<anchor 729 -210> mark @yfenBelow
+	<anchor 763 1291> mark @koronis
+	<anchor 772 -277> mark @endofonon
+	<anchor 1316 -49> mark @heteronConnecting
+	<anchor 784 1> mark @psifiston
+	<anchor 172 1333> mark @measureNumber
+	<anchor 650 1293> mark @isonIndicator
+	<anchor 765 -250> mark @apli
+	<anchor 713 -68> mark @antikenoma
+	<anchor 352 42> mark @fthoraBottom
+	<anchor 649 1101> mark @fthoraTop
+	<anchor 202 1332> mark @noteTop
+	<anchor 464 4> mark @diesis
+	<anchor 968 1337> mark @yfesis
+	<anchor 800 -63> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop;
+  pos base [\petastiDoubleChamiliApostrofos ] <anchor 782 1289> mark @yfenAbove
+	<anchor 729 -210> mark @yfenBelow
+	<anchor 763 1291> mark @koronis
+	<anchor 772 -287> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 781 2> mark @psifiston
+	<anchor 172 1333> mark @measureNumber
+	<anchor 650 1293> mark @isonIndicator
+	<anchor 765 -250> mark @apli
+	<anchor 713 -68> mark @antikenoma
+	<anchor 352 42> mark @fthoraBottom
+	<anchor 649 1101> mark @fthoraTop
+	<anchor 202 1332> mark @noteTop
+	<anchor 464 4> mark @diesis
+	<anchor 968 1337> mark @yfesis
+	<anchor 800 -65> mark @klasmaBottom
+	<anchor 884 -242> mark @klasmaTop;
+  pos base [\oligonKentimaMiddle \oxeiaKentimaMiddle ] <anchor 667 125> mark @gorgonBottom
+	<anchor 930 641> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 783 801> mark @koronis
+	<anchor 802 -62> mark @endofonon
+	<anchor 172 753> mark @measureNumber
+	<anchor 792 913> mark @isonIndicator
+	<anchor 1970 -19> mark @heteronConnecting
+	<anchor 1087 227> mark @heteron
+	<anchor 1031 133> mark @omalon
+	<anchor 1471 133> mark @omalonConnecting
+	<anchor 820 165> mark @antikenoma
+	<anchor 803 30> mark @apli
+	<anchor 314 676> mark @noteTop
+	<anchor 788 507> mark @fthoraTop
+	<anchor 789 209> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 1316 619> mark @yfesis
+	<anchor 793 487> mark @klasmaTop
+	<anchor 708 459> mark @gorgonTop
+	<anchor 840 113> mark @psifiston;
+  pos base [\tripleChamili ] <anchor 630 1321> mark @yfenAbove
+	<anchor 659 -40> mark @yfenBelow
+	<anchor 670 1330> mark @koronis
+	<anchor 632 -37> mark @endofonon
+	<anchor 172 1363> mark @measureNumber
+	<anchor 528 1317> mark @isonIndicator
+	<anchor 1284 -19> mark @heteronConnecting
+	<anchor 1001 89> mark @omalonConnecting
+	<anchor 575 10> mark @apli
+	<anchor 378 171> mark @karasPiesma
+	<anchor 571 131> mark @antikenoma
+	<anchor 242 1363> mark @noteTop
+	<anchor 773 1235> mark @fthoraTop
+	<anchor 609 120> mark @fthoraBottom
+	<anchor 779 1197> mark @gorgonTop
+	<anchor 464 167> mark @diesis
+	<anchor 893 1227> mark @yfesis
+	<anchor 687 1107> mark @klasmaTop;
+  pos base [\martyriaNoteZoLow ] <anchor 517 590> mark @barline
+	<anchor 517 444> mark @agogi
+	<anchor 547 -40> mark @martyriaTop
+	<anchor 515 590> mark @fthoraTop;
+  pos base [\martyriaNoteNiLow ] <anchor 517 590> mark @barline
+	<anchor 517 374> mark @agogi
+	<anchor 515 -78> mark @martyriaTop
+	<anchor 515 592> mark @fthoraTop;
+  pos base [\martyriaNotePaLow ] <anchor 517 590> mark @barline
+	<anchor 517 474> mark @agogi
+	<anchor 517 -44> mark @martyriaTop
+	<anchor 516 670> mark @fthoraTop;
+  pos base [\martyriaNoteVouLow ] <anchor 517 590> mark @barline
+	<anchor 517 454> mark @agogi
+	<anchor 467 -40> mark @martyriaTop
+	<anchor 517 590> mark @fthoraTop;
+  pos base [\martyriaNoteGaLow ] <anchor 517 590> mark @barline
+	<anchor 517 444> mark @agogi
+	<anchor 517 590> mark @fthoraTop
+	<anchor 467 -40> mark @martyriaTop;
+  pos base [\martyriaNoteDiLow ] <anchor 517 590> mark @barline
+	<anchor 517 444> mark @agogi
+	<anchor 517 673> mark @fthoraTop
+	<anchor 533 -13> mark @martyriaTop;
+  pos base [\martyriaNoteKeLow ] <anchor 517 590> mark @barline
+	<anchor 517 444> mark @agogi
+	<anchor 559 672> mark @fthoraTop
+	<anchor 560 -80> mark @martyriaTop;
+  pos base [\martyriaNoteZo \martyriaNoteZoHigh ] <anchor 517 590> mark @barline
+	<anchor 517 541> mark @agogi
+	<anchor 527 -33> mark @martyriaBottom
+	<anchor 517 640> mark @fthoraTop;
+  pos base [\martyriaNotePa ] <anchor 517 590> mark @barline
+	<anchor 517 448> mark @agogi
+	<anchor 520 -47> mark @martyriaBottom
+	<anchor 517 590> mark @fthoraTop;
+  pos base [\martyriaNoteNi ] <anchor 517 590> mark @barline
+	<anchor 517 417> mark @agogi
+	<anchor 487 -30> mark @martyriaBottom
+	<anchor 517 588> mark @fthoraTop;
+  pos base [\martyriaNoteVou \martyriaNoteVouHigh ] <anchor 517 590> mark @barline
+	<anchor 517 523> mark @agogi
+	<anchor 453 -40> mark @martyriaBottom
+	<anchor 517 651> mark @fthoraTop;
+  pos base [\martyriaNoteNiHigh ] <anchor 517 590> mark @barline
+	<anchor 517 417> mark @agogi
+	<anchor 487 -30> mark @martyriaBottom
+	<anchor 517 608> mark @fthoraTop;
+  pos base [\martyriaNoteGa ] <anchor 517 590> mark @barline
+	<anchor 517 529> mark @agogi
+	<anchor 493 -27> mark @martyriaBottom
+	<anchor 515 613> mark @fthoraTop;
+  pos base [\martyriaNoteDi ] <anchor 517 590> mark @barline
+	<anchor 539 548> mark @agogi
+	<anchor 533 -27> mark @martyriaBottom
+	<anchor 540 653> mark @fthoraTop;
+  pos base [\martyriaNoteKe ] <anchor 517 590> mark @barline
+	<anchor 517 449> mark @agogi
+	<anchor 517 590> mark @fthoraTop
+	<anchor 507 -27> mark @martyriaBottom;
+  pos base [\martyriaNotePaHigh ] <anchor 517 590> mark @barline
+	<anchor 517 448> mark @agogi
+	<anchor 520 -47> mark @martyriaBottom
+	<anchor 517 610> mark @fthoraTop;
+  pos base [\martyriaNoteGaHigh ] <anchor 517 590> mark @barline
+	<anchor 517 529> mark @agogi
+	<anchor 493 -27> mark @martyriaBottom
+	<anchor 517 613> mark @fthoraTop;
+  pos base [\martyriaNoteDiHigh ] <anchor 517 590> mark @barline
+	<anchor 539 548> mark @agogi
+	<anchor 533 -27> mark @martyriaBottom
+	<anchor 538 653> mark @fthoraTop;
+  pos base [\martyriaNoteKeHigh ] <anchor 517 590> mark @barline
+	<anchor 517 449> mark @agogi
+	<anchor 515 590> mark @fthoraTop
+	<anchor 507 -27> mark @martyriaBottom;
+  pos base [\u1D0AD ] # Martyria Apostrofoi
+	<anchor 0 380> mark @martyriaTop
+	<anchor 250 175> mark @fanerosisMonofonias
+	<anchor 0 380> mark @agogi;
+  pos base [\u1D0A3 ] # Martyria Protos Below
+	<anchor 180 540> mark @martyriaTop
+	<anchor 180 540> mark @agogi;
+  pos base [\u1D0A8 ] # Martyria Tetartos Below
+	<anchor 300 500> mark @martyriaTop
+	<anchor 300 500> mark @agogi;
+  pos base [\u1D0A7 ] # Martyria Tritos Below
+	<anchor 300 460> mark @martyriaTop
+	<anchor 300 460> mark @agogi;
+  pos base [\u1D0A9 ] # Martyria Legetos Below
+	<anchor 275 500> mark @martyriaTop
+	<anchor 275 500> mark @agogi;
+  pos base [\u1D0B1 ] # Martyria Varys Below
+	<anchor 575 240> mark @martyriaTop
+	<anchor 575 240> mark @agogi;
+  pos base [\u1D0A5 ] # Martyria Primary Chromatic Below
+	<anchor 400 200> mark @martyriaTop
+	<anchor 400 200> mark @agogi;
+  pos base [\u1D0C7.toHardChromaticDiMartyria ]
+	<anchor 260 410> mark @martyriaTop
+	<anchor 260 410> mark @agogi;
+  pos base [\u1D0C4.toSoftChromaticKeMartyria ]
+	<anchor 240 410> mark @martyriaTop
+	<anchor 240 410> mark @agogi;
+  pos base [\u1D0E9 ] # Inverted Martyriae Pa Below
+	<anchor 200 350> mark @martyriaTop
+	<anchor 200 175> mark @agogi
+	<anchor 400 20> mark @martyriaAnoOxeia;
+  pos base [\u1D0EA ] # Inverted Martyriae Vou Below
+	<anchor 200 390> mark @martyriaTop
+	<anchor 215 215> mark @agogi
+	<anchor 380 20> mark @martyriaAnoOxeia;
+  pos base [\u1D0EB ] # Inverted Martyria Ga Below
+	<anchor 180 465> mark @martyriaTop
+	<anchor 233 184> mark @agogi
+	<anchor 420 13> mark @martyriaAnoOxeia
+    <anchor 450 154> mark @fanerosisMonofonias;
+  pos base [\u1D0EE ] # Inverted Martyria Zo Below
+	<anchor 180 465> mark @martyriaTop
+	<anchor 213 219> mark @agogi
+	<anchor 389 59> mark @martyriaAnoOxeia;
+  pos base [\u1D0ED \u1D0EF ] # Inverted Martyria Ke and Ni Below
+	<anchor 180 465> mark @martyriaTop
+	<anchor 191 169> mark @agogi
+	<anchor 370 -10> mark @martyriaAnoOxeia;
+  pos base [\u1D0EC ] # Inverted Martyria Di
+	<anchor 180 465> mark @martyriaTop
+	<anchor 226 215> mark @agogi
+	<anchor 365 15> mark @martyriaAnoOxeia;
+  pos base [\oligonKentimataBelow.alt01 \oxeiaKentimataBelow.alt01 ] <anchor 277 590> mark @barline
+	<anchor 686 801> mark @koronis
+	<anchor 172 753> mark @measureNumber
+	<anchor 384 160> mark @fthoraBottom
+	<anchor 400 133> mark @diesis
+	<anchor 763 505> mark @gorgonTop
+	<anchor 793 487> mark @klasmaTop
+	<anchor 1316 619> mark @yfesis
+	<anchor 743 515> mark @fthoraTop
+	<anchor 262 561> mark @noteTop
+	<anchor 710 877> mark @isonIndicator
+	<anchor 840 113> mark @psifiston;
+  pos base [\oligonKentimataAbove.alt01 ] <anchor 840 113> mark @psifiston; # TODO: Find out why this exists and maybe make an oxeia version
+  pos base [\petastiKentimaTripleYpsili ] <anchor 792 1439> mark @yfenAbove
+	<anchor 729 -40> mark @yfenBelow
+	<anchor 663 1383> mark @koronis
+	<anchor 772 -127> mark @endofonon
+	<anchor 1316 -19> mark @heteronConnecting
+	<anchor 1213 613> mark @yfesis
+	<anchor 795 140> mark @psifiston
+	<anchor 173 1240> mark @measureNumber
+	<anchor 664 1389> mark @isonIndicator
+	<anchor 1224 1296> mark @fthoraTop
+	<anchor 132 1272> mark @noteTop
+	<anchor 464 147> mark @diesis
+	<anchor 352 162> mark @fthoraBottom
+	<anchor 800 83> mark @klasmaBottom
+	<anchor 884 -94> mark @klasmaTop
+	<anchor 713 62> mark @antikenoma
+	<anchor 765 -80> mark @apli;
+  pos base [\leimma1 \leimma2 \leimma3 \leimma4 ] <anchor 585 563> mark @gorgonTop;
+  pos base [\modeNi \modePa \modeVou \modeGa \modeDi \modeKe \modeZo ] <anchor 634 940> mark @fthoraTop
+	<anchor 617 981> mark @modeTop;
+  pos base [\modePlagal ] <anchor 1170 234> mark @martyriaTop;
+  pos base [\u1D0AF \u1D0AF.withMApos ] <anchor 245 100> mark @fanerosisDifonias;
+  pos base [\barlineShortSingle \barlineShortDouble \barlineShortTheseos ] <anchor 80 1026> mark @measureNumber;
+  pos base [\barlineSingle \barlineDouble \barlineTheseos ] <anchor 110 960> mark @measureNumber;
+} markMarkPositioninglookup0;
+
+lookup markMarkPositioninglookupToLigature {
+  pos ligature [\oligonYporroiKentimata ]
+	<anchor 610 793> mark @gorgonTop
+	<anchor 473 814> mark @fthoraTop
+	<anchor 433 194> mark @fthoraBottom
+	<anchor 191 870> mark @fthoraTopSecondary
+	<anchor 191 -584> mark @fthoraTopTertiary
+    <anchor 965 1153> mark @diesis
+	<anchor 640 828> mark @yfesis
+    ligComponent
+    <anchor 965 1153> mark @diesisSecondary
+	<anchor 502 862> mark @barline
+	<anchor 640 828> mark @yfesisSecondary
+	<anchor 492 835> mark @fthoraTopSecondary
+	<anchor 930 1141> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 852 -37> mark @endofonon
+	<anchor 1594 -19> mark @heteronConnecting
+	<anchor 172 943> mark @measureNumber
+	<anchor 713 1147> mark @isonIndicator
+	<anchor 820 165> mark @antikenoma
+	<anchor 192 941> mark @noteTop
+	<anchor 1141 194> mark @fthoraBottom
+	<anchor 1093 767> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1433 719> mark @yfesis
+	<anchor 870 113> mark @psifiston
+	<anchor 835 920> mark @karasParacletike
+	<anchor 610 793> mark @gorgonSecondary
+	<anchor 1207 733> mark @gorgonTop;
+  pos ligature [\oxeiaYporroiKentimata ]
+    ligComponent
+	<anchor 610 793> mark @gorgonTop
+	<anchor 473 814> mark @fthoraTop
+	<anchor 846 194> mark @fthoraBottom
+	<anchor 191 870> mark @fthoraTopSecondary
+	<anchor 191 -584> mark @fthoraTopTertiary
+    <anchor 965 1153> mark @diesis
+	<anchor 640 828> mark @yfesis
+    ligComponent
+    <anchor 965 1153> mark @diesisSecondary
+	<anchor 502 862> mark @barline
+	<anchor 640 828> mark @yfesisSecondary
+	<anchor 492 835> mark @fthoraTopSecondary
+	<anchor 930 1141> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 852 -37> mark @endofonon
+	<anchor 1594 -19> mark @heteronConnecting
+	<anchor 172 943> mark @measureNumber
+	<anchor 713 1147> mark @isonIndicator
+	<anchor 820 165> mark @antikenoma
+	<anchor 192 941> mark @noteTop
+	<anchor 1001 194> mark @fthoraBottom
+	<anchor 1093 767> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1433 719> mark @yfesis
+	<anchor 870 113> mark @psifiston
+	<anchor 835 920> mark @karasParacletike
+	<anchor 610 793> mark @gorgonSecondary
+	<anchor 1207 733> mark @gorgonTop;
+  pos ligature [\oligonIsonKentimata ]
+    <anchor 1255 1101> mark @diesis
+	<anchor 930 776> mark @yfesis
+	<anchor 682 900> mark @fthoraTop
+	<anchor 1096 194> mark @fthoraBottom
+	<anchor 685 703> mark @gorgonTop
+    ligComponent
+    <anchor 1255 1101> mark @diesisSecondary
+	<anchor 930 776> mark @yfesisSecondary
+	<anchor 682 900> mark @fthoraTopSecondary
+	<anchor 1350 961> mark @yfenAbove
+	<anchor 1389 -40> mark @yfenBelow
+	<anchor 1102 -77> mark @endofonon
+	<anchor 2000 -19> mark @heteronConnecting
+	<anchor 685 703> mark @gorgonSecondary
+	<anchor 194 961> mark @measureNumber
+	<anchor 710 1157> mark @isonIndicator
+	<anchor 1053 113> mark @antikenoma
+	<anchor 342 921> mark @noteTop
+	<anchor 1330 194> mark @fthoraBottom
+	<anchor 1453 901> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1819 820> mark @yfesis
+	<anchor 1130 113> mark @psifiston
+	<anchor 1204 734> mark @karasParacletike
+	<anchor 1560 760> mark @gorgonTop;
+  pos ligature [\oxeiaIsonKentimata ]
+    ligComponent
+    <anchor 1255 1101> mark @diesis
+	<anchor 930 776> mark @yfesis
+	<anchor 682 900> mark @fthoraTop
+	<anchor 1096 194> mark @fthoraBottom
+	<anchor 685 703> mark @gorgonTop
+    ligComponent
+    <anchor 1255 1101> mark @diesisSecondary
+	<anchor 930 776> mark @yfesisSecondary
+	<anchor 682 900> mark @fthoraTopSecondary
+	<anchor 1350 961> mark @yfenAbove
+	<anchor 1389 -40> mark @yfenBelow
+	<anchor 1102 -77> mark @endofonon
+	<anchor 2000 -19> mark @heteronConnecting
+	<anchor 685 703> mark @gorgonSecondary
+	<anchor 194 961> mark @measureNumber
+	<anchor 710 1157> mark @isonIndicator
+	<anchor 1053 113> mark @antikenoma
+	<anchor 342 921> mark @noteTop
+	<anchor 1330 194> mark @fthoraBottom
+	<anchor 1453 901> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1819 820> mark @yfesis
+	<anchor 1130 113> mark @psifiston
+	<anchor 1204 734> mark @karasParacletike
+	<anchor 1560 760> mark @gorgonTop;
+  pos ligature [\oligonApostrofosKentimata ]
+    <anchor 965 1154> mark @diesis
+	<anchor 640 828> mark @yfesis
+	<anchor 410 813> mark @fthoraTop
+	<anchor 876 194> mark @fthoraBottom
+	<anchor 410 874> mark @gorgonTop
+    ligComponent
+    <anchor 965 1154> mark @diesisSecondary
+	<anchor 640 828> mark @yfesisSecondary
+	<anchor 410 813> mark @fthoraTopSecondary
+	<anchor 930 1111> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 862 -37> mark @endofonon
+	<anchor 1594 -19> mark @heteronConnecting
+	<anchor 410 874> mark @gorgonSecondary
+	<anchor 172 1013> mark @measureNumber
+	<anchor 707 1107> mark @isonIndicator
+	<anchor 820 165> mark @antikenoma
+	<anchor 272 1011> mark @noteTop
+	<anchor 1006 194> mark @fthoraBottom
+	<anchor 1087 789> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1437 760> mark @yfesis
+	<anchor 895 113> mark @psifiston
+	<anchor 820 743> mark @karasParacletike
+	<anchor 1213 740> mark @gorgonTop;
+  pos ligature [\oxeiaApostrofosKentimata ]
+    ligComponent
+    <anchor 965 1154> mark @diesis
+	<anchor 640 828> mark @yfesis
+	<anchor 410 813> mark @fthoraTop
+	<anchor 876 194> mark @fthoraBottom
+	<anchor 410 874> mark @gorgonTop
+    ligComponent
+    <anchor 965 1154> mark @diesisSecondary
+	<anchor 640 828> mark @yfesisSecondary
+	<anchor 410 813> mark @fthoraTopSecondary
+	<anchor 930 1111> mark @yfenAbove
+	<anchor 929 -40> mark @yfenBelow
+	<anchor 862 -37> mark @endofonon
+	<anchor 1594 -19> mark @heteronConnecting
+	<anchor 410 874> mark @gorgonSecondary
+	<anchor 172 1013> mark @measureNumber
+	<anchor 707 1107> mark @isonIndicator
+	<anchor 820 165> mark @antikenoma
+	<anchor 272 1011> mark @noteTop
+	<anchor 1006 194> mark @fthoraBottom
+	<anchor 1087 789> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1437 760> mark @yfesis
+	<anchor 895 113> mark @psifiston
+	<anchor 820 743> mark @karasParacletike
+	<anchor 1213 740> mark @gorgonTop;
+  pos ligature [\oligonElafronKentimata ]
+    <anchor 1325 1163> mark @diesis
+	<anchor 1000 838> mark @yfesis
+	<anchor 492 912> mark @fthoraTop
+	<anchor 1136 194> mark @fthoraBottom
+	<anchor 638 939> mark @gorgonTop
+    ligComponent
+    <anchor 1325 1163> mark @diesisSecondary
+	<anchor 1000 838> mark @yfesisSecondary
+	<anchor 492 912> mark @fthoraTopSecondary
+	<anchor 638 939> mark @gorgonSecondary
+	<anchor 1280 1061> mark @yfenAbove
+	<anchor 1349 -40> mark @yfenBelow
+	<anchor 1142 -37> mark @endofonon
+	<anchor 2050 -19> mark @heteronConnecting
+	<anchor 1647 733> mark @gorgonTop
+	<anchor 172 1043> mark @measureNumber
+	<anchor 710 1057> mark @isonIndicator
+	<anchor 1093 153> mark @antikenoma
+	<anchor 242 1041> mark @noteTop
+	<anchor 1428 194> mark @fthoraBottom
+	<anchor 1523 825> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1829 761> mark @yfesis
+	<anchor 1200 770> mark @karasParacletike
+	<anchor 1140 113> mark @psifiston;
+  pos ligature [\oxeiaElafronKentimata ]
+    ligComponent
+    <anchor 1325 1163> mark @diesis
+	<anchor 1000 838> mark @yfesis
+	<anchor 492 912> mark @fthoraTop
+	<anchor 1136 194> mark @fthoraBottom
+	<anchor 638 939> mark @gorgonTop
+    ligComponent
+    <anchor 1325 1163> mark @diesisSecondary
+	<anchor 1000 838> mark @yfesisSecondary
+	<anchor 492 912> mark @fthoraTopSecondary
+	<anchor 638 939> mark @gorgonSecondary
+	<anchor 1280 1061> mark @yfenAbove
+	<anchor 1349 -40> mark @yfenBelow
+	<anchor 1142 -37> mark @endofonon
+	<anchor 2050 -19> mark @heteronConnecting
+	<anchor 1647 733> mark @gorgonTop
+	<anchor 172 1043> mark @measureNumber
+	<anchor 710 1057> mark @isonIndicator
+	<anchor 1093 153> mark @antikenoma
+	<anchor 242 1041> mark @noteTop
+	<anchor 1428 194> mark @fthoraBottom
+	<anchor 1523 825> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1829 761> mark @yfesis
+	<anchor 1200 770> mark @karasParacletike
+	<anchor 1140 113> mark @psifiston;
+  pos ligature [\oligonElafronApostrofosKentimata ]
+    <anchor 1327 1137> mark @diesis
+	<anchor 1002 812> mark @yfesis
+	<anchor 492 912> mark @fthoraTop
+	<anchor 1126 194> mark @fthoraBottom
+	<anchor 638 939> mark @gorgonTop
+    ligComponent
+    <anchor 1327 1137> mark @diesisSecondary
+	<anchor 1002 812> mark @yfesisSecondary
+	<anchor 492 912> mark @fthoraTopSecondary
+	<anchor 638 939> mark @gorgonSecondary
+	<anchor 1240 1061> mark @yfenAbove
+	<anchor 1269 -40> mark @yfenBelow
+	<anchor 1122 -37> mark @endofonon
+	<anchor 2050 -19> mark @heteronConnecting
+	<anchor 172 1013> mark @measureNumber
+	<anchor 710 1010> mark @isonIndicator
+	<anchor 820 165> mark @antikenoma
+	<anchor 312 1011> mark @noteTop
+	<anchor 1415 194> mark @fthoraBottom
+	<anchor 1527 745> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1868 766> mark @yfesis
+	<anchor 1140 113> mark @psifiston
+	<anchor 1200 770> mark @karasParacletike
+	<anchor 1647 733> mark @gorgonTop;
+  pos ligature [\oxeiaElafronApostrofosKentimata ]
+    ligComponent
+    <anchor 1327 1137> mark @diesis
+	<anchor 1002 812> mark @yfesis
+	<anchor 492 912> mark @fthoraTop
+	<anchor 1126 194> mark @fthoraBottom
+	<anchor 638 939> mark @gorgonTop
+    ligComponent
+    <anchor 1327 1137> mark @diesisSecondary
+	<anchor 1002 812> mark @yfesisSecondary
+	<anchor 492 912> mark @fthoraTopSecondary
+	<anchor 638 939> mark @gorgonSecondary
+	<anchor 1240 1061> mark @yfenAbove
+	<anchor 1269 -40> mark @yfenBelow
+	<anchor 1122 -37> mark @endofonon
+	<anchor 2050 -19> mark @heteronConnecting
+	<anchor 172 1013> mark @measureNumber
+	<anchor 710 1010> mark @isonIndicator
+	<anchor 820 165> mark @antikenoma
+	<anchor 312 1011> mark @noteTop
+	<anchor 1415 194> mark @fthoraBottom
+	<anchor 1527 745> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1868 766> mark @yfesis
+	<anchor 1140 113> mark @psifiston
+	<anchor 1200 770> mark @karasParacletike
+	<anchor 1647 733> mark @gorgonTop;
+  pos ligature [\oligonRunningElafronKentimata ]
+	<anchor 1595 1133> mark @diesis
+	<anchor 1270 808> mark @yfesis
+	<anchor 832 852> mark @fthoraTop
+	<anchor 1206 194> mark @fthoraBottom
+	<anchor 948 889> mark @gorgonTop
+    ligComponent
+    <anchor 701 1183> mark @diesisTertiary
+	<anchor 1595 1133> mark @diesisSecondary
+	<anchor 459 856> mark @barline
+	<anchor 376 858> mark @yfesisTertiary
+	<anchor 1270 808> mark @yfesisSecondary
+	<anchor 188 854> mark @fthoraTopTertiary
+	<anchor 832 852> mark @fthoraTopSecondary
+	<anchor 948 889> mark @gorgonSecondary
+	<anchor 1320 1061> mark @yfenAbove
+	<anchor 1389 -40> mark @yfenBelow
+	<anchor 1212 -37> mark @endofonon
+	<anchor 2150 -19> mark @heteronConnecting
+	<anchor 662 913> mark @measureNumber
+	<anchor 710 1077> mark @isonIndicator
+	<anchor 1253 153> mark @antikenoma
+	<anchor 732 921> mark @noteTop
+	<anchor 1518 194> mark @fthoraBottom
+	<anchor 1735 743> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 2033 829> mark @yfesis
+	<anchor 1220 113> mark @psifiston
+	<anchor 1398 770> mark @karasParacletike
+	<anchor 1860 740> mark @gorgonTop;
+  pos ligature [\oxeiaApostrofosElafronKentimata ]
+    ligComponent
+	<anchor 1595 1133> mark @diesis
+	<anchor 1270 808> mark @yfesis
+	<anchor 832 852> mark @fthoraTop
+	<anchor 1206 194> mark @fthoraBottom
+	<anchor 948 889> mark @gorgonTop
+    ligComponent
+    <anchor 701 1183> mark @diesisTertiary
+	<anchor 1595 1133> mark @diesisSecondary
+	<anchor 459 856> mark @barline
+	<anchor 376 858> mark @yfesisTertiary
+	<anchor 1270 808> mark @yfesisSecondary
+	<anchor 188 854> mark @fthoraTopTertiary
+	<anchor 832 852> mark @fthoraTopSecondary
+	<anchor 948 889> mark @gorgonSecondary
+	<anchor 1320 1061> mark @yfenAbove
+	<anchor 1389 -40> mark @yfenBelow
+	<anchor 1212 -37> mark @endofonon
+	<anchor 2150 -19> mark @heteronConnecting
+	<anchor 662 913> mark @measureNumber
+	<anchor 710 1077> mark @isonIndicator
+	<anchor 1253 153> mark @antikenoma
+	<anchor 732 921> mark @noteTop
+	<anchor 1518 194> mark @fthoraBottom
+	<anchor 1735 743> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 2033 829> mark @yfesis
+	<anchor 1220 113> mark @psifiston
+	<anchor 1398 770> mark @karasParacletike
+	<anchor 1860 740> mark @gorgonTop;
+  pos ligature [\oligonChamiliKentimata ]
+    <anchor 1327 1137> mark @diesis
+	<anchor 1002 812> mark @yfesis
+	<anchor 794 902> mark @fthoraTop
+	<anchor 1116 194> mark @fthoraBottom
+	<anchor 795 910> mark @gorgonTop
+    ligComponent
+    <anchor 1327 1137> mark @diesisSecondary
+	<anchor 1002 812> mark @yfesisSecondary
+	<anchor 794 902> mark @fthoraTopSecondary
+	<anchor 795 910> mark @gorgonSecondary
+	<anchor 1260 1061> mark @yfenAbove
+	<anchor 1299 -40> mark @yfenBelow
+	<anchor 1112 -37> mark @endofonon
+	<anchor 2000 -19> mark @heteronConnecting
+	<anchor 172 993> mark @measureNumber
+	<anchor 710 1010> mark @isonIndicator
+	<anchor 1100 173> mark @antikenoma
+	<anchor 372 991> mark @noteTop
+	<anchor 1325 194> mark @fthoraBottom
+	<anchor 1459 751> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1828 736> mark @yfesis
+	<anchor 1130 113> mark @psifiston
+	<anchor 1133 773> mark @karasParacletike
+	<anchor 1580 740> mark @gorgonTop;
+  pos ligature [\oxeiaChamiliKentimata ]
+    ligComponent
+    <anchor 1327 1137> mark @diesis
+	<anchor 1002 812> mark @yfesis
+	<anchor 794 902> mark @fthoraTop
+	<anchor 1116 194> mark @fthoraBottom
+	<anchor 795 910> mark @gorgonTop
+    ligComponent
+    <anchor 1327 1137> mark @diesisSecondary
+	<anchor 1002 812> mark @yfesisSecondary
+	<anchor 794 902> mark @fthoraTopSecondary
+	<anchor 795 910> mark @gorgonSecondary
+	<anchor 1260 1061> mark @yfenAbove
+	<anchor 1299 -40> mark @yfenBelow
+	<anchor 1112 -37> mark @endofonon
+	<anchor 2000 -19> mark @heteronConnecting
+	<anchor 172 993> mark @measureNumber
+	<anchor 710 1010> mark @isonIndicator
+	<anchor 1100 173> mark @antikenoma
+	<anchor 372 991> mark @noteTop
+	<anchor 1325 194> mark @fthoraBottom
+	<anchor 1459 751> mark @fthoraTop
+	<anchor 400 133> mark @diesis
+	<anchor 1828 736> mark @yfesis
+	<anchor 1130 113> mark @psifiston
+	<anchor 1133 773> mark @karasParacletike
+	<anchor 1580 740> mark @gorgonTop;
+  pos ligature [\apostrofosSyndesmos ]
+	<anchor 330 340> mark @diesis
+	<anchor 660 530> mark @yfesis
+	<anchor 587 642> mark @fthoraTop
+    ligComponent
+    <anchor 930 891> mark @yfenAbove
+	<anchor 929 -400> mark @yfenBelow
+	<anchor 630 881> mark @koronis
+	<anchor 944 -424> mark @apli
+	<anchor 183 243> mark @karasPiesma
+	<anchor 172 803> mark @measureNumber
+	<anchor 630 895> mark @isonIndicator
+	<anchor 194 699> mark @noteTop
+	<anchor 1135 -520> mark @fthoraTop
+	<anchor 1200 -90> mark @fthoraTop
+	<anchor 660 -16> mark @fthoraBottom
+	<anchor 938 193> mark @gorgonTop
+	<anchor 820 -90> mark @diesis # <anchor 333 127> mark @diesis
+	<anchor 1054 80> mark @yfesis;
+  pos ligature [\isonApostrofos ]
+	<anchor 333 590> mark @yfesis
+	<anchor 400 133> mark @diesis
+	<anchor 644 507> mark @fthoraTop
+	<anchor 420 153> mark @fthoraBottom
+    ligComponent
+    <anchor 690 891> mark @yfenAbove
+	<anchor 754 -236> mark @yfenBelow
+	<anchor 630 881> mark @koronis
+	<anchor 1244 -424> mark @apli
+	<anchor 172 773> mark @measureNumber
+	<anchor 630 895> mark @isonIndicator
+	<anchor 322 661> mark @noteTop
+	<anchor 1295 146> mark @fthoraTop
+	<anchor 854 -24> mark @fthoraBottom
+	<anchor 1164 453> mark @gorgonTop
+	<anchor 156 216> mark @gorgonBottom
+	<anchor 1045 -80> mark @diesis
+	<anchor 1199 143> mark @yfesis;
+} markMarkPositioninglookupToLigature;
+
+lookup mkmkMarktoMarklookup1 {
+  lookupflag 0;
+  markClass [\barlineShortSingleAbove \barlineShortDoubleAbove \barlineShortTheseosAbove ] <anchor 0 590> @barlineAboveFthora;
+  markClass [\barlineSingleAbove \barlineDoubleAbove \barlineTheseosAbove ] <anchor 0 0> @barlineAboveFthora;
+  markClass [\agogiTrueAgogiMesiAbove ] <anchor 1 -200> @agogiAboveFthora;
+  markClass [\agogiPoliArgiAbove ] <anchor 1 -200> @agogiAboveFthora;
+  markClass [\agogiArgoteriAbove ] <anchor -2 -205> @agogiAboveFthora;
+  markClass [\agogiArgiAbove ] <anchor -1 -200> @agogiAboveFthora;
+  markClass [\agogiMetriaAbove ] <anchor -0 -200> @agogiAboveFthora;
+  markClass [\agogiMesiAbove ] <anchor 3 -207> @agogiAboveFthora;
+  markClass [\agogiGorgiAbove ] <anchor 4 -207> @agogiAboveFthora;
+  markClass [\agogiGorgoteriAbove ] <anchor -0 -205> @agogiAboveFthora;
+  markClass [\agogiPoliGorgiAbove ] <anchor -1 -198> @agogiAboveFthora;
+  pos mark [\fthoraDiatonicNiLowAbove ] <anchor 0 1300> mark @barlineAboveFthora
+	<anchor 0 1126> mark @agogiAboveFthora;
+  pos mark [\fthoraDiatonicPaAbove ] <anchor 0 1240> mark @barlineAboveFthora
+	<anchor 0 1076> mark @agogiAboveFthora;
+  pos mark [\fthoraDiatonicVouAbove ] <anchor 0 1457> mark @barlineAboveFthora
+	<anchor 0 1296> mark @agogiAboveFthora;
+  pos mark [\fthoraDiatonicGaAbove ] <anchor 0 1366> mark @barlineAboveFthora
+	<anchor 0 1216> mark @agogiAboveFthora;
+  pos mark [\fthoraDiatonicDiAbove ] <anchor 0 1249> mark @barlineAboveFthora
+	<anchor 0 1146> mark @agogiAboveFthora;
+  pos mark [\fthoraDiatonicKeAbove ] <anchor 0 1387> mark @barlineAboveFthora
+	<anchor 0 1226> mark @agogiAboveFthora;
+  pos mark [\fthoraDiatonicZoAbove ] <anchor 0 1453> mark @barlineAboveFthora
+	<anchor 0 1356> mark @agogiAboveFthora;
+  pos mark [\fthoraDiatonicNiHighAbove ] <anchor 0 1305> mark @barlineAboveFthora
+	<anchor 0 1226> mark @agogiAboveFthora;
+  pos mark [\fthoraHardChromaticPaAbove ] <anchor 0 1285> mark @barlineAboveFthora
+	<anchor 0 1125> mark @agogiAboveFthora;
+  pos mark [\fthoraHardChromaticDiAbove ] <anchor 0 1240> mark @barlineAboveFthora
+	<anchor 0 1126> mark @agogiAboveFthora;
+  pos mark [\fthoraSoftChromaticDiAbove ] <anchor 0 1305> mark @barlineAboveFthora
+	<anchor 0 1146> mark @agogiAboveFthora;
+  pos mark [\fthoraSoftChromaticKeAbove ] <anchor 0 1242> mark @barlineAboveFthora
+	<anchor 0 1196> mark @agogiAboveFthora;
+  pos mark [\fthoraEnharmonicAbove ] <anchor 0 1298> mark @barlineAboveFthora
+	<anchor 0 1146> mark @agogiAboveFthora;
+  pos mark [\chroaZygosAbove ] <anchor 0 1241> mark @barlineAboveFthora
+	<anchor 0 1196> mark @agogiAboveFthora;
+  pos mark [\chroaKlitonAbove ] <anchor 0 1305> mark @barlineAboveFthora
+	<anchor 0 1225> mark @agogiAboveFthora;
+  pos mark [\diesisGenikiAbove ] <anchor 0 1306> mark @agogiAboveFthora
+	<anchor 0 1430> mark @barlineAboveFthora;
+  pos mark [\yfesisGenikiAbove ] <anchor 0 1176> mark @agogiAboveFthora
+	<anchor 0 1262> mark @barlineAboveFthora;
+  pos mark [\chroaSpathiAbove ] <anchor 0 1300> mark @barlineAboveFthora
+	<anchor 0 1136> mark @agogiAboveFthora;
+  pos mark [\martyriaTick ] # Doubling up the AnoOxeias
+	<anchor 176 345> mark @martyriaAnoOxeia;
+  pos mark [\karasParacletike ]
+	<anchor -412 1102> mark @fthoraTop;
+  pos mark [\barlineShortSingleAbove \barlineShortDoubleAbove \barlineShortTheseosAbove ] <anchor 0 1080> mark @measureNumber;
+  pos mark [\barlineSingleAbove \barlineDoubleAbove \barlineTheseosAbove ] <anchor 0 950> mark @measureNumber;
+} mkmkMarktoMarklookup1;
+
+@wideFthochraeTop = [\fthoraHardChromaticPaAbove \fthoraSoftChromaticDiAbove \chroaSpathiAbove];
+@tallFthochraeTop = [\fthoraDiatonicVouAbove \fthoraDiatonicZoAbove];
+@fthochraeTop = [\fthoraDiatonicNiLowAbove \fthoraDiatonicPaAbove
+    \fthoraDiatonicGaAbove \fthoraDiatonicDiAbove \fthoraDiatonicKeAbove
+    \fthoraDiatonicNiHighAbove \fthoraHardChromaticDiAbove
+    \fthoraSoftChromaticKeAbove \fthoraEnharmonicAbove @tallFthochraeTop
+    @wideFthochraeTop ];
+@wideFthochraeBottom = [\fthoraHardChromaticPaBelow \fthoraSoftChromaticDiBelow \chroaSpathiBelow];
+@tallFthochraeBottom = [\fthoraDiatonicVouBelow \fthoraDiatonicZoBelow];
+@fthochraeBottom = [\fthoraDiatonicNiLowBelow \fthoraDiatonicPaBelow
+    \fthoraDiatonicGaBelow \fthoraDiatonicDiBelow \fthoraDiatonicKeBelow
+    \fthoraDiatonicNiHighBelow \fthoraHardChromaticDiBelow
+    \fthoraSoftChromaticKeBelow \fthoraEnharmonicBelow @tallFthochraeBottom
+    @wideFthochraeBottom ];
+
+lookup markConditionalLigatureTallFthoraPsifiston {
+  pos ligature [\oligonYporroiKentimata \oxeiaYporroiKentimata ]
+	<anchor 36 116> mark @fthoraBottom
+    ligComponent
+	<anchor 1590 56> mark @fthoraBottom;
+} markConditionalLigatureTallFthoraPsifiston;
+
+lookup markConditionalLigatureWideFthoraPsifiston {
+  pos ligature [\oligonYporroiKentimata \oxeiaYporroiKentimata ]
+	<anchor 142 -80> mark @fthoraBottom
+    ligComponent
+	<anchor 1374 -106> mark @fthoraBottom;
+} markConditionalLigatureWideFthoraPsifiston;
+
+lookup markConditionsLigatureFthoraPsifiston {
+  lookupflag UseMarkFilteringSet [\oligonYporroiKentimata \oxeiaYporroiKentimata @fthochraeBottom \psifiston];
+  pos [\oligonYporroiKentimata \oxeiaYporroiKentimata ] @tallFthochraeBottom'lookup markConditionalLigatureTallFthochraPsifiston @tallFthochraeBottom \psifiston;
+  pos [\oligonYporroiKentimata \oxeiaYporroiKentimata ] @tallFthochraeBottom @tallFthochraeBottom'lookup markConditionalLigatureTallFthochraPsifiston \psifiston;
+  pos [\oligonYporroiKentimata \oxeiaYporroiKentimata ] @tallFthochraeBottom'lookup markConditionalLigatureTallFthochraPsifiston \psifiston;
+  pos [\oligonYporroiKentimata \oxeiaYporroiKentimata ] @fthochraeBottom'lookup markConditionalLigatureWideFthochraPsifiston @fthochraeBottom \psifiston;
+  pos [\oligonYporroiKentimata \oxeiaYporroiKentimata ] @fthochraeBottom @fthochraeBottom'lookup markConditionalLigatureWideFthochraPsifiston \psifiston;
+  pos [\oligonYporroiKentimata \oxeiaYporroiKentimata ] @fthochraeBottom'lookup markConditionalLigatureWideFthochraPsifiston \psifiston;
+} markConditionsLigatureFthoraPsifiston;
+
+feature mark {
+
+ script DFLT;
+     language dflt ;
+      lookup markMarkPositioninglookup0;
+      lookup markMarkPositioninglookupToLigature;
+      lookup markConditionsLigatureFthoraPsifiston;
+
+ script byzm;
+     language dflt ;
+      lookup markMarkPositioninglookup0;
+      lookup markMarkPositioninglookupToLigature;
+      lookup markConditionsLigatureFthoraPsifiston;
+
+ script latn;
+     language dflt ;
+      lookup markMarkPositioninglookup0;
+      lookup markMarkPositioninglookupToLigature;
+      lookup markConditionsLigatureFthoraPsifiston;
+} mark;
+
+feature mkmk {
+
+ script DFLT;
+     language dflt ;
+      lookup mkmkMarktoMarklookup1;
+
+ script byzm;
+     language dflt ;
+      lookup mkmkMarktoMarklookup1;
+
+ script latn;
+     language dflt ;
+      lookup mkmkMarktoMarklookup1;
+} mkmk;
+#Mark attachment classes (defined in GDEF, used in lookupflags)
+
+@GDEF_Simple = [\u1D046 \u1D047 \u1D049 \space \u1D04E \u1D04F \u1D050
+	\u1D055 \u1D056 \u1D051 \u1D053 \u1D058 \u1D05B \u1D05C \u1D05A \u1D07E \u1D07F 
+	\u1D085 \u1D086 \u1D0A3 \u1D0A7 \u1D0A5 \u1D0A8 \u1D0A9 \u1D0D4 \u1D0D0 \u1D0F1 
+	\u1D0F3 \u1D0F2 \u1D0F4 \u1D0F5 \u1D0F0 \ison \oligonKentimaBelow \oligon 
+	\oligonKentimaAbove \oligonYpsiliRight \oligonYpsiliLeft 
+	\oligonKentimaYpsiliRight \oligonKentimaYpsiliMiddle \oligonDoubleYpsili 
+	\oligonKentimataDoubleYpsili \isonApostrofos \apostrofosSyndesmos \yporroi 
+	\runningElafron \elafron \elafronApostrofos \chamiliApostrofos \chamili 
+	\chamiliElafron \chamiliElafronApostrofos \doubleChamili \petastiIson 
+	\petasti \petastiOligon \petastiKentima \petastiYpsiliRight 
+	\petastiYpsiliLeft \petastiKentimaYpsiliRight \petastiKentimaYpsiliMiddle 
+	\petastiApostrofos \petastiElafron \petastiElafronApostrofos 
+	\petastiChamili \kentima \kentimata \oligonKentimataAbove 
+	\oligonIsonKentimata \oligonYpsiliLeftKentimata \oligonApostrofosKentimata 
+	\oligonElafronKentimata \oligonYporroiKentimata \oligonKentimataBelow 
+	\oligonKentimaTripleYpsili \oligonIson \oligonElafron 
+	\petastiRunningElafron \oligonApostrofos \oligonYporroi \petastiYporroi 
+	\oligonRunningElafronKentimata \oligonElafronApostrofosKentimata 
+	\oligonYpsiliRightKentimata \petastiChamiliApostrofos \apostrofos 
+	\oligonKentimataTripleYpsili \doubleChamiliElafronApostrofos 
+	\doubleChamiliElafron \doubleChamiliApostrofos 
+	\petastiKentimataDoubleYpsili \petastiKentimaDoubleYpsiliRight 
+	\petastiKentimaDoubleYpsiliLeft \petastiKentimataTripleYpsili 
+	\petastiTripleYpsili \oligonKentimaDoubleYpsiliRight 
+	\oligonKentimaDoubleYpsiliLeft \oligonTripleYpsili 
+	\oligonElafronApostrofos \petastiDoubleYpsili \oligonChamili 
+	\petastiChamiliElafron \petastiChamiliElafronApostrofos 
+	\petastiDoubleChamili \petastiDoubleChamiliApostrofos \agogiPoliArgi \agogiTrueAgogiMesi
+	\agogiMesi \tripleChamili \agogiArgoteri \agogiGorgi \agogiArgi 
+	\agogiGorgoteri \agogiPoliGorgi \agogiMetria \martyriaNoteZoLow 
+	\martyriaNoteNiLow \martyriaNotePaLow \martyriaNoteVouLow 
+	\martyriaNoteGaLow \martyriaNoteDiLow \martyriaNoteKeLow \martyriaNoteZo 
+	\martyriaNotePa \martyriaNoteNi \martyriaNoteVou \martyriaNoteGa 
+	\martyriaNoteDi \martyriaNoteKe \oligonKentimataBelow.alt01
+	\oligonKentimataAbove.alt01 \petastiKentimaTripleYpsili \vareia \stavros 
+	\leimma1 \leimma2 \leimma3 \leimma4 \modeThirdNana \modeThird \modePlagalFirst 
+	\modeFourth \modePlagalSecond \modePlagalFourth \modeNi \modePa 
+	\modeAlphaCapital \modeBetaCapital \modeGammaCapital \modeDeltaCapital 
+	\modeVarys \modePlagal \modeWordVarys \modeAlpha \modeBeta \modeWordEchos 
+	\modeGamma \modeDelta \modeFirst \modeSecond \modeLegetos \modeVarys2 \modeVou 
+	\modeGa \modeDi \modeKe \modeZo \gorthmikon \pelastikon \barlineSingle 
+	\barlineDouble \barlineTheseos \barlineShortSingle \barlineShortDouble 
+	\barlineShortTheseos \breath \leimmaDot \uni200D \modeFirst.salt01 
+	\modeFourth.salt01 \oligonKentimataBelow.alt02 \oligonChamiliKentimata 
+	\u1D0B4 \u1D0B5 \u1D0B6 \u1D0BA \u1D0BB \u1D0BD \u1D0BF \u1D0C0 \u1D0C1 \u1D0C2 
+	\u1D0C3 \u1D0C4 \u1D0C5 \u1D0C7 \u1D0C8 \u1D0C9 \u1D0CA \u1D0CB \uniE1D0 \uniE1D1 
+	\uniE1D2 \uniE1D3 \uniE1D4 \uniE1D5 \uniE1D6 \uniE1D7 \uniE1D8 \uniE1D9 \uniE1DA 
+	\uniE1DB \uniE1DC \uniE1DD \uniE1DE \uniE1DF ];
+@GDEF_Ligature = [\oligonKentimaMiddleKentimata \oligonKentimaMiddle 
+	\martyriaNoteNiHigh \martyriaNoteZoHigh \martyriaNotePaHigh 
+	\martyriaNoteVouHigh \martyriaNoteGaHigh \martyriaNoteDiHigh 
+	\martyriaNoteKeHigh ];
+@GDEF_Mark = [\u1D08F \u1D090 \u1D091 \u1D092 \u1D093
+    \u1D094 \u1D095 \u1D096 \u1D097 \u1D098 \u1D099
+    \gorgonAbove \gorgonBelow \gorgonDottedLeft \digorgon
+	\gorgonDottedRight \digorgonDottedLeftBelow \digorgonDottedLeftAbove
+	\antikenoma.alt01 \psifiston \antikenoma \omalon \omalonConnecting \heteron
+	\heteronConnecting \klasmaAbove \klasmaBelow \karasTsakisma \karasTsakismaBelow \apli \dipli \tripli \tetrapli
+	\digorgonDottedRight \trigorgon \trigorgonDottedLeftBelow 
+	\trigorgonDottedLeftAbove \trigorgonDottedRight \argon \diargon \triargon 
+	\martyriaTick \martyriaZoBelow \martyriaDeltaBelow \martyriaAlphaBelow
+	\martyriaLegetosBelow \martyriaNanaBelow \martyriaDeltaDottedBelow 
+	\martyriaAlphaDottedBelow \martyriaHardChromaticPaBelow 
+	\martyriaHardChromaticDiBelow \martyriaSoftChromaticDiBelow 
+	\martyriaSoftChromaticKeBelow \martyriaZygosBelow \martyriaZoAbove 
+	\martyriaDeltaAbove \martyriaAlphaAbove \martyriaLegetosAbove 
+	\martyriaNanaAbove \martyriaDeltaDottedAbove \martyriaAlphaDottedAbove 
+	\martyriaHardChromaticPaAbove \martyriaHardChromaticDiAbove 
+	\martyriaSoftChromaticDiAbove \martyriaSoftChromaticKeAbove 
+	\martyriaZygosAbove \fthoraDiatonicNiLowAbove \fthoraDiatonicPaAbove 
+	\fthoraDiatonicVouAbove \fthoraDiatonicGaAbove \fthoraDiatonicDiAbove 
+	\fthoraDiatonicKeAbove \fthoraDiatonicZoAbove \fthoraDiatonicNiHighAbove 
+	\fthoraHardChromaticPaAbove \fthoraHardChromaticDiAbove 
+	\fthoraSoftChromaticDiAbove \fthoraSoftChromaticKeAbove 
+	\fthoraEnharmonicAbove \chroaZygosAbove \chroaKlitonAbove 
+	\fthoraDiatonicNiLowBelow \fthoraDiatonicPaBelow \fthoraDiatonicVouBelow 
+	\fthoraDiatonicGaBelow \fthoraDiatonicDiBelow \fthoraDiatonicKeBelow 
+	\fthoraDiatonicZoBelow \fthoraDiatonicNiHighBelow 
+	\fthoraHardChromaticPaBelow \fthoraHardChromaticDiBelow 
+	\fthoraSoftChromaticDiBelow \fthoraSoftChromaticKeBelow 
+	\fthoraEnharmonicBelow \chroaZygosBelow \chroaKlitonBelow \diesis2 \diesis4 
+	\diesis6 \diesis8 \yfesis2 \yfesis4 \yfesis6 \yfesis8 \diesisGenikiAbove 
+	\yfesisGenikiAbove \diesisGenikiBelow \yfesisGenikiBelow \noteIndicatorNi 
+	\noteIndicatorPa \noteIndicatorVou \noteIndicatorGa \noteIndicatorDi 
+	\noteIndicatorKe \noteIndicatorZo \chroaSpathiBelow \chroaSpathiAbove 
+	\measureNumber3 \measureNumber4 \measureNumber5 \measureNumber6 
+	\measureNumber7 \measureNumber8 \measureNumber2 \isonIndicatorDiLow 
+	\isonIndicatorUnison \isonIndicatorKeLow \isonIndicatorZo \isonIndicatorNi 
+	\isonIndicatorPa \isonIndicatorVou \isonIndicatorGa \isonIndicatorDi 
+	\isonIndicatorKe \isonIndicatorZoHigh \modeOligonYpsili 
+	\modeOligonKentimaAbove \modeElafron \modeRunningElafron \koronis 
+	\gorgonSecondary \endofonon \yfenAbove \yfenBelow \gorgonDottedLeftSecondary 
+	\gorgonDottedRightSecondary \digorgonSecondary 
+	\digorgonDottedLeftBelowSecondary \digorgonDottedRightSecondary 
+	\trigorgonSecondary \trigorgonDottedLeftBelowSecondary 
+	\trigorgonDottedRightSecondary \psifiston.salt01 \heteronConnecting.salt01 
+	\agogiPoliArgiAbove \agogiTrueAgogiMesiAbove \agogiArgoteriAbove \agogiArgiAbove \agogiMetriaAbove
+	\agogiMesiAbove \agogiGorgiAbove \agogiGorgoteriAbove \agogiPoliGorgiAbove 
+	\fthoraDiatonicNiLowSecondary \fthoraDiatonicPaSecondary 
+	\fthoraDiatonicVouSecondary \fthoraDiatonicGaSecondary 
+	\fthoraDiatonicDiSecondary \fthoraDiatonicKeSecondary 
+	\fthoraDiatonicZoSecondary \fthoraDiatonicNiHighSecondary 
+	\fthoraHardChromaticPaSecondary \fthoraHardChromaticDiSecondary 
+	\fthoraSoftChromaticDiSecondary \fthoraSoftChromaticKeSecondary 
+	\fthoraEnharmonicSecondary \chroaZygosSecondary \chroaKlitonSecondary 
+	\chroaSpathiSecondary \fthoraDiatonicNiLowTertiary 
+	\fthoraDiatonicPaTertiary \fthoraDiatonicVouTertiary 
+	\fthoraDiatonicGaTertiary \fthoraDiatonicDiTertiary 
+	\fthoraDiatonicKeTertiary \fthoraDiatonicZoTertiary 
+	\fthoraDiatonicNiHighTertiary \fthoraHardChromaticPaTertiary 
+	\fthoraHardChromaticDiTertiary \fthoraSoftChromaticDiTertiary 
+	\fthoraSoftChromaticKeTertiary \fthoraEnharmonicTertiary 
+	\chroaZygosTertiary \chroaKlitonTertiary \chroaSpathiTertiary
+    \karasThemaAploun \karasThemaAplounBelow \karasThemaAplounSecondary \karasThemaAplounTertiary \karasParacletike
+	\yfesis2Secondary \yfesis4Secondary \yfesis6Secondary \yfesis8Secondary 
+	\yfesis2Tertiary \yfesis4Tertiary \yfesis6Tertiary \yfesis8Tertiary 
+	\yfesisGenikiSecondary \yfesisGenikiTertiary \diesisGenikiSecondary 
+	\diesisGenikiTertiary \digorgonDottedLeftSecondary 
+	\trigorgonDottedLeftSecondary \psifiston.alt01 \barlineShortSingleAbove 
+	\barlineSingleAbove \barlineDoubleAbove \barlineTheseosAbove 
+	\barlineShortDoubleAbove \barlineShortTheseosAbove \diesis2Secondary 
+	\diesis4Secondary \diesis6Secondary \diesis8Secondary \diesis2Tertiary 
+	\diesis4Tertiary \diesis6Tertiary \diesis8Tertiary \stavrosAbove ];
+
+table GDEF {
+  GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
+
+} GDEF;
+

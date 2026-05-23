@@ -2,25 +2,25 @@
 <glyph name="oligonYporroiKentimata" format="2">
   <advance width="1627"/>
   <unicode hex="E089"/>
-  <anchor x="965" y="1153" name="diesisSecondary"/>
-  <anchor x="502" y="862" name="barline"/>
-  <anchor x="640" y="828" name="yfesisSecondary"/>
-  <anchor x="492" y="835" name="fthoraTopSecondary"/>
-  <anchor x="930" y="1141" name="yfenAbove"/>
-  <anchor x="929" y="-40" name="yfenBelow"/>
-  <anchor x="852" y="-37" name="endofonon"/>
-  <anchor x="1594" y="-19" name="heteronConnecting"/>
-  <anchor x="172" y="943" name="measureNumber"/>
-  <anchor x="713" y="1147" name="isonIndicator"/>
-  <anchor x="820" y="165" name="antikenoma"/>
-  <anchor x="192" y="941" name="noteTop"/>
-  <anchor x="846" y="194" name="fthoraBottom"/>
-  <anchor x="1093" y="767" name="fthoraTop"/>
-  <anchor x="400" y="133" name="diesis"/>
-  <anchor x="1433" y="719" name="yfesis"/>
-  <anchor x="870" y="113" name="psifiston"/>
-  <anchor x="610" y="793" name="gorgonSecondary"/>
-  <anchor x="1207" y="733" name="gorgonTop"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <outline>
     <contour>
       <point x="1149" y="671" type="curve" smooth="yes"/>

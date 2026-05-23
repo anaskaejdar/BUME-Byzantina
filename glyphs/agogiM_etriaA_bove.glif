@@ -2,8 +2,8 @@
 <glyph name="agogiMetriaAbove" format="2">
   <advance width="0"/>
   <unicode hex="E12B"/>
-  <anchor x="0.964" y="-198.973" name="_agogi"/>
-  <anchor x="-0.349" y="-199.723" name="_agogiAboveFthora"/>
+
+
   <outline>
     <contour>
       <point x="138.175" y="298.611" type="curve"/>

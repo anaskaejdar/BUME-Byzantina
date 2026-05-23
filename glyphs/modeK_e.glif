@@ -2,8 +2,8 @@
 <glyph name="modeKe" format="2">
   <advance width="1198"/>
   <unicode hex="E2E5"/>
-  <anchor x="634" y="940" name="fthoraTop"/>
-  <anchor x="617" y="981" name="modeTop"/>
+
+
   <outline>
     <contour>
       <point x="513" y="650" type="line"/>

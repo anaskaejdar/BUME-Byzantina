@@ -2,7 +2,7 @@
 <glyph name="chroaSpathiTertiary" format="2">
   <advance width="0"/>
   <unicode hex="E1BF"/>
-  <anchor x="0" y="804" name="_fthoraTopTertiary"/>
+
   <outline>
     <contour>
       <point x="-131.361" y="976" type="curve"/>

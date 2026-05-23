@@ -2,22 +2,22 @@
 <glyph name="petastiDoubleChamiliApostrofos" format="2">
   <advance width="1236"/>
   <unicode hex="E06A"/>
-  <anchor x="782" y="1289" name="yfenAbove"/>
-  <anchor x="729" y="-210" name="yfenBelow"/>
-  <anchor x="763" y="1291" name="koronis"/>
-  <anchor x="772" y="-287" name="endofonon"/>
-  <anchor x="1316" y="-19" name="heteronConnecting"/>
-  <anchor x="781" y="2" name="psifiston"/>
-  <anchor x="172" y="1333" name="measureNumber"/>
-  <anchor x="650" y="1293" name="isonIndicator"/>
-  <anchor x="765" y="-250" name="apli"/>
-  <anchor x="713" y="-68" name="antikenoma"/>
-  <anchor x="352" y="42" name="fthoraBottom"/>
-  <anchor x="649" y="1101" name="fthoraTop"/>
-  <anchor x="202" y="1332" name="noteTop"/>
-  <anchor x="464" y="4" name="diesis"/>
-  <anchor x="968" y="1337" name="yfesis"/>
-  <anchor x="800" y="-65" name="klasmaBottom"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <outline>
     <contour>
       <point x="592" y="185" type="curve"/>

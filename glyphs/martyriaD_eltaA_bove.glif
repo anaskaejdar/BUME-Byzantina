@@ -2,7 +2,7 @@
 <glyph name="martyriaDeltaAbove" format="2">
   <advance width="0"/>
   <unicode hex="E171"/>
-  <anchor x="2" y="-192" name="_martyriaTop"/>
+
   <outline>
     <contour>
       <point x="-149.723" y="29" type="curve" smooth="yes"/>

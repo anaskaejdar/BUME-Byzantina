@@ -2,9 +2,9 @@
 <glyph name="chroaKlitonAbove" format="2">
   <advance width="0"/>
   <unicode hex="E19E"/>
-  <anchor x="0" y="1305" name="barlineAboveFthora"/>
-  <anchor x="0" y="1225" name="agogiAboveFthora"/>
-  <anchor x="0" y="734" name="_fthoraTop"/>
+
+
+
   <outline>
     <contour>
       <point x="136.575" y="1082" type="curve"/>

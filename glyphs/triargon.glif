@@ -2,7 +2,7 @@
 <glyph name="triargon" format="2">
   <advance width="0"/>
   <unicode hex="E0FE"/>
-  <anchor x="0" y="800" name="_gorgonTop"/>
+
   <outline>
     <contour>
       <point x="-37" y="1004" type="curve"/>

@@ -2,29 +2,29 @@
 <glyph name="oligonKentimataBelow" format="2">
   <advance width="1515"/>
   <unicode hex="E082"/>
-  <anchor x="1596" y="897" name="diesisSecondary"/>
-  <anchor x="425" y="-145" name="yfesisSecondary"/>
-  <anchor x="277" y="590" name="barline"/>
-  <anchor x="930" y="641" name="yfenAbove"/>
-  <anchor x="929" y="-200" name="yfenBelow"/>
-  <anchor x="686" y="801" name="koronis"/>
-  <anchor x="772" y="-277" name="endofonon"/>
-  <anchor x="1087" y="227" name="heteron"/>
-  <anchor x="1684" y="-138" name="heteronConnecting"/>
-  <anchor x="803" y="-227" name="apli"/>
-  <anchor x="172" y="753" name="measureNumber"/>
-  <anchor x="710" y="133" name="diesis"/>
-  <anchor x="710" y="877" name="isonIndicator"/>
-  <anchor x="1460" y="-40" name="omalonConnecting"/>
-  <anchor x="1040" y="-120" name="omalon"/>
-  <anchor x="820" y="-85" name="antikenoma"/>
-  <anchor x="262" y="561" name="noteTop"/>
-  <anchor x="384" y="160" name="fthoraBottom"/>
-  <anchor x="743" y="515" name="fthoraTop"/>
-  <anchor x="1316" y="619" name="yfesis"/>
-  <anchor x="793" y="487" name="klasmaTop"/>
-  <anchor x="763" y="505" name="gorgonTop"/>
-  <anchor x="840" y="113" name="psifiston"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <outline>
     <contour>
       <point x="825" y="187" type="curve" smooth="yes"/>

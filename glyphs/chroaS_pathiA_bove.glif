@@ -2,9 +2,9 @@
 <glyph name="chroaSpathiAbove" format="2">
   <advance width="0"/>
   <unicode hex="E19F"/>
-  <anchor x="0" y="1300" name="barlineAboveFthora"/>
-  <anchor x="0" y="1136" name="agogiAboveFthora"/>
-  <anchor x="0" y="804" name="_fthoraTop"/>
+
+
+
   <outline>
     <contour>
       <point x="-131.361" y="976" type="curve"/>

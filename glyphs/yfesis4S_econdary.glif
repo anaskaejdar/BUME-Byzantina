@@ -2,7 +2,7 @@
 <glyph name="yfesis4Secondary" format="2">
   <advance width="0"/>
   <unicode hex="E207"/>
-  <anchor x="-134" y="429" name="_yfesisSecondary"/>
+
   <outline>
     <contour>
       <point x="-63" y="484" type="line"/>

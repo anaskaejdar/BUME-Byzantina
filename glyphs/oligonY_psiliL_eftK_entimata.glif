@@ -2,20 +2,20 @@
 <glyph name="oligonYpsiliLeftKentimata" format="2">
   <advance width="1515"/>
   <unicode hex="E087"/>
-  <anchor x="930" y="1201" name="yfenAbove"/>
-  <anchor x="929" y="-40" name="yfenBelow"/>
-  <anchor x="802" y="-37" name="endofonon"/>
-  <anchor x="1594" y="-19" name="heteronConnecting"/>
-  <anchor x="174" y="983" name="measureNumber"/>
-  <anchor x="710" y="1207" name="isonIndicator"/>
-  <anchor x="820" y="165" name="antikenoma"/>
-  <anchor x="172" y="991" name="noteTop"/>
-  <anchor x="746" y="194" name="fthoraBottom"/>
-  <anchor x="853" y="889" name="fthoraTop"/>
-  <anchor x="400" y="133" name="diesis"/>
-  <anchor x="1316" y="619" name="yfesis"/>
-  <anchor x="840" y="113" name="psifiston"/>
-  <anchor x="1000" y="787" name="gorgonTop"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <outline>
     <contour>
       <point x="924" y="711" type="curve" smooth="yes"/>

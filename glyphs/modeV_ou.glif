@@ -2,8 +2,8 @@
 <glyph name="modeVou" format="2">
   <advance width="1128"/>
   <unicode hex="E2E2"/>
-  <anchor x="634" y="940" name="fthoraTop"/>
-  <anchor x="617" y="981" name="modeTop"/>
+
+
   <outline>
     <contour>
       <point x="627" y="621" type="curve"/>

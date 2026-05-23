@@ -2,23 +2,23 @@
 <glyph name="doubleChamiliElafronApostrofos" format="2">
   <advance width="1174"/>
   <unicode hex="E02E"/>
-  <anchor x="630" y="1231" name="yfenAbove"/>
-  <anchor x="659" y="-310" name="yfenBelow"/>
-  <anchor x="770" y="1236" name="koronis"/>
-  <anchor x="632" y="-347" name="endofonon"/>
-  <anchor x="172" y="1223" name="measureNumber"/>
-  <anchor x="528" y="1227" name="isonIndicator"/>
-  <anchor x="1284" y="-240" name="heteronConnecting"/>
-  <anchor x="1160" y="-180" name="omalonConnecting"/>
-  <anchor x="575" y="-320" name="apli"/>
-  <anchor x="572" y="-232" name="antikenoma"/>
-  <anchor x="242" y="1223" name="noteTop"/>
-  <anchor x="773" y="1105" name="fthoraTop"/>
-  <anchor x="609" y="-230" name="fthoraBottom"/>
-  <anchor x="819" y="1047" name="gorgonTop"/>
-  <anchor x="462" y="-191" name="diesis"/>
-  <anchor x="965" y="1097" name="yfesis"/>
-  <anchor x="707" y="933" name="klasmaTop"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <outline>
     <contour>
       <point x="899" y="711" type="curve"/>

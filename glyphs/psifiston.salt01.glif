@@ -2,7 +2,7 @@
 <glyph name="psifiston.salt01" format="2">
   <advance width="0"/>
   <unicode hex="F006"/>
-  <anchor x="-1" y="569" name="_psifiston"/>
+
   <outline>
     <contour>
       <point x="529.617" y="546" type="curve"/>

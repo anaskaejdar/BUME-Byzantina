@@ -2,8 +2,8 @@
 <glyph name="agogiArgoteriAbove" format="2">
   <advance width="0"/>
   <unicode hex="E129"/>
-  <anchor x="-0.328" y="-200.139" name="_agogi"/>
-  <anchor x="-1.641" y="-205.389" name="_agogiAboveFthora"/>
+
+
   <outline>
     <contour>
       <point x="146.32" y="295.444" type="curve"/>

@@ -2,24 +2,24 @@
 <glyph name="elafronApostrofos" format="2">
   <advance width="1243"/>
   <unicode hex="E026"/>
-  <anchor x="487" y="-93" name="gorgonBottom"/>
-  <anchor x="630" y="891" name="yfenAbove"/>
-  <anchor x="659" y="-210" name="yfenBelow"/>
-  <anchor x="560" y="746" name="koronis"/>
-  <anchor x="632" y="-37" name="endofonon"/>
-  <anchor x="172" y="643" name="measureNumber"/>
-  <anchor x="528" y="897" name="isonIndicator"/>
-  <anchor x="1420" y="-19" name="heteronConnecting"/>
-  <anchor x="1241" y="89" name="omalonConnecting"/>
-  <anchor x="600" y="-93" name="apli"/>
-  <anchor x="581" y="-29" name="antikenoma"/>
-  <anchor x="232" y="703" name="noteTop"/>
-  <anchor x="518" y="660" name="fthoraTop"/>
-  <anchor x="609" y="-30" name="fthoraBottom"/>
-  <anchor x="627" y="580" name="gorgonTop"/>
-  <anchor x="427" y="20" name="diesis"/>
-  <anchor x="980" y="536" name="yfesis"/>
-  <anchor x="560" y="620" name="klasmaTop"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <outline>
     <contour>
       <point x="375" y="140" type="curve"/>

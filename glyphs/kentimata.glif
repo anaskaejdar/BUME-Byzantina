@@ -2,19 +2,19 @@
 <glyph name="kentimata" format="2">
   <advance width="738"/>
   <unicode hex="E081"/>
-  <anchor x="806" y="34" name="heteronConnecting"/>
-  <anchor x="413" y="875" name="yfenAbove"/>
-  <anchor x="459" y="-40" name="yfenBelow"/>
-  <anchor x="452" y="-277" name="endofonon"/>
-  <anchor x="172" y="753" name="measureNumber"/>
-  <anchor x="354" y="-18" name="gorgonBottom"/>
-  <anchor x="330" y="877" name="isonIndicator"/>
-  <anchor x="125" y="507" name="noteTop"/>
-  <anchor x="465" y="97" name="fthoraBottom"/>
-  <anchor x="227" y="759" name="fthoraTop"/>
-  <anchor x="333" y="93" name="diesis"/>
-  <anchor x="624" y="551" name="yfesis"/>
-  <anchor x="453" y="547" name="gorgonTop"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <outline>
     <contour>
       <point x="107" y="452" type="curve" smooth="yes"/>

@@ -2,8 +2,8 @@
 <glyph name="barlineTheseosAbove" format="2">
   <advance width="0"/>
   <unicode hex="E218"/>
-  <anchor x="0" y="0" name="_barlineAboveFthora"/>
-  <anchor x="0" y="0" name="_barline"/>
+
+
   <outline>
     <contour>
       <point x="-20" y="248" type="line"/>

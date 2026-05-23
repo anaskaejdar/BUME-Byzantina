@@ -2,7 +2,7 @@
 <glyph name="fthoraDiatonicPaBelow" format="2">
   <advance width="0"/>
   <unicode hex="E1C1"/>
-  <anchor x="0" y="244" name="_fthoraBottom"/>
+
   <outline>
     <contour>
       <point x="-12" y="5" type="line"/>

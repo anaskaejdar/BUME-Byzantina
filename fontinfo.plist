@@ -3,11 +3,11 @@
 <plist version="1.0">
   <dict>
     <key>familyName</key>
-    <string>NeanesAnasta</string>
+    <string>BUMEByzantina</string>
     <key>styleName</key>
     <string>Regular</string>
     <key>styleMapFamilyName</key>
-    <string>NeanesAnasta</string>
+    <string>BUMEByzantina</string>
     <key>styleMapStyleName</key>
     <string>regular</string>
     <key>versionMajor</key>
@@ -15,7 +15,11 @@
     <key>versionMinor</key>
     <integer>0</integer>
     <key>copyright</key>
-    <string>Copyright (c) 2022, Daniel</string>
+    <string>Copyright 2026, Zachari Khayati Darian</string>
+    <key>openTypeNameLicense</key>
+    <string>This Font Software is licensed under the SIL Open Font License, Version 1.1.</string>
+    <key>openTypeNameLicenseURL</key>
+    <string>https://sil.org</string>
     <key>unitsPerEm</key>
     <integer>1000</integer>
     <key>ascender</key>
@@ -24,10 +28,8 @@
     <integer>-200</integer>
     <key>italicAngle</key>
     <real>0</real>
-    <key>note</key>
-    <string>2022-3-8: Created with FontForge (http://fontforge.org)</string>
     <key>openTypeHeadCreated</key>
-    <string>2022/03/09 03:08:57</string>
+    <string>2026/05/19 06:12:24</string>
     <key>openTypeHheaAscender</key>
     <integer>1400</integer>
     <key>openTypeHheaDescender</key>
@@ -35,7 +37,7 @@
     <key>openTypeHheaLineGap</key>
     <integer>0</integer>
     <key>openTypeNameVersion</key>
-    <string>Version 1.000</string>
+    <string>Version 1.001</string>
     <key>openTypeOS2WidthClass</key>
     <integer>5</integer>
     <key>openTypeOS2WeightClass</key>
@@ -48,7 +50,9 @@
       <integer>0</integer>
     </array>
     <key>openTypeOS2Type</key>
-    <array/>
+    <array>
+      <integer>7</integer>
+    </array>
     <key>openTypeOS2TypoAscender</key>
     <integer>1400</integer>
     <key>openTypeOS2TypoDescender</key>
@@ -60,9 +64,9 @@
     <key>openTypeOS2WinDescent</key>
     <integer>466</integer>
     <key>postscriptFontName</key>
-    <string>NeanesAnasta</string>
+    <string>BUMEByzantina</string>
     <key>postscriptFullName</key>
-    <string>NeanesAnasta</string>
+    <string>BUMEByzantina</string>
     <key>postscriptWeightName</key>
     <string>Regular</string>
     <key>postscriptUnderlineThickness</key>

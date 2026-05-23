@@ -2,10 +2,10 @@
 <glyph name="martyriaNoteVouHigh" format="2">
   <advance width="849"/>
   <unicode hex="E141"/>
-  <anchor x="517" y="590" name="barline"/>
-  <anchor x="517" y="523" name="agogi"/>
-  <anchor x="453" y="-40" name="martyriaBottom"/>
-  <anchor x="517" y="651" name="fthoraTop"/>
+
+
+
+
   <outline>
     <component base="martyriaTick" xOffset="701"/>
     <component base="martyriaNoteVou"/>

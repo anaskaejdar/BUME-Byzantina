@@ -2,7 +2,7 @@
 <glyph name="noteIndicatorGa" format="2">
   <advance width="0"/>
   <unicode hex="E253"/>
-  <anchor x="0" y="800" name="_noteTop"/>
+
   <outline>
     <contour>
       <point x="-141" y="1056" type="line"/>

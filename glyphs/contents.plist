@@ -8,6 +8,16 @@
     <string>u1D_047.glif</string>
     <key>u1D049</key>
     <string>u1D_049.glif</string>
+    <key>u1D08A</key>
+    <string>u1D_08_A.glif</string>
+    <key>u1D08B</key>
+    <string>u1D_08_B.glif</string>
+    <key>u1D08C</key>
+    <string>u1D_08_C.glif</string>
+    <key>u1D08D</key>
+    <string>u1D_08_D.glif</string>
+    <key>u1D08E</key>
+    <string>u1D_08_E.glif</string>
     <key>u1D08F</key>
     <string>u1D_08F_.glif</string>
     <key>space</key>
@@ -92,16 +102,26 @@
     <string>u1D_0A_1.glif</string>
     <key>u1D0A3</key>
     <string>u1D_0A_3.glif</string>
+    <key>u1D0A3.toProtosMartyriaTop</key>
+    <string>u1D_0A_3.toProtosMartyriaTop.glif</string>
+    <key>u1D0A5</key>
+    <string>u1D_0A_5.glif</string>
+    <key>u1D0A5.toPrimaryChromaticMartyriaTop</key>
+    <string>u1D_0A_5.toPrimaryChromaticMartyriaTop.glif</string>
     <key>u1D0A6</key>
     <string>u1D_0A_6.glif</string>
     <key>u1D0A7</key>
     <string>u1D_0A_7.glif</string>
-    <key>u1D0A5</key>
-    <string>u1D_0A_5.glif</string>
+    <key>u1D0A7.toTritosMartyriaTop</key>
+    <string>u1D_0A_7.toTritosMartyriaTop.glif</string>
     <key>u1D0A8</key>
     <string>u1D_0A_8.glif</string>
+    <key>u1D0A8.toTetartosMartyriaTop</key>
+    <string>u1D_0A_8.toTetartosMartyriaTop.glif</string>
     <key>u1D0A9</key>
     <string>u1D_0A_9.glif</string>
+    <key>u1D0A9.toLegetosMartyriaTop</key>
+    <string>u1D_0A_9.toLegetosMartyriaTop.glif</string>
     <key>u1D0AA</key>
     <string>u1D_0A_A.glif</string>
     <key>u1D0AB</key>
@@ -120,6 +140,8 @@
     <string>u1D_0B_0.withMonofonias.glif</string>
     <key>u1D0B1</key>
     <string>u1D_0B_1.glif</string>
+    <key>u1D0B1.toVarysMartyriaTop</key>
+    <string>u1D_0B_1.toVarysMartyriaTop.glif</string>
     <key>u1D0B3</key>
     <string>u1D_0B_3.glif</string>
     <key>u1D0D0</key>
@@ -152,18 +174,32 @@
     <string>u1D_0D_D.glif</string>
     <key>u1D0E9</key>
     <string>u1D_0E_9.glif</string>
+    <key>u1D0E9.toPaMartyriaTop</key>
+    <string>u1D_0E_9.toPaMartyriaTop.glif</string>
     <key>u1D0EA</key>
     <string>u1D_0E_A.glif</string>
+    <key>u1D0EA.toVouMartyriaTop</key>
+    <string>u1D_0E_A.toVouMartyriaTop.glif</string>
     <key>u1D0EB</key>
     <string>u1D_0E_B.glif</string>
+    <key>u1D0EB.toGaMartyriaTop</key>
+    <string>u1D_0E_B.toGaMartyriaTop.glif</string>
     <key>u1D0EC</key>
     <string>u1D_0E_C.glif</string>
+    <key>u1D0EC.toDiMartyriaTop</key>
+    <string>u1D_0E_C.toDiMartyriaTop.glif</string>
     <key>u1D0ED</key>
     <string>u1D_0E_D.glif</string>
+    <key>u1D0ED.toKeMartyriaTop</key>
+    <string>u1D_0E_D.toKeMartyriaTop.glif</string>
     <key>u1D0EE</key>
     <string>u1D_0E_E.glif</string>
+    <key>u1D0EE.toZoMartyriaTop</key>
+    <string>u1D_0E_E.toZoMartyriaTop.glif</string>
     <key>u1D0EF</key>
     <string>u1D_0E_F.glif</string>
+    <key>u1D0EF.toNiMartyriaTop</key>
+    <string>u1D_0E_F.toNiMartyriaTop.glif</string>
     <key>u1D0F0</key>
     <string>u1D_0F_0.glif</string>
     <key>u1D0F1</key>
@@ -328,12 +364,18 @@
     <string>petastiD_oubleC_hamiliA_postrofos.glif</string>
     <key>gorgonAbove</key>
     <string>gorgonA_bove.glif</string>
+    <key>gorgonAbove.onFirstComponent</key>
+    <string>gorgonA_bove.onFirstComponent.glif</string>
     <key>gorgonBelow</key>
     <string>gorgonB_elow.glif</string>
     <key>gorgonDottedLeft</key>
     <string>gorgonD_ottedL_eft.glif</string>
+    <key>gorgonDottedLeft.onFirstComponent</key>
+    <string>gorgonD_ottedL_eft.onFirstComponent.glif</string>
     <key>digorgon</key>
     <string>digorgon.glif</string>
+    <key>digorgon.onFirstComponent</key>
+    <string>digorgon.onFirstComponent.glif</string>
     <key>agogiPoliArgi</key>
     <string>agogiP_oliA_rgi.glif</string>
     <key>agogiMesi</key>
@@ -342,8 +384,12 @@
     <string>oligonK_entimaM_iddle.glif</string>
     <key>gorgonDottedRight</key>
     <string>gorgonD_ottedR_ight.glif</string>
+    <key>gorgonDottedRight.onFirstComponent</key>
+    <string>gorgonD_ottedR_ight.onFirstComponent.glif</string>
     <key>digorgonDottedLeftBelow</key>
     <string>digorgonD_ottedL_eftB_elow.glif</string>
+    <key>digorgonDottedLeftBelow.onFirstComponent</key>
+    <string>digorgonD_ottedL_eftB_elow.onFirstComponent.glif</string>
     <key>tripleChamili</key>
     <string>tripleC_hamili.glif</string>
     <key>agogiArgoteri</key>
@@ -364,6 +410,8 @@
     <string>agogiM_etria.glif</string>
     <key>digorgonDottedLeftAbove</key>
     <string>digorgonD_ottedL_eftA_bove.glif</string>
+    <key>digorgonDottedLeftAbove.onFirstComponent</key>
+    <string>digorgonD_ottedL_eftA_bove.onFirstComponent.glif</string>
     <key>martyriaNoteZoLow</key>
     <string>martyriaN_oteZ_oL_ow.glif</string>
     <key>martyriaNoteNiLow</key>
@@ -454,8 +502,12 @@
     <string>leimma4.glif</string>
     <key>digorgonDottedRight</key>
     <string>digorgonD_ottedR_ight.glif</string>
+    <key>digorgonDottedRight.onFirstComponent</key>
+    <string>digorgonD_ottedR_ight.onFirstComponent.glif</string>
     <key>trigorgon</key>
     <string>trigorgon.glif</string>
+    <key>trigorgon.onFirstComponent</key>
+    <string>trigorgon.onFirstComponent.glif</string>
     <key>trigorgonDottedLeftBelow</key>
     <string>trigorgonD_ottedL_eftB_elow.glif</string>
     <key>trigorgonDottedLeftAbove</key>
@@ -946,18 +998,34 @@
     <string>u1D_0C_4.glif</string>
     <key>u1D0C4.toSoftChromaticKeMartyria</key>
     <string>u1D_0C_4.toS_oftC_hromaticK_eM_artyria.glif</string>
+    <key>u1D0C4.toSoftChromaticKeMartyriaTop</key>
+    <string>u1D_0C_4.toSoftChromaticKeMartyriaTop.glif</string>
     <key>u1D0C5</key>
     <string>u1D_0C_5.glif</string>
     <key>u1D0C7</key>
     <string>u1D_0C_7.glif</string>
     <key>u1D0C7.toHardChromaticDiMartyria</key>
     <string>u1D_0C_7.toH_ardC_hromaticD_iM_artyria.glif</string>
+    <key>u1D0C7.toHardChromaticDiMartyriaTop</key>
+    <string>u1D_0C_7.toHardChromaticDiMartyriaTop.glif</string>
     <key>u1D0C8</key>
     <string>u1D_0C_8.glif</string>
+    <key>u1D0C8.toZygosMartyria</key>
+    <string>u1D_0C_8.toZygosMartyria.glif</string>
+    <key>u1D0C8.toZygosMartyriaTop</key>
+    <string>u1D_0C_8.toZygosMartyriaTop.glif</string>
     <key>u1D0C9</key>
     <string>u1D_0C_9.glif</string>
+    <key>u1D0C9.toKlitonMartyria</key>
+    <string>u1D_0C_9.toKlitonMartyria.glif</string>
+    <key>u1D0C9.toKlitonMartyriaTop</key>
+    <string>u1D_0C_9.toKlitonMartyriaTop.glif</string>
     <key>u1D0CA</key>
     <string>u1D_0C_A_.glif</string>
+    <key>u1D0CA.toSpathiMartyria</key>
+    <string>u1D_0C_A.toSpathiMartyria.glif</string>
+    <key>u1D0CA.toSpathiMartyriaTop</key>
+    <string>u1D_0C_A.toSpathiMartyriaTop.glif</string>
     <key>u1D0CB</key>
     <string>u1D_0C_B_.glif</string>
     <key>uniE1D0</key>
@@ -994,8 +1062,16 @@
     <string>uniE_1D_F_.glif</string>
     <key>karasIsaki</key>
     <string>karasIsaki.glif</string>
+    <key>karasIsaki.altFront01</key>
+    <string>karasIsaki.altFront01.glif</string>
+    <key>karasIsaki.altBack01</key>
+    <string>karasIsaki.altBack01.glif</string>
+    <key>karasIsaki.altBack02</key>
+    <string>karasIsaki.altBack02.glif</string>
     <key>karasLygisma</key>
     <string>karasLygisma.glif</string>
+    <key>karasLygisma.connecting</key>
+    <string>karasLygisma.connecting.glif</string>
     <key>karasParacletike</key>
     <string>karasParacletike.glif</string>
     <key>karasPiesma</key>
@@ -1016,6 +1092,10 @@
     <string>karasThemaAplounSecondary.glif</string>
     <key>karasThemaAplounTertiary</key>
     <string>karasThemaAplounTertiary.glif</string>
+    <key>karasThemaAploun.toSabaaMartyria</key>
+    <string>karasThemaAploun.toSabaaMartyria.glif</string>
+    <key>karasThemaAploun.toSabaaMartyriaTop</key>
+    <string>karasThemaAploun.toSabaaMartyriaTop.glif</string>
     <key>oxeiaApostrofosElafron</key>
     <string>oxeiaApostrofosElafron.glif</string>
     <key>oxeiaApostrofosElafronKentimata</key>

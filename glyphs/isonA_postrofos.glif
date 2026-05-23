@@ -2,16 +2,16 @@
 <glyph name="isonApostrofos" format="2">
   <advance width="1447"/>
   <unicode hex="E020"/>
-  <anchor x="690" y="891" name="yfenAbove"/>
-  <anchor x="754" y="-236" name="yfenBelow"/>
-  <anchor x="630" y="881" name="koronis"/>
-  <anchor x="1244" y="-424" name="apli"/>
-  <anchor x="172" y="773" name="measureNumber"/>
-  <anchor x="630" y="895" name="isonIndicator"/>
-  <anchor x="322" y="661" name="noteTop"/>
-  <anchor x="644" y="507" name="fthoraTop"/>
-  <anchor x="420" y="153" name="fthoraBottom"/>
-  <anchor x="400" y="133" name="diesis"/>
+
+
+
+
+
+
+
+
+
+
   <outline>
     <contour>
       <point x="1144" y="-218" type="curve"/>

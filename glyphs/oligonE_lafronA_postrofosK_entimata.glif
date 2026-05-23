@@ -2,24 +2,24 @@
 <glyph name="oligonElafronApostrofosKentimata" format="2">
   <advance width="2077"/>
   <unicode hex="E08C"/>
-  <anchor x="1327" y="1137" name="diesisSecondary"/>
-  <anchor x="1002" y="812" name="yfesisSecondary"/>
-  <anchor x="492" y="912" name="fthoraTopSecondary"/>
-  <anchor x="638" y="939" name="gorgonSecondary"/>
-  <anchor x="1240" y="1061" name="yfenAbove"/>
-  <anchor x="1269" y="-40" name="yfenBelow"/>
-  <anchor x="1122" y="-37" name="endofonon"/>
-  <anchor x="2050" y="-19" name="heteronConnecting"/>
-  <anchor x="172" y="1013" name="measureNumber"/>
-  <anchor x="710" y="1010" name="isonIndicator"/>
-  <anchor x="820" y="165" name="antikenoma"/>
-  <anchor x="312" y="1011" name="noteTop"/>
-  <anchor x="1126" y="194" name="fthoraBottom"/>
-  <anchor x="1527" y="745" name="fthoraTop"/>
-  <anchor x="400" y="133" name="diesis"/>
-  <anchor x="1868" y="766" name="yfesis"/>
-  <anchor x="1140" y="113" name="psifiston"/>
-  <anchor x="1647" y="733" name="gorgonTop"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <outline>
     <contour>
       <point x="1321" y="671" type="curve" smooth="yes"/>
