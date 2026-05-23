@@ -608,6 +608,7 @@ lookup ccmpPsalticBaseLigs {
     sub \u1D0A1 by \agogiPoliGorgi;
     sub \u1D07C by \yfenBelow;
     sub \u1D07D by \yfenAbove;
+    sub \u1D089 by \koronis;
     sub \u1D08A by \leimma1;
     sub \u1D08B by \leimma2;
     sub \u1D08C by \leimma3;
