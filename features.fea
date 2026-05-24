@@ -634,9 +634,12 @@ lookup ccmpPsalticBaseLigs {
     \oxeiaChamili \petastiChamiliElafronApostrofos \petastiDoubleChamili
     \petastiDoubleChamiliApostrofos \petastiKentimaTripleYpsili ];
 
+@klasmata=[\u1D07F \u1D0F4 \klasmaAbove \klasmaBelow \karasTsakisma \karasTsakismaBelow ];
+@klasmataSwapped=[\u1D0F4 \u1D07F \klasmaBelow \klasmaAbove \karasTsakismaBelow \karasTsakisma ];
+
 lookup ccmpContextualReplacementsIgnoringMarksExceptKlasma {
-  lookupflag UseMarkFilteringSet [\u1D07F \u1D0F4 \klasmaAbove \klasmaBelow ];
-    sub @basesWithBottomKlasma [\u1D07F \u1D0F4 \klasmaAbove \klasmaBelow ]' by [\u1D0F4 \u1D07F \klasmaBelow \klasmaAbove ];
+  lookupflag UseMarkFilteringSet [@klasmata];
+    sub @basesWithBottomKlasma @klasmata' by @klasmataSwapped;
 } ccmpContextualReplacementsIgnoringMarksExceptKlasma;
 
 lookup ccmpContextualSubstitutions2 {
