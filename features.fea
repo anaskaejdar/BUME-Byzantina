@@ -2868,7 +2868,7 @@ lookup markMarkPositioninglookupToLigature {
     <anchor 930 891> mark @yfenAbove
 	<anchor 929 -400> mark @yfenBelow
 	<anchor 780 -58> mark @heteron
-	<anchor 1177 -172> mark @heteronConnecting
+	<anchor 1217 -172> mark @heteronConnecting
 	<anchor 630 881> mark @koronis
 	<anchor 944 -424> mark @apli
 	<anchor 172 803> mark @measureNumber
@@ -2897,7 +2897,7 @@ lookup markMarkPositioninglookupToLigature {
     <anchor 690 891> mark @yfenAbove
 	<anchor 754 -236> mark @yfenBelow
 	<anchor 974 -134> mark @heteron
-	<anchor 1447 -158> mark @heteronConnecting
+	<anchor 1527 -198> mark @heteronConnecting
 	<anchor 630 881> mark @koronis
 	<anchor 1244 -424> mark @apli
 	<anchor 172 773> mark @measureNumber
